@@ -82,7 +82,7 @@
         "turboSpeed": { "blue": "7.20 km/h", "purple": "10.80 km/h" },
         "ultPower": "8"
       },
-      "chipSlots": ["circle", "circle", "triangle", "triangle", "hexagon", "vslot"],
+      "chipSlots": ["circle", "circle", "triangle", "rhombus", "rhombus", "vslot"],
       "skills": {
         "ult": {
           "name": "不讲鹉德",
