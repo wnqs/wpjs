@@ -163,6 +163,10 @@
       "position": "辅助",
       "specialty": "场地",
       "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/85500f4d-513f-47f7-81ac-2040342732a3.png",
+      "images": [
+    "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ceffbc72-b4ea-4b91-8ba7-1c4e864150e3.png",
+    "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e2bb6662-ae28-46a0-96e0-1c8f1ea09d98.png"
+  ],
       "positionIcon": "辅助",
       "specialtyIcon": "场地",
       "description": "为队友解控并使全队在特殊地形不减速",
