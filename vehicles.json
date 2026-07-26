@@ -222,7 +222,7 @@
     {
       "id": "bugatti_bolide",
       "name": "布加迪 Bolide",
-      "quality": "传说",
+      "quality": "耀世",
       "position": "竞速",
       "specialty": "山路",
       "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/07b093b9-2086-4d68-96a4-45584ba2db83.png",
@@ -921,7 +921,7 @@
     {
       "id": "lamborghini_veneno",
       "name": "兰博基尼 Veneno",
-      "quality": "传说",
+      "quality": "耀世",
       "position": "竞速",
       "specialty": "场地",
       "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/bf74c0ca-e3fc-46a9-8ed4-e2645cc83631.png",
@@ -1126,7 +1126,7 @@
     {
       "id": "ferrari_laferrari",
       "name": "法拉利 LaFerrari",
-      "quality": "传说",
+      "quality": "耀世",
       "position": "竞速",
       "specialty": "城市",
       "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e617f88b-2ecc-4494-a0e3-911bc2598961.png",
@@ -1185,7 +1185,7 @@
     {
       "id": "koenigsegg_one1",
       "name": "柯尼塞格 One:1",
-      "quality": "传说",
+      "quality": "耀世",
       "position": "竞速",
       "specialty": "城市",
       "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6e4de72f-f956-491c-b6ad-50fa90ee7977.png",
