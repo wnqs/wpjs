@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王牌竞速数据整合站</title>
+    <meta name="description" content="王牌竞速数据整合站 — 车辆图鉴、平衡性调整、芯片赋能攻略、壁纸CG一站式查询">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#/" class="nav-logo" data-nav="home">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">王牌竞速<span class="logo-sub">数据站</span></span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#/vehicles" data-nav="vehicles">🚗 车辆数据</a></li>
+                <li><a href="#/balance" data-nav="balance">⚖️ 平衡性调整</a></li>
+                <li><a href="#/chips" data-nav="chips">💠 芯片系统</a></li>
+                <li><a href="#/empower" data-nav="empower">🔮 赋能系统</a></li>
+                <li><a href="#/resources" data-nav="resources">📦 资源获取</a></li>
+                <li><a href="#/wallpaper-static" data-nav="wallpaper-static">🖼️ 静态壁纸</a></li>
+                <li><a href="#/wallpaper-live" data-nav="wallpaper-live">🎬 动态壁纸</a></li>
+                <li><a href="#/cg" data-nav="cg">🎥 CG</a></li>
+                <li><a href="#/pv" data-nav="pv">📺 PV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主内容区域 -->
+    <main id="app"></main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>王牌竞速数据整合站 &mdash; 玩家共建站</p>
+            <p class="footer-meta">数据仅供参考，以游戏内实际版本为准</p>
+        </div>
+    </footer>
+
+    <script src="js/router.js"></script>
+    <script src="js/data/home.js"></script>
+    <script src="js/data/vehicles.js"></script>
+    <script src="js/data/balance.js"></script>
+    <script src="js/data/chips.js"></script>
+    <script src="js/data/empower.js"></script>
+    <script src="js/data/resources.js"></script>
+    <script src="js/data/wallpapers.js"></script>
+    <script src="js/data/media.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
