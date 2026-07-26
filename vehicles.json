@@ -54,6 +54,56 @@
       "passiveIcon": "https://a1.boltp.com/2026/06/24/6a3be67a181f1.png"
     },
     {
+      "id": "baibianxioaying",
+      "name": "百变小鹦",
+      "quality": "传说",
+      "position": "天平",
+      "specialty": "山路",
+      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/32dbad77-98e9-43d1-b1b1-82666b91a365.png",
+      "positionIcon": "天平",
+      "specialtyIcon": "山路",
+      "description": "模仿触碰到的车辆",
+      "skillName": "不讲鹉德",
+      "searchKeywords": ["百变小樱", "竞速", "天平", "bbxy"],
+      "registerDate": "2026-07-24",
+      "vehicleType": "幻想阵营",
+      "manufacturer": "进化",
+      "acquisition": "王牌补给",
+      "acquisitionIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5f49f1f3-7441-4b1b-a432-a497b8440304.png",
+      "stats": {
+        "topSpeed": "222.0 km/h",
+        "power": "8.14",
+        "durability": "120",
+        "nitroCharge": "32.0%",
+        "startCharge": "32.0%",
+        "nitroDuration": "5.40 s",
+        "nitroSpeed": { "blue": "24.80 km/h", "purple": "37.20 km/h" },
+        "turboDuration": { "blue": "0.67 s", "purple": "2.01 s" },
+        "turboSpeed": { "blue": "7.20 km/h", "purple": "10.80 km/h" },
+        "ultPower": "8"
+      },
+      "chipSlots": ["circle", "circle", "triangle", "triangle", "hexagon", "vslot"],
+      "skills": {
+        "ult": {
+          "name": "不讲鹉德",
+          "desc": "加速推进，极速提升极速提升80km/h，持续7秒。加速开始时：<br>·破除300米范围内敌方的效果<br>·若附近30米范围内没有其它车辆则7秒内额外+30km/h。",
+          "recu": "不讲鹉德可以充能两次",
+          "ultPassive": ""
+        },
+        "passive": {
+          "name": "鹦鹉学舌",
+          "desc": "开局25秒时向当前敌方排名最前的赛车学习并进行模仿（若处在大招期间则将在大招结束时进行模仿），模仿后获得50%大招能量"
+        },
+        "features": [
+          { "name": "模仿", "desc": "变形为目标车辆，获得它的数值属性和所有技能效果", "color": "黄" },
+          { "name": "破除隐身", "desc": "破除对方的隐身效果", "color": "红" },
+          { "name": "自充能", "desc": "技能可以补充大招能量", "color": "蓝" }
+        ]
+      },
+      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9c6df0c5-4517-4cd2-b96e-9614b2b6b5cf.png",
+      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/76d11b62-a021-4f92-bfac-a7fdd24be959.png"
+    },
+    {
   "id": "shenjianhao",
   "name": "神剑号",
   "quality": "传说",
