@@ -1,0 +1,44 @@
+[
+  {
+    "type": "static",
+    "name": "示例壁纸 1 — 城市赛道",
+    "url": "https://picsum.photos/seed/aceracer1/800/450",
+    "download": "https://picsum.photos/seed/aceracer1/1920/1080"
+  },
+  {
+    "type": "static",
+    "name": "示例壁纸 2 — 极速光影",
+    "url": "https://picsum.photos/seed/aceracer2/800/450",
+    "download": "https://picsum.photos/seed/aceracer2/1920/1080"
+  },
+  {
+    "type": "static",
+    "name": "示例壁纸 3 — 霓虹之夜",
+    "url": "https://picsum.photos/seed/aceracer3/800/450",
+    "download": "https://picsum.photos/seed/aceracer3/1920/1080"
+  },
+  {
+    "type": "static",
+    "name": "示例壁纸 4 — 沙漠竞速",
+    "url": "https://picsum.photos/seed/aceracer4/800/450",
+    "download": "https://picsum.photos/seed/aceracer4/1920/1080"
+  },
+  {
+    "type": "static",
+    "name": "示例壁纸 5 — 极寒冰原",
+    "url": "https://picsum.photos/seed/aceracer5/800/450",
+    "download": "https://picsum.photos/seed/aceracer5/1920/1080"
+  },
+  {
+    "type": "live",
+    "name": "示例动态壁纸 1",
+    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "download": ""
+  },
+  {
+    "type": "live",
+    "name": "示例动态壁纸 2",
+    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "download": ""
+  }
+]

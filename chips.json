@@ -1,0 +1,52 @@
+[
+  {
+    "id": "accel-core",
+    "name": "加速核心",
+    "icon": "🚀",
+    "rarity": "传说",
+    "set_name": "极速套装",
+    "effect": "提升车辆基础加速值 +8%",
+    "suit_desc": "2件套：加速 +5%；3件套：氮气持续时间 +10%",
+    "recommend": "适合竞速型车辆"
+  },
+  {
+    "id": "shield-module",
+    "name": "护盾模块",
+    "icon": "🛡️",
+    "rarity": "史诗",
+    "set_name": "守护套装",
+    "effect": "受到减速效果降低15%",
+    "suit_desc": "2件套：护盾类技能效果 +10%；3件套：被击中时概率生成小护盾",
+    "recommend": "适合辅助型车辆"
+  },
+  {
+    "id": "interfere-boost",
+    "name": "干扰强化",
+    "icon": "⚡",
+    "rarity": "史诗",
+    "set_name": "干扰套装",
+    "effect": "干扰类技能范围 +10%",
+    "suit_desc": "2件套：干扰效果持续时间 +12%；3件套：干扰命中目标使其额外减速",
+    "recommend": "适合干扰型车辆"
+  },
+  {
+    "id": "nitro-extend",
+    "name": "氮气延长",
+    "icon": "💨",
+    "rarity": "稀有",
+    "set_name": "极速套装",
+    "effect": "氮气加速持续时间 +8%",
+    "suit_desc": "2件套：加速 +5%",
+    "recommend": "万用芯片，适合大多数车辆"
+  },
+  {
+    "id": "cooldown-reduce",
+    "name": "冷却缩减",
+    "icon": "⏱️",
+    "rarity": "稀有",
+    "set_name": "灵动套装",
+    "effect": "技能冷却时间 -8%",
+    "suit_desc": "2件套：技能冷却 -5%；3件套：使用技能后概率立即减少部分冷却",
+    "recommend": "适合技能依赖型车辆"
+  }
+]
