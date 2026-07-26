@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王牌竞速数据整合站</title>
+    <meta name="description" content="王牌竞速数据整合站 — 车辆图鉴、平衡性调整、芯片赋能攻略、壁纸CG一站式查询">
+    <style>
+/* ===== CSS Variables & Reset ===== */
+:root {
+    --bg-primary: #0a0e1a;
+    --bg-secondary: #111827;
+    --bg-card: rgba(17, 24, 39, 0.85);
+    --bg-card-hover: rgba(30, 41, 59, 0.9);
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-cyan: #00f0ff;
+    --accent-orange: #ff6a00;
+    --accent-purple: #a855f7;
+    --accent-green: #22d3ee;
+    --border-color: rgba(0, 240, 255, 0.15);
+    --border-glow: rgba(0, 240, 255, 0.3);
+    --shadow-glow: 0 0 20px rgba(0, 240, 255, 0.1);
+    --radius: 12px;
+    --radius-lg: 20px;
+    --nav-height: 64px;
+    --max-width: 1200px;
+    --font-sans: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg-primary);color:var(--text-primary);line-height:1.6;min-height:100vh;overflow-x:hidden}
+a{color:var(--accent-cyan);text-decoration:none;transition:color .3s}
+a:hover{color:var(--accent-orange)}
+img{max-width:100%;height:auto;display:block}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--bg-primary)}
+::-webkit-scrollbar-thumb{background:var(--accent-cyan);border-radius:3px}
+.navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-height);background:rgba(10,14,26,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border-color);z-index:1000}
+.nav-inner{max-width:var(--max-width);margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;height:100%}
+.nav-logo{display:flex;align-items:center;gap:10px;color:var(--text-primary);font-size:1.2rem;font-weight:700}
+.nav-logo:hover{color:var(--accent-cyan)}
+.logo-text{color:var(--accent-cyan)}
+.logo-sub{color:var(--text-muted);font-weight:400;font-size:.85rem;margin-left:4px}
+.nav-links{display:flex;list-style:none;gap:4px}
+.nav-links a{display:block;padding:8px 14px;color:var(--text-secondary);font-size:.9rem;border-radius:8px;transition:all .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--accent-cyan);background:rgba(0,240,255,.08)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-toggle span{display:block;width:24px;height:2px;background:var(--text-primary);border-radius:2px;transition:all .3s}
+main{max-width:var(--max-width);margin:0 auto;padding:calc(var(--nav-height) + 20px) 20px 40px;min-height:100vh}
+.footer{border-top:1px solid var(--border-color);background:var(--bg-secondary);margin-top:40px}
+.footer-inner{max-width:var(--max-width);margin:0 auto;padding:24px 20px;text-align:center}
+.footer p{color:var(--text-muted);font-size:.85rem}
+.footer-meta{font-size:.75rem;margin-top:4px}
+.hero{text-align:center;padding:60px 20px 50px}
+.hero h1{font-size:2.2rem;font-weight:800;background:linear-gradient(135deg,var(--accent-cyan),var(--accent-orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
+.hero p{color:var(--text-muted);font-size:1.05rem;max-width:600px;margin:0 auto}
+.quick-nav{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-bottom:50px}
+.quick-card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius);padding:20px 14px;text-align:center;cursor:pointer;transition:all .3s;backdrop-filter:blur(8px);color:var(--text-primary)}
+.quick-card:hover{border-color:var(--accent-cyan);box-shadow:var(--shadow-glow);transform:translateY(-3px);color:var(--text-primary)}
+.quick-card .icon{font-size:2rem;margin-bottom:10px;display:block}
+.quick-card .quick-icon{width:48px;height:48px;margin:0 auto 10px;display:flex;align-items:center;justify-content:center;background:rgba(0,240,255,.1);border:1px solid var(--border-color);border-radius:12px;font-size:.85rem;font-weight:700;color:var(--accent-cyan);transition:all .3s}
+.quick-card:hover .quick-icon{background:rgba(0,240,255,.2);border-color:var(--accent-cyan);box-shadow:0 0 15px rgba(0,240,255,.2)}
+.page-header{padding:30px 0 10px}
+.page-header h1{font-size:1.6rem;font-weight:700}
+.filter-bar{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0}
+.filter-btn{padding:6px 16px;border:1px solid var(--border-color);border-radius:20px;background:transparent;color:var(--text-secondary);font-size:.85rem;cursor:pointer;transition:all .3s;font-family:var(--font-sans)}
+.filter-btn:hover,.filter-btn.active{border-color:var(--accent-cyan);color:var(--accent-cyan)}
+.filter-btn.active{background:rgba(0,240,255,.12)}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding:20px 0 40px}
+.card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius);overflow:hidden;transition:all .3s;backdrop-filter:blur(8px)}
+.card:hover{border-color:var(--accent-cyan);box-shadow:var(--shadow-glow);transform:translateY(-3px)}
+.card-body{padding:16px}
+.card-body h3{font-size:1.05rem;margin-bottom:6px}
+.card-body .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.tag{display:inline-block;padding:2px 10px;border-radius:20px;font-size:.75rem;font-weight:600}
+.tag-racing{background:rgba(255,106,0,.2);color:var(--accent-orange)}
+.tag-assist{background:rgba(0,240,255,.15);color:var(--accent-cyan)}
+.tag-interfere{background:rgba(168,85,247,.2);color:var(--accent-purple)}
+.tag-epic{background:rgba(168,85,247,.25);color:#c084fc}
+.tag-rare{background:rgba(59,130,246,.2);color:#60a5fa}
+.tag-common{background:rgba(34,197,94,.2);color:#4ade80}
+.tag-legendary{background:rgba(255,106,0,.25);color:#fb923c}
+.tag-glory{background:rgba(255,215,0,.25);color:#fbbf24}
+
+/* Vehicle page */
+.v-header{padding:30px 0 10px}
+.v-header-title{font-size:1.6rem;font-weight:700}
+.v-header-sub{color:var(--text-muted);font-size:.9rem;margin-top:4px}
+.v-desktop-filter{padding:16px 0;border-bottom:1px solid var(--border-color);margin-bottom:16px}
+.v-search-box{margin-bottom:12px}
+.v-search-box input{width:100%;max-width:400px;padding:10px 16px;border:1px solid var(--border-color);border-radius:10px;background:rgba(255,255,255,.04);color:var(--text-primary);font-size:.9rem;font-family:var(--font-sans);outline:none;transition:border .2s}
+.v-search-box input:focus{border-color:var(--accent-cyan)}
+.v-filter-sections{display:flex;gap:24px;flex-wrap:wrap}
+.v-filter-section{display:flex;flex-direction:column;gap:6px}
+.v-filter-title{font-size:.78rem;font-weight:600;color:var(--text-muted)}
+.v-filter-opts{display:flex;gap:6px;flex-wrap:wrap}
+.v-fopt{display:flex;align-items:center;gap:4px;padding:5px 12px;border:1px solid var(--border-color);border-radius:8px;font-size:.82rem;color:var(--text-secondary);cursor:pointer;transition:all .2s;background:transparent}
+.v-fopt:hover{border-color:rgba(255,255,255,.2);color:var(--text-primary)}
+.v-fopt.active{border-color:var(--accent-cyan);color:var(--accent-cyan);background:rgba(0,240,255,.08)}
+.v-fopt-icon{width:18px;height:18px;display:block}
+.v-qopt{min-width:44px;justify-content:center}
+.v-stats-text{font-size:.82rem;color:var(--text-muted);padding:4px 0 12px}
+.v-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;padding:0 0 40px}
+.v-car-card{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;transition:all .3s;background:var(--bg-card);border:2px solid transparent}
+.v-car-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.4)}
+.v-car-card.legendary-border{border-color:#ffd700}
+.v-car-card.epic-border{border-color:#a855f7}
+.v-car-card.rare-border{border-color:#3b82f6}
+.v-car-card.normal-border{border-color:#22c55e}
+.v-car-card.glory-border{border-color:#ffd700}
+.v-card-img{height:160px;display:flex;align-items:center;justify-content:center;position:relative}
+.v-card-img.legendary{
+    background: linear-gradient(135deg, rgba(255,215,0,0.25) 0%, rgba(255,200,0,0.08) 100%);
+    position:relative;
+    overflow:hidden;
+}
+.v-card-img.legendary::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(ellipse at 30% 40%, rgba(255,230,50,0.15) 0%, transparent 70%);
+    pointer-events:none;
+}
+.v-card-img.legendary::after{
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,transparent,#ffd700,transparent);
+}
+.v-card-img.glory{
+    background:url('https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fc890049-ab85-47b7-8d66-a3959f3862b9.png') center/cover;
+    position:relative;overflow:hidden;
+}
+.v-card-img.glory::after{
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,transparent,#ffd700,transparent);
+}
+.v-card-img.epic{
+    background:linear-gradient(135deg,rgba(168,85,247,0.2) 0%,rgba(168,85,247,0.05) 100%);
+    position:relative;overflow:hidden;
+}
+.v-card-img.epic::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(ellipse at 30% 40%, rgba(200,120,255,0.12) 0%, transparent 70%);
+    pointer-events:none;
+}
+.v-card-img.epic::after{
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,transparent,#a855f7,transparent);
+}
+.v-card-img.rare{
+    background:linear-gradient(135deg,rgba(59,130,246,0.18) 0%,rgba(59,130,246,0.04) 100%);
+    position:relative;overflow:hidden;
+}
+.v-card-img.rare::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(ellipse at 30% 40%, rgba(100,160,255,0.1) 0%, transparent 70%);
+    pointer-events:none;
+}
+.v-card-img.rare::after{
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,transparent,#3b82f6,transparent);
+}
+.v-card-img.normal{
+    background:linear-gradient(135deg,rgba(34,197,94,0.15) 0%,rgba(34,197,94,0.03) 100%);
+    position:relative;overflow:hidden;
+}
+.v-card-img.normal::after{
+    content:'';position:absolute;top:0;left:0;right:0;height:1px;
+    background:linear-gradient(90deg,transparent,#22c55e,transparent);
+}
+.v-card-img img{-webkit-touch-callout:none;pointer-events:none}
+.v-card-img-placeholder{font-size:3.5rem;filter:drop-shadow(0 2px 8px rgba(0,0,0,.3))}
+.v-card-acq{position:absolute;bottom:6px;right:6px;width:24px;height:24px;border-radius:6px;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.1)}
+.v-card-acq img{width:18px;height:18px;display:block;pointer-events:none}
+.v-card-info{padding:12px 14px 14px}
+.v-card-title{font-size:1rem;font-weight:700;margin-bottom:6px}
+.v-card-meta{display:flex;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.v-meta-item{display:flex;align-items:center;gap:3px;font-size:.78rem;color:var(--text-secondary)}
+.v-meta-item img{width:16px;height:16px;display:block}
+.v-acq-icon img{width:14px;height:14px}
+.v-card-desc{font-size:.8rem;color:var(--text-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.v-quality-badge{position:absolute;top:8px;right:8px;padding:3px 10px;border-radius:12px;font-size:.7rem;font-weight:700;backdrop-filter:blur(4px)}
+.v-quality-badge.legendary{background:rgba(255,106,0,.4);color:#fff}
+.v-quality-badge.epic{background:rgba(168,85,247,.4);color:#fff}
+.v-quality-badge.rare{background:rgba(59,130,246,.4);color:#fff}
+.v-quality-badge.normal{background:rgba(34,197,94,.4);color:#fff}
+
+/* Vehicle detail modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);z-index:2000;display:flex;align-items:center;justify-content:center;padding:16px;animation:fadeIn .25s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.vd-modal{background:var(--bg-secondary);border-radius:var(--radius-lg);max-width:520px;width:100%;max-height:90vh;overflow-y:auto;position:relative;border:1px solid var(--border-color)}
+.vd-close{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:none;background:rgba(0,0,0,.5);color:#fff;font-size:1.2rem;cursor:pointer;z-index:10;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.vd-close:hover{background:var(--accent-orange)}
+.vd-banner{position:relative;height:200px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.vd-banner.legendary{
+    background:linear-gradient(135deg,rgba(255,215,0,0.3),rgba(255,200,0,0.08));
+    position:relative;overflow:hidden;
+}
+.vd-banner.legendary::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(ellipse at 30% 40%, rgba(255,230,50,0.12) 0%, transparent 70%);
+    pointer-events:none;
+}
+.vd-banner.epic{
+    background:linear-gradient(135deg,rgba(168,85,247,0.25),rgba(168,85,247,0.05));
+    position:relative;overflow:hidden;
+}
+.vd-banner.epic::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(ellipse at 30% 40%, rgba(200,120,255,0.1) 0%, transparent 70%);
+    pointer-events:none;
+}
+.vd-banner.rare{
+    background:linear-gradient(135deg,rgba(59,130,246,0.2),rgba(59,130,246,0.04));
+    position:relative;overflow:hidden;
+}
+.vd-banner.rare::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(ellipse at 30% 40%, rgba(100,160,255,0.08) 0%, transparent 70%);
+    pointer-events:none;
+}
+.vd-banner.normal{
+    background:linear-gradient(135deg,rgba(34,197,94,0.2),rgba(34,197,94,0.03));
+}
+.vd-banner.glory{
+    background:url('https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fc890049-ab85-47b7-8d66-a3959f3862b9.png') center/cover;
+}
+.vd-emblem{font-size:4.5rem;filter:drop-shadow(0 4px 16px rgba(0,0,0,.4))}
+.vd-pos-badge{position:absolute;top:14px;left:14px;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.15)}
+.vd-pos-badge img{width:34px;height:34px;display:block}
+.vd-q-tag{position:absolute;top:14px;right:14px;padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:700;backdrop-filter:blur(4px)}
+.vd-q-tag.legendary{background:rgba(255,106,0,.4);color:#fff}
+.vd-q-tag.epic{background:rgba(168,85,247,.4);color:#fff}
+.vd-q-tag.rare{background:rgba(59,130,246,.4);color:#fff}
+.vd-q-tag.normal{background:rgba(34,197,94,.4);color:#fff}
+.vd-q-tag.glory{background:rgba(255,215,0,.4);color:#000}
+.vd-gallery{width:100%;height:100%;position:relative;overflow:hidden}
+.vd-gallery-track{display:flex;height:100%;transition:transform .3s ease}
+.vd-gallery-slide{min-width:100%;height:100%;display:none}
+.vd-gallery-slide.active{display:block}
+.vd-gallery-slide img{width:100%;height:100%;object-fit:cover;-webkit-touch-callout:none;pointer-events:none}
+.vd-gallery-btn{position:absolute;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:none;background:rgba(0,0,0,.5);color:#fff;font-size:1.4rem;cursor:pointer;z-index:6;display:flex;align-items:center;justify-content:center;transition:all .2s;line-height:1}
+.vd-gallery-btn:hover{background:rgba(0,0,0,.7)}
+.vd-prev{left:8px}
+.vd-next{right:8px}
+.vd-body{padding:20px 24px 24px}
+.vd-name{font-size:1.4rem;font-weight:800;margin-bottom:4px}
+.vd-badges-row{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.vd-badge{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:10px;font-size:.85rem;background:rgba(255,255,255,.05);color:var(--text-secondary)}
+.vd-badge img{width:22px;height:22px}
+.vd-sec-title{font-size:.85rem;font-weight:700;color:var(--accent-cyan);margin:16px 0 10px;padding-left:10px;border-left:3px solid var(--accent-cyan)}
+.vd-features{display:flex;gap:8px;flex-wrap:wrap}
+.v-feat-box{padding:5px 14px;border-radius:8px;font-size:.82rem;background:rgba(0,240,255,.06);color:var(--accent-cyan);border:1px solid rgba(0,240,255,.12);cursor:pointer;transition:all .2s}
+.v-feat-box:hover{background:rgba(0,240,255,.12)}
+.vd-chip-slots{display:flex;gap:8px}
+.v-chip-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid var(--border-color);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--text-muted)}
+.v-chip-icon img{width:24px;height:24px}
+.vd-chip-rec{padding:14px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid var(--border-color)}
+.v-rec-title{font-size:.9rem;font-weight:700;color:#feca57;margin:4px 0 2px}
+.v-rec-line{font-size:.8rem;color:#e2e2e6;padding:2px 0;line-height:1.7}
+.vd-stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.v-stat-card{padding:10px;border-radius:8px;background:rgba(255,255,255,.03);border:1px solid var(--border-color);text-align:center}
+.v-stat-card span{display:block;font-size:.78rem;color:var(--text-muted)}
+.v-stat-card span:last-child{font-size:.95rem;font-weight:700;color:var(--text-primary);margin-top:4px}
+.v-stat-card .v-gold{color:#fbbf24}
+.vd-skill-block{padding:14px;border-radius:10px;background:rgba(0,240,255,.03);border:1px solid rgba(0,240,255,.1);margin-bottom:10px}
+.vd-skill-hd{font-size:.95rem;font-weight:700;color:var(--accent-cyan);margin-bottom:6px}
+.vd-skill-desc{font-size:.85rem;color:var(--text-secondary);line-height:1.6;white-space:pre-wrap}
+.vd-sub-skill{margin-top:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06)}
+.vd-sub-title{font-size:.82rem;font-weight:600;color:var(--text-muted);margin-bottom:4px}
+
+@media(max-width:768px){
+.nav-links{position:fixed;top:var(--nav-height);left:0;right:0;background:rgba(10,14,26,.98);backdrop-filter:blur(16px);flex-direction:column;padding:12px 16px 20px;display:none;overflow-y:auto;max-height:calc(100vh - var(--nav-height))}
+.nav-links.open{display:flex}
+.nav-links li{width:100%}
+.nav-links a{display:block;padding:10px 14px;font-size:.95rem;border-radius:8px;border-bottom:1px solid rgba(255,255,255,.04)}
+.nav-links li:last-child a{border-bottom:none}
+.nav-toggle{display:flex}
+.nav-toggle.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.v-desktop-filter{padding:12px 0}
+.v-search-box input{max-width:100%}
+.v-filter-sections{gap:10px;flex-direction:column}
+.v-filter-opts{gap:4px}
+.v-fopt{padding:4px 10px;font-size:.78rem}
+.v-grid{grid-template-columns:1fr 1fr;gap:10px}
+.v-card-img{height:110px}
+.v-card-img-placeholder{font-size:2.2rem}
+.v-card-info{padding:8px 10px 10px}
+.v-card-title{font-size:.9rem}
+.v-meta-item{font-size:.72rem}
+.v-meta-item img{width:14px;height:14px}
+.v-card-desc{font-size:.72rem;-webkit-line-clamp:1}
+.v-card-acq{width:20px;height:20px;bottom:4px;right:4px}
+.v-card-acq img{width:14px;height:14px}
+.v-quality-badge{padding:2px 8px;font-size:.65rem;top:6px;right:6px}
+.vd-modal{max-width:100%;margin:0 8px}
+.vd-banner{height:160px}
+.vd-emblem{font-size:3rem}
+.vd-pos-badge{width:40px;height:40px;top:10px;left:10px}
+.vd-pos-badge img{width:28px;height:28px}
+.vd-q-tag{padding:4px 12px;font-size:.75rem;top:10px;right:10px}
+.vd-body{padding:14px 16px 18px}
+.vd-name{font-size:1.2rem}
+.vd-badge{padding:4px 8px;font-size:.78rem}
+.vd-badge img{width:18px;height:18px}
+.vd-stats-grid{grid-template-columns:repeat(2,1fr);gap:6px}
+.v-stat-card{padding:8px}
+.v-stat-card span:last-child{font-size:.85rem}
+.vd-skill-hd{font-size:.88rem}
+.vd-skill-desc{font-size:.8rem}
+.v-chip-icon{width:30px;height:30px}
+.v-chip-icon img{width:20px;height:20px}
+.vd-chip-rec{padding:10px}
+.v-rec-title{font-size:.82rem}
+.v-rec-line{font-size:.75rem}
+.v-feat-box{padding:4px 10px;font-size:.75rem}
+.vd-gallery-btn{width:26px;height:26px;font-size:1.1rem}}
+
+/* Balance updates */
+.update-item{background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius);padding:16px;margin-bottom:12px;transition:all .3s}
+.update-item:hover{border-color:var(--accent-orange)}
+.update-item .version{color:var(--accent-orange);font-weight:700;font-size:.9rem}
+.update-item .date{color:var(--text-muted);font-size:.8rem;margin-left:10px}
+.update-item .desc{color:var(--text-secondary);font-size:.9rem;margin-top:4px}
+
+/* Data table */
+.data-table-wrap{overflow-x:auto;padding:20px 0 40px}
+.data-table{width:100%;border-collapse:collapse;font-size:.88rem}
+.data-table th{background:rgba(0,240,255,.08);color:var(--accent-cyan);text-align:left;padding:12px 14px;border-bottom:2px solid var(--border-color);font-weight:600;white-space:nowrap}
+.data-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text-secondary)}
+.data-table tr:hover td{background:rgba(0,240,255,.03)}
+
+/* Gallery */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;padding:20px 0 40px}
+.gallery-item{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--bg-card);border:1px solid var(--border-color);cursor:pointer;transition:all .3s;aspect-ratio:16/9}
+.gallery-item:hover{border-color:var(--accent-cyan);box-shadow:var(--shadow-glow);transform:scale(1.02)}
+.gallery-item img,.gallery-item video{width:100%;height:100%;object-fit:cover}
+.gallery-item .gallery-label{position:absolute;bottom:0;left:0;right:0;padding:30px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:var(--text-primary);font-size:.85rem;font-weight:600}
+
+/* Calculator */
+.calc-card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:var(--radius-lg);padding:32px;max-width:520px;margin:0 auto 24px;backdrop-filter:blur(8px)}
+.calc-form{display:flex;flex-direction:column;gap:20px}
+.calc-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.calc-row label{font-size:.95rem;font-weight:600;color:var(--text-primary);min-width:90px}
+.calc-input-group{display:flex;align-items:center;gap:8px}
+.calc-btn{width:36px;height:36px;border-radius:8px;border:1px solid var(--border-color);background:rgba(255,255,255,.05);color:var(--text-primary);font-size:1.2rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;justify-content:center;font-family:var(--font-sans)}
+.calc-btn:hover{background:rgba(0,240,255,.1);border-color:var(--accent-cyan)}
+.calc-input-group input{width:60px;height:36px;text-align:center;border:1px solid var(--border-color);border-radius:8px;background:rgba(0,0,0,.3);color:var(--text-primary);font-size:1.1rem;font-weight:700;font-family:var(--font-sans)}
+.calc-select{padding:8px 16px;border:1px solid var(--border-color);border-radius:8px;background:rgba(0,0,0,.3);color:var(--text-primary);font-size:.95rem;font-family:var(--font-sans);cursor:pointer;min-width:120px}
+.calc-submit{width:100%;padding:12px;border:none;border-radius:10px;background:linear-gradient(135deg,var(--accent-cyan),var(--accent-purple));color:#fff;font-size:1rem;font-weight:700;cursor:pointer;transition:all .3s;font-family:var(--font-sans)}
+.calc-submit:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(0,240,255,.3)}
+.calc-result{margin-top:24px;padding:20px;border:1px solid var(--border-color);border-radius:var(--radius);background:rgba(0,0,0,.2)}
+.calc-result h3{font-size:1.1rem;margin-bottom:12px;color:var(--accent-cyan)}
+.result-summary{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--border-color)}
+.result-total{font-size:1.2rem;color:var(--text-primary)}
+.result-total strong{color:var(--accent-orange);font-size:1.4rem}
+.result-meta{font-size:.82rem;color:var(--text-muted)}
+.result-table{width:100%;border-collapse:collapse;font-size:.88rem}
+.result-table th{text-align:left;padding:8px 12px;border-bottom:1px solid var(--border-color);color:var(--text-secondary);font-weight:600}
+.result-table td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.04);color:var(--text-primary)}
+.result-total-row td{border-top:2px solid var(--accent-cyan);border-bottom:none;color:var(--accent-cyan)}
+.calc-note{max-width:520px;margin:0 auto;padding:20px;border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);font-size:.85rem;color:var(--text-muted);line-height:1.8}
+.calc-note ul{margin:8px 0 0 18px}
+.calc-note li{margin-bottom:4px}
+
+/* Responsive */
+@media(max-width:900px){
+.hero h1{font-size:1.6rem}
+.hero{padding:40px 16px 30px}
+.quick-nav{grid-template-columns:repeat(auto-fill,minmax(130px,1fr)}
+.vehicle-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr)}
+.card-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr)}}
+@media(max-width:400px){
+.quick-nav{grid-template-columns:1fr 1fr;gap:10px}
+.quick-card{padding:16px 12px}
+.v-grid{grid-template-columns:1fr 1fr;gap:8px}
+.v-card-img{height:90px}
+.v-card-img-placeholder{font-size:2rem}}
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏎️</text></svg>">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#/" class="nav-logo">
+                <span class="logo-text">王牌竞速<span class="logo-sub">数据站</span></span>
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#/vehicles">车辆数据</a></li>
+                <li><a href="#/balance">平衡性调整</a></li>
+                <li><a href="#/calculator">芯片要求计算器</a></li>
+                <li><a href="#/chips">芯片系统</a></li>
+                <li><a href="#/empower">赋能系统</a></li>
+                <li><a href="#/resources">资源获取</a></li>
+                <li><a href="#/wallpaper-static">静态壁纸</a></li>
+                <li><a href="#/wallpaper-live">动态壁纸</a></li>
+                <li><a href="#/cg">CG</a></li>
+                <li><a href="#/pv">PV</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="app"></main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>王牌竞速数据整合站 &mdash; 玩家共建站</p>
+            <p class="footer-meta">数据仅供参考，以游戏内实际版本为准</p>
+        </div>
+    </footer>
+
+<script>
+// ============================================================
+// 页面渲染函数
+// ============================================================
+
+// ----- home.js -----
+window.renderHome = function () {
+    const navItems = [
+        { icon: '车辆',   name: '车辆数据',     desc: '全车辆图鉴与属性',   route: 'vehicles' },
+        { icon: '平衡',   name: '平衡性调整',   desc: '版本更新调整记录',   route: 'balance' },
+        { icon: '计算',   name: '芯片要求计算器', desc: '芯片升级所需数量计算', route: 'calculator' },
+        { icon: '芯片',   name: '芯片系统',     desc: '芯片图鉴与搭配',     route: 'chips' },
+        { icon: '赋能',   name: '赋能系统',     desc: '赋能模块与推荐',     route: 'empower' },
+        { icon: '资源',   name: '资源获取',     desc: '全资源获取途径',     route: 'resources' },
+        { icon: '壁纸',   name: '静态壁纸',     desc: '精美壁纸收藏',       route: 'wallpaper-static' },
+        { icon: '动态',   name: '动态壁纸',     desc: '动态壁纸展示',       route: 'wallpaper-live' },
+        { icon: 'CG',    name: 'CG',          desc: '游戏CG动画',         route: 'cg' },
+        { icon: 'PV',    name: 'PV',          desc: '宣传视频合集',       route: 'pv' },
+    ];
+    const updates = window.DATA_BALANCE ? window.DATA_BALANCE.slice(0, 3) : [];
+    var html = '<div class="page">';
+    html += '<section class="hero">';
+    html += '<h1>王牌竞速数据整合站</h1>';
+    html += '<p>一站式查询车辆图鉴、芯片赋能攻略、版本平衡性调整与游戏媒体资源</p>';
+    html += '</section>';
+    html += '<div class="quick-nav">';
+    navItems.forEach(function (item) {
+        html += '<div class="quick-card" onclick="window.location.hash=\'#/' + item.route + '\'">';
+        html += '<div class="quick-icon">' + item.icon + '</div>';
+        html += '<h3>' + item.name + '</h3>';
+        html += '<p>' + item.desc + '</p>';
+        html += '</div>';
+    });
+    html += '</div>';
+    if (updates.length) {
+        html += '<section class="recent-updates">';
+        html += '<h2>最近更新</h2>';
+        updates.forEach(function (u) {
+            html += '<div class="update-item">';
+            html += '<span class="version">' + (u.version || '') + '</span>';
+            html += '<span class="date">' + (u.date || '') + '</span>';
+            html += '<div class="desc">' + (u.summary || u.content || '') + '</div>';
+            html += '</div>';
+        });
+        html += '</section>';
+    }
+    html += '</div>';
+    document.getElementById('app').innerHTML = html;
+};
+
+// ----- vehicles.js -----
+// ===== 图标资源 =====
+var POSITION_ICONS = {
+    '竞速': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/3dff9aca-3af3-47c0-bf76-cce424c2d846.png',
+    '干扰': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/3275e576-7547-4a19-94e9-71725a09c902.png',
+    '辅助': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/76986bb0-a074-42e8-9f7a-acf66eb19ea3.png',
+    '天平': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/57b6bd90-c852-4ee7-9720-e9a58f07914c.png',
+};
+var SPECIALTY_ICONS = {
+    '城市': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/cab840bc-ee68-4bff-9d26-0919a8836907.png',
+    '山路': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fb120b3c-bceb-4d2d-b282-428f6d0bbf3a.png',
+    '场地': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9bdee65d-6c29-4170-ba12-cd60bf8fdfac.png',
+};
+var CHIP_ICONS = {
+    'circle': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a83f677d-34a5-4ec9-a2c3-a1ee9948e6a0.png',
+    'triangle': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/4ae94d05-cde3-4718-b5ff-78aa669cd4f8.png',
+    'rhombus': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/115fccc6-7229-4bf9-a530-4dc8562f7cf4.png',
+    'hexagon': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/4de60050-47d8-472f-8fe7-d1f43d276814.png',
+    'vslot': 'https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/22ea020f-99df-4248-844b-66c91f8dec12.png',
+};
+var RACING_ICON_URL = POSITION_ICONS['竞速'];
+var EXTRA_RACING_ICON_CARS = [];
+var QUALITY_WEIGHT = { '传说':5, '耀世':5, '史诗':4, '稀有':3, '普通':2 };
+// ===== 车辆列表页渲染 =====
+window.renderVehicles = function () {
+    var raw = window.DATA_VEHICLES || [];
+    var vehicles = Array.isArray(raw) ? raw : (raw.vehicles && Array.isArray(raw.vehicles) ? raw.vehicles : []);
+    var app = document.getElementById('app');
+    
+    var html = '<div class="page" id="vehiclesPage">';
+    // 顶部标题
+    html += '<div class="v-header"><div class="v-header-title">车辆数据</div><div class="v-header-sub">全车辆图鉴 — 定位 / 专精 / 品质</div></div>';
+    // 筛选栏
+    html += '<div class="v-desktop-filter" id="desktopFilter">';
+    html += '<div class="v-search-box"><input type="text" id="vSearchInput" placeholder="搜索车辆名称..."></div>';
+    html += '<div class="v-filter-sections">';
+    html += '<div class="v-filter-section"><div class="v-filter-title">定位</div><div class="v-filter-opts" id="vPosOpts"></div></div>';
+    html += '<div class="v-filter-section"><div class="v-filter-title">专精</div><div class="v-filter-opts" id="vSpecOpts"></div></div>';
+    html += '<div class="v-filter-section"><div class="v-filter-title">品质</div><div class="v-filter-opts" id="vQOpts"></div></div>';
+    html += '</div></div>';
+    html += '<div class="v-stats-text" id="vStats"></div>';
+    html += '<div class="v-grid" id="vGrid"></div>';
+    html += '</div>';
+    app.innerHTML = html;
+    
+    initVehicleFilters();
+    renderVehicleList();
+    setupVehicleSearch();
+};
+
+var vActiveFilters = { position:'', specialty:'', quality:'' };
+var vKeyword = '';
+
+function initVehicleFilters() {
+    var positions = ['辅助','竞速','干扰','天平'];
+    var specialties = ['城市','山路','场地'];
+    var qualities = ['传说','史诗','稀有','普通'];
+    
+    var posHtml = positions.map(function(p) {
+        return '<div class="v-fopt" data-type="position" data-val="'+p+'"><img src="'+POSITION_ICONS[p]+'" class="v-fopt-icon"> '+p+'</div>';
+    }).join('');
+    document.getElementById('vPosOpts').innerHTML = posHtml;
+    
+    var specHtml = specialties.map(function(s) {
+        return '<div class="v-fopt" data-type="specialty" data-val="'+s+'"><img src="'+SPECIALTY_ICONS[s]+'" class="v-fopt-icon"> '+s+'</div>';
+    }).join('');
+    document.getElementById('vSpecOpts').innerHTML = specHtml;
+    
+    var qHtml = qualities.map(function(q) {
+        return '<div class="v-fopt v-qopt" data-type="quality" data-val="'+q+'">'+q+'</div>';
+    }).join('');
+    document.getElementById('vQOpts').innerHTML = qHtml;
+    
+    document.querySelectorAll('#vPosOpts .v-fopt, #vSpecOpts .v-fopt, #vQOpts .v-fopt').forEach(function(opt) {
+        opt.addEventListener('click', function() {
+            var type = opt.dataset.type;
+            var val = opt.dataset.val;
+            if (vActiveFilters[type] === val) vActiveFilters[type] = '';
+            else vActiveFilters[type] = val;
+            updateVFilterUI();
+            renderVehicleList();
+        });
+    });
+}
+
+function updateVFilterUI() {
+    document.querySelectorAll('#vPosOpts .v-fopt').forEach(function(o) {
+        o.classList.toggle('active', o.dataset.val === vActiveFilters.position);
+    });
+    document.querySelectorAll('#vSpecOpts .v-fopt').forEach(function(o) {
+        o.classList.toggle('active', o.dataset.val === vActiveFilters.specialty);
+    });
+    document.querySelectorAll('#vQOpts .v-fopt').forEach(function(o) {
+        o.classList.toggle('active', o.dataset.val === vActiveFilters.quality);
+    });
+}
+
+function setupVehicleSearch() {
+    var input = document.getElementById('vSearchInput');
+    if (!input) return;
+    input.addEventListener('input', function() {
+        vKeyword = input.value.toLowerCase();
+        renderVehicleList();
+    });
+}
+
+function renderVehicleList() {
+    var raw = window.DATA_VEHICLES || [];
+    var vehicles = Array.isArray(raw) ? raw : (raw.vehicles && Array.isArray(raw.vehicles) ? raw.vehicles : []);
+    // 筛选
+    var filtered = vehicles.filter(function(v) {
+        if (vActiveFilters.position && v.position !== vActiveFilters.position) return false;
+        if (vActiveFilters.specialty && v.specialty !== vActiveFilters.specialty) return false;
+        if (vActiveFilters.quality && v.quality !== vActiveFilters.quality) return false;
+        if (vKeyword) {
+            if (!v.name.toLowerCase().includes(vKeyword) &&
+                !(v.skillName && v.skillName.toLowerCase().includes(vKeyword)) &&
+                !(v.searchKeywords && v.searchKeywords.some(function(k) { return k.toLowerCase().includes(vKeyword); }))) return false;
+        }
+        return true;
+    });
+    // 排序
+    filtered.sort(function(a, b) {
+        var qa = QUALITY_WEIGHT[a.quality]||0, qb = QUALITY_WEIGHT[b.quality]||0;
+        if (qa !== qb) return qb - qa;
+        return (a.name || '').localeCompare(b.name || '');
+    });
+    
+    var grid = document.getElementById('vGrid');
+    var stats = document.getElementById('vStats');
+    if (!grid) return;
+    if (filtered.length === 0) {
+        grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px;color:var(--text-muted);">暂无车辆数据</div>';
+        if (stats) stats.textContent = '共 0 辆车';
+        return;
+    }
+    
+    grid.innerHTML = filtered.map(function(car) {
+        var qClass = car.quality === '传说' ? 'legendary' : car.quality === '史诗' ? 'epic' : car.quality === '稀有' ? 'rare' : car.quality === '耀世' ? 'glory' : 'normal';
+        var bClass = qClass + '-border';
+        var posIcon = POSITION_ICONS[car.position] || '';
+        var specIcon = SPECIALTY_ICONS[car.specialty] || '';
+        var extraRacing = EXTRA_RACING_ICON_CARS.includes(car.name) ? '<div class="v-meta-item"><img src="'+RACING_ICON_URL+'"><span>竞速</span></div>' : '';
+        return '<div class="v-car-card '+bClass+'" data-id="'+car.id+'">' +
+            '<div class="v-card-img '+qClass+'">' +
+            (car.imageUrl ? '<img src="'+car.imageUrl+'" alt="'+car.name+'" style="width:100%;height:100%;object-fit:contain;background:var(--bg-secondary);" onerror="this.style.display=\'none\';this.parentNode.innerHTML=\'<div class=v-card-img-placeholder>🚗</div>\'">' : '<div class="v-card-img-placeholder">🚗</div>') +
+            (car.acquisitionIcon ? '<div class="v-card-acq"><img src="'+car.acquisitionIcon+'" alt="获取"></div>' : '') +
+            '</div>' +
+            '<div class="v-card-info"><div class="v-card-title">'+car.name+'</div>' +
+            '<div class="v-card-meta">' +
+            (posIcon ? '<div class="v-meta-item"><img src="'+posIcon+'"><span>'+car.position+'</span></div>' : '') +
+            extraRacing +
+            (specIcon ? '<div class="v-meta-item"><img src="'+specIcon+'"><span>'+car.specialty+'</span></div>' : '') +
+            '</div>' +
+            '<div class="v-card-desc">'+(car.description||'')+'</div></div>' +
+            '<div class="v-quality-badge '+qClass+'">'+car.quality+'</div></div>';
+    }).join('');
+    if (stats) stats.textContent = '共 '+filtered.length+' 辆车';
+    
+    // 点击卡片 -> 详情
+    grid.querySelectorAll('.v-car-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            var id = card.dataset.id;
+            var car = vehicles.find(function(v) { return v.id === id; });
+            if (car) showVehicleDetail(car);
+        });
+    });
+}
+
+// ===== 车辆详情页渲染 =====
+function showVehicleDetail(car) {
+    var qClass = car.quality === '传说' ? 'legendary' : car.quality === '史诗' ? 'epic' : car.quality === '稀有' ? 'rare' : car.quality === '耀世' ? 'glory' : 'normal';
+    var posIcon = POSITION_ICONS[car.position] || '';
+    var specIcon = SPECIALTY_ICONS[car.specialty] || '';
+    var st = car.stats || {};
+    var skills = car.skills || {ult:{},passive:{}};
+    
+    // 芯片槽图标
+    var chipSlotsHtml = '';
+    if (car.chipSlots && car.chipSlots.length) {
+        chipSlotsHtml = car.chipSlots.map(function(s) {
+            var icon = CHIP_ICONS[s] || '';
+            return icon ? '<div class="v-chip-icon"><img src="'+icon+'"></div>' : '<div class="v-chip-icon v-chip-empty">'+s+'</div>';
+        }).join('');
+    }
+    
+    // 特点
+    var featuresHtml = '';
+    if (skills.features && skills.features.length) {
+        featuresHtml = skills.features.map(function(f) {
+            var desc = (f.desc || '').replace(/"/g,'&quot;');
+            return '<div class="v-feat-box" data-desc="'+desc+'" data-name="'+f.name+'">'+f.name+'</div>';
+        }).join('');
+    }
+    
+    // 芯片推荐
+    var chipRec = window.DATA_CHIP_RECS || {};
+    var recs = chipRec.recommendations || {};
+    var carRec = recs[car.name];
+    var recHtml = '';
+    if (carRec && carRec.content) {
+        var recLines = carRec.content.split('\n').filter(function(l) { return l.trim(); });
+        recHtml = recLines.map(function(l) {
+            var isTitle = l.includes('：') && !l.includes('要求');
+            return isTitle ? '<div class="v-rec-title">'+l+'</div>' : '<div class="v-rec-line">'+l+'</div>';
+        }).join('');
+    } else {
+        recHtml = '<div style="color:var(--text-muted);padding:10px;">暂无芯片推荐数据</div>';
+    }
+    
+    // Stat cards
+    var statItems = [
+        {label:'极速', val:st.topSpeed},
+        {label:'动力', val:st.power},
+        {label:'耐久', val:st.durability},
+        {label:'氮气充能', val:st.nitroCharge, cls:'gold'},
+        {label:'起步充能', val:st.startCharge, cls:'gold'},
+        {label:'氮气时长', val:st.nitroDuration},
+        {label:'氮气极速', val:(st.nitroSpeed ? '<span style="color:#60a5fa">'+st.nitroSpeed.blue+'</span> / <span style="color:#c084fc">'+st.nitroSpeed.purple+'</span>' : '-')},
+        {label:'涡轮时长', val:(st.turboDuration ? '<span style="color:#60a5fa">'+st.turboDuration.blue+'</span> / <span style="color:#c084fc">'+st.turboDuration.purple+'</span>' : '-')},
+        {label:'涡轮极速', val:(st.turboSpeed ? '<span style="color:#60a5fa">'+st.turboSpeed.blue+'</span> / <span style="color:#c084fc">'+st.turboSpeed.purple+'</span>' : '-')},
+        {label:'大招动力', val:st.ultPower},
+    ];
+    var statHtml = statItems.map(function(s) {
+        return '<div class="v-stat-card"><span>'+s.label+'</span><span'+(s.cls?' class="v-gold"':'')+'>'+s.val+'</span></div>';
+    }).join('');
+    
+    // 技能
+    var ult = skills.ult || {};
+    var passive = skills.passive || {};
+    var sp = car.sp || {};
+    
+    var html = '<div class="modal-overlay" id="modal"><div class="vd-modal">' +
+        '<button class="vd-close" id="modalClose">✕</button>' +
+        
+        // 顶部横幅
+        // 顶部横幅（图片轮播）
+        '<div class="vd-banner '+qClass+'">' +
+        (function(){
+            var imgs = car.images && car.images.length ? car.images : (car.imageUrl ? [car.imageUrl] : []);
+            if (!imgs.length) return '<div class="vd-emblem">🚗</div>';
+            var slides = imgs.map(function(u,i){ return '<div class="vd-gallery-slide'+(i===0?' active':'')+'"><img src="'+u+'" alt="'+car.name+'" onerror="this.outerHTML=\'<div class=vd-emblem>🚗</div>\'"></div>'; }).join('');
+            var arrows = imgs.length > 1 ? '<button class="vd-gallery-btn vd-prev" onclick="event.stopPropagation();galleryNav(-1)">‹</button><button class="vd-gallery-btn vd-next" onclick="event.stopPropagation();galleryNav(1)">›</button>' : '';
+            return '<div class="vd-gallery" id="vdGallery"><div class="vd-gallery-track" id="vdGalleryTrack">'+slides+'</div>'+arrows+'</div>';
+        })() +
+        (posIcon ? '<div class="vd-pos-badge"><img src="'+posIcon+'"></div>' : '') +
+        '<div class="vd-q-tag '+qClass+'">'+car.quality+'</div></div>' +
+        
+        // 内容
+        '<div class="vd-body">' +
+        '<div class="vd-name">'+car.name+'</div>' +
+        '<div class="vd-badges-row">' +
+        (posIcon ? '<span class="vd-badge"><img src="'+posIcon+'"> '+car.position+'位</span>' : '') +
+        (specIcon ? '<span class="vd-badge"><img src="'+specIcon+'"> '+car.specialty+'</span>' : '') +
+        (car.acquisitionIcon ? '<span class="vd-badge"><img src="'+car.acquisitionIcon+'" style="width:22px;height:22px"> '+(car.acquisition||'获取')+'</span>' : '') +
+        '</div>' +
+        
+        // 特点
+        (featuresHtml ? '<div class="vd-sec-title">车辆特点</div><div class="vd-features">'+featuresHtml+'</div>' : '') +
+        
+        // 芯片槽
+        (chipSlotsHtml ? '<div class="vd-sec-title">芯片槽</div><div class="vd-chip-slots">'+chipSlotsHtml+'</div>' : '') +
+        
+        // 芯片推荐
+        '<div class="vd-sec-title">芯片要求搭配</div><div class="vd-chip-rec">'+recHtml+'</div>' +
+        
+        // 属性
+        '<div class="vd-sec-title">车辆基础数据</div><div class="vd-stats-grid">'+statHtml+'</div>' +
+        
+        // 技能
+        '<div class="vd-sec-title">技能</div>' +
+        '<div class="vd-skill-block">' +
+        '<div class="vd-skill-hd">'+(car.ultIcon?'<img src="'+car.ultIcon+'" style="width:28px;height:28px;vertical-align:middle;margin-right:8px;">':'')+'大招：'+(ult.name||'—')+'</div>' +
+        '<div class="vd-skill-desc">'+(ult.desc||'')+'</div>' +
+        (ult.recu ? '<div class="vd-sub-skill"><div class="vd-sub-title">RECU限制解除（8级解锁）</div><div class="vd-skill-desc">'+ult.recu+'</div></div>' : '') +
+        (ult.ultPassive ? '<div class="vd-sub-skill"><div class="vd-sub-title">解锁大招被动</div><div class="vd-skill-desc">'+ult.ultPassive+'</div></div>' : '') +
+        '</div>' +
+        '<div class="vd-skill-block"><div class="vd-skill-hd">'+(car.passiveIcon?'<img src="'+car.passiveIcon+'" style="width:28px;height:28px;vertical-align:middle;margin-right:8px;">':'')+'被动：'+(passive.name||'—')+'</div><div class="vd-skill-desc">'+(passive.desc||'')+'</div></div>' +
+        (sp.name ? '<div class="vd-skill-block"><div class="vd-skill-hd">'+(sp.icon?'<img src="'+sp.icon+'" style="width:28px;height:28px;vertical-align:middle;margin-right:8px;">':'')+'SP：'+sp.name+'</div>'+(sp.cooltime?' <span style="color:var(--text-muted);font-size:0.8rem;">冷却：'+sp.cooltime+'</span>':'')+'<div class="vd-skill-desc">'+(sp.desc||'')+'</div></div>' : '') +
+        
+        '</div></div></div>';
+    
+    document.body.insertAdjacentHTML('beforeend', html);
+    var close = function() { document.getElementById('modal').remove(); };
+    document.getElementById('modalClose').addEventListener('click', close);
+    document.getElementById('modal').addEventListener('click', function(e) { if (e.target.id === 'modal') close(); });
+    
+    // 轮播导航
+    var galleryIdx = 0;
+    window.galleryNav = function(dir) {
+        var slides = document.querySelectorAll('#vdGallery .vd-gallery-slide');
+        var dots = document.querySelectorAll('#vdGalleryDots .vd-dot');
+        if (!slides.length) return;
+        galleryIdx = (galleryIdx + dir + slides.length) % slides.length;
+        slides.forEach(function(s,i){ s.classList.toggle('active', i===galleryIdx); });
+        if (dots.length) dots.forEach(function(d,i){ d.classList.toggle('active', i===galleryIdx); });
+    };
+    setTimeout(function() {
+        var btns = document.querySelectorAll('#vdGallery .vd-gallery-btn');
+        if (btns.length) { /* arrows work via onclick */ }
+    }, 50);
+}
+
+function getRarityColor(r) { switch(r){ case'传说':return'#ff6a00'; case'史诗':return'#a855f7'; case'稀有':return'#3b82f6'; case'普通':return'#22c55e'; case'耀世':return'#ffd700'; default:return'#94a3b8'; } }
+
+// ----- balance.js -----
+window.renderBalance = function () {
+    var data = window.DATA_BALANCE || [];
+    var app = document.getElementById('app');
+    var html = '<div class="page">';
+    html += '<div class="page-header"><h1>平衡性调整</h1><p>各版本车辆 / 芯片 / 赋能系统调整记录</p></div>';
+    if (!data.length) {
+        html += '<div style="text-align:center;padding:60px 0;color:var(--text-muted);"><p>暂无数据</p></div>';
+    } else {
+        data.forEach(function (item) {
+            html += '<div class="update-item" style="margin-bottom:14px;">';
+            html += '<span class="version">' + (item.version || '') + '</span>';
+            html += '<span class="date">' + (item.date || '') + '</span>';
+            html += '<div class="desc" style="margin-top:8px;">';
+            if (item.summary) html += '<p style="color:var(--text-secondary);margin-bottom:8px;">' + item.summary + '</p>';
+            if (Array.isArray(item.changes)) {
+                item.changes.forEach(function (c) {
+                    var arrow = c.direction === '增强' ? '⬆️' : c.direction === '削弱' ? '⬇️' : c.direction === '调整' ? '🔄' : '';
+                    html += '<div style="padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);">';
+                    html += '<span style="color:var(--accent-cyan);font-weight:600;">' + (c.target || '') + '</span> ';
+                    if (arrow) html += '<span>' + arrow + '</span> ';
+                    html += '<span style="color:var(--text-secondary);font-size:0.88rem;">' + (c.content || '') + '</span></div>';
+                });
+            }
+            if (item.content) html += '<p style="color:var(--text-secondary);font-size:0.88rem;">' + item.content + '</p>';
+            html += '</div></div>';
+        });
+    }
+    html += '</div>';
+    app.innerHTML = html;
+};
+
+// ----- chips.js -----
+window.renderChips = function () {
+    var chips = window.DATA_CHIPS || [];
+    var app = document.getElementById('app');
+    var html = '<div class="page">';
+    html += '<div class="page-header"><h1>芯片系统</h1><p>芯片图鉴 — 套装效果 / 推荐搭配</p></div>';
+    if (!chips.length) {
+        html += '<div style="text-align:center;padding:60px 0;color:var(--text-muted);"><p>暂无数据</p></div></div>';
+        app.innerHTML = html; return;
+    }
+    html += '<div class="filter-bar" id="chipFilter">';
+    ['全部','传说','史诗','稀有'].forEach(function (r) {
+        html += '<button class="filter-btn' + (r === '全部' ? ' active' : '') + '" data-rarity="' + r + '">' + r + '</button>';
+    });
+    html += '</div><div class="card-grid" id="chipGrid">';
+    chips.forEach(function (c) {
+        var tag = 'tag-' + (c.rarity === '传说' ? 'legendary' : c.rarity === '史诗' ? 'epic' : 'rare');
+        html += '<div class="card chip-card" data-id="' + c.id + '" data-rarity="' + c.rarity + '"><div class="card-body">' +
+            '<h3>' + (c.icon || '💠') + ' ' + c.name + '</h3><div class="tags">' +
+            '<span class="tag ' + tag + '">' + c.rarity + '</span>' +
+            (c.set_name ? '<span class="tag" style="background:rgba(0,240,255,0.1);color:var(--accent-cyan);">' + c.set_name + '</span>' : '') +
+            '</div><div class="desc">' + (c.effect || '') + '</div>' +
+            (c.suit_desc ? '<div class="meta">套装：' + c.suit_desc + '</div>' : '') + '</div></div>';
+    });
+    html += '</div></div>';
+    app.innerHTML = html;
+    document.getElementById('chipFilter').addEventListener('click', function (e) {
+        var btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        document.querySelectorAll('#chipFilter .filter-btn').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var r = btn.getAttribute('data-rarity');
+        document.querySelectorAll('#chipGrid .chip-card').forEach(function (card) {
+            card.style.display = (r === '全部' || card.getAttribute('data-rarity') === r) ? '' : 'none';
+        });
+    });
+    document.getElementById('chipGrid').addEventListener('click', function (e) {
+        var card = e.target.closest('.chip-card');
+        if (!card) return;
+        var c = chips.find(function (x) { return x.id === card.getAttribute('data-id'); });
+        if (c) showChipDetail(c);
+    });
+};
+function showChipDetail(c) {
+    var html = '<div class="modal-overlay" id="modal"><div class="modal-content">' +
+        '<button class="modal-close" id="modalClose">&times;</button>' +
+        '<h2>' + (c.icon || '💠') + ' ' + c.name + '</h2>' +
+        '<table class="info-table">' +
+        '<tr><td>稀有度</td><td>' + c.rarity + '</td></tr>' +
+        (c.set_name ? '<tr><td>所属套装</td><td>' + c.set_name + '</td></tr>' : '') +
+        (c.effect ? '<tr><td>单件效果</td><td>' + c.effect + '</td></tr>' : '') +
+        (c.suit_desc ? '<tr><td>套装效果</td><td>' + c.suit_desc + '</td></tr>' : '') +
+        (c.recommend ? '<tr><td>推荐搭配</td><td>' + c.recommend + '</td></tr>' : '') +
+        '</table></div></div>';
+    document.body.insertAdjacentHTML('beforeend', html);
+    var close = function () { document.getElementById('modal').remove(); };
+    document.getElementById('modalClose').addEventListener('click', close);
+    document.getElementById('modal').addEventListener('click', function (e) { if (e.target.id === 'modal') close(); });
+}
+
+// ----- empower.js -----
+window.renderEmpower = function () {
+    var data = window.DATA_EMPOWER || [];
+    var app = document.getElementById('app');
+    var html = '<div class="page">';
+    html += '<div class="page-header"><h1>赋能系统</h1><p>赋能模块图鉴 — 效果 / 解锁 / 推荐方案</p></div>';
+    if (!data.length) {
+        html += '<div style="text-align:center;padding:60px 0;color:var(--text-muted);"><p>暂无数据</p></div></div>';
+        app.innerHTML = html; return;
+    }
+    html += '<div class="card-grid" id="empowerGrid">';
+    data.forEach(function (item, idx) {
+        html += '<div class="card" data-empower-idx="' + idx + '"><div class="card-body">';
+        html += '<h3>' + (item.icon || '🔮') + ' ' + item.name + '</h3>';
+        html += '<div class="tags">';
+        if (item.type) html += '<span class="tag" style="background:rgba(168,85,247,0.2);color:var(--accent-purple);">' + item.type + '</span>';
+        html += '</div><div class="desc">' + (item.effect || '') + '</div>';
+        if (item.unlock) html += '<div class="meta">解锁条件：' + item.unlock + '</div>';
+        html += '</div></div>';
+    });
+    html += '</div></div>';
+    app.innerHTML = html;
+    document.getElementById('empowerGrid').addEventListener('click', function (e) {
+        var card = e.target.closest('.card');
+        if (!card) return;
+        var idx = parseInt(card.getAttribute('data-empower-idx'), 10);
+        if (!isNaN(idx) && data[idx]) showEmpowerDetail(data[idx]);
+    });
+};
+window.showEmpowerDetail = function (item) {
+    var html = '<div class="modal-overlay" id="modal"><div class="modal-content">' +
+        '<button class="modal-close" id="modalClose">&times;</button>' +
+        '<h2>' + (item.icon || '🔮') + ' ' + item.name + '</h2>' +
+        '<table class="info-table">' +
+        (item.type ? '<tr><td>类型</td><td>' + item.type + '</td></tr>' : '') +
+        (item.effect ? '<tr><td>效果</td><td>' + item.effect + '</td></tr>' : '') +
+        (item.unlock ? '<tr><td>解锁条件</td><td>' + item.unlock + '</td></tr>' : '') +
+        (item.level_max ? '<tr><td>最高等级</td><td>' + item.level_max + '</td></tr>' : '') +
+        (item.recommend ? '<tr><td>推荐方案</td><td>' + item.recommend + '</td></tr>' : '') +
+        '</table></div></div>';
+    document.body.insertAdjacentHTML('beforeend', html);
+    var close = function () { document.getElementById('modal').remove(); };
+    document.getElementById('modalClose').addEventListener('click', close);
+    document.getElementById('modal').addEventListener('click', function (e) { if (e.target.id === 'modal') close(); });
+};
+
+// ----- resources.js -----
+window.renderResources = function () {
+    var data = window.DATA_RESOURCES || [];
+    var app = document.getElementById('app');
+    var html = '<div class="page">';
+    html += '<div class="page-header"><h1>资源获取</h1><p>各类资源的获取途径一览</p></div>';
+    if (!data.length) {
+        html += '<div style="text-align:center;padding:60px 0;color:var(--text-muted);"><p>暂无数据</p></div></div>';
+        app.innerHTML = html; return;
+    }
+    html += '<div class="data-table-wrap"><table class="data-table">';
+    html += '<thead><tr><th>资源名称</th><th>类型</th><th>获取途径</th><th>备注</th></tr></thead><tbody>';
+    data.forEach(function (item) {
+        html += '<tr><td style="font-weight:600;color:var(--text-primary);">' + (item.icon || '') + ' ' + item.name + '</td>';
+        html += '<td>' + (item.type || '-') + '</td>';
+        html += '<td>' + (Array.isArray(item.ways) ? item.ways.join('<br>') : item.ways || '-') + '</td>';
+        html += '<td style="color:var(--text-muted);font-size:0.82rem;">' + (item.notes || '-') + '</td></tr>';
+    });
+    html += '</tbody></table></div></div>';
+    app.innerHTML = html;
+};
+
+// ----- wallpapers.js -----
+window.renderWallpaperStatic = function () { renderWallpaper('static', '静态壁纸', '精美游戏壁纸收藏'); };
+window.renderWallpaperLive = function () { renderWallpaper('live', '动态壁纸', '动态壁纸 / 视频壁纸展示'); };
+function renderWallpaper(type, title, subtitle) {
+    var all = window.DATA_WALLPAPERS || [];
+    var data = all.filter(function (w) { return w.type === type; });
+    var app = document.getElementById('app');
+    var html = '<div class="page">';
+    html += '<div class="page-header"><h1>' + title + '</h1><p>' + subtitle + '</p></div>';
+    if (!data.length) {
+        html += '<div style="text-align:center;padding:60px 0;color:var(--text-muted);"><p>暂无数据</p></div></div>';
+        app.innerHTML = html; return;
+    }
+    html += '<div class="gallery-grid">';
+    data.forEach(function (item) {
+        html += '<div class="gallery-item" onclick="previewMedia(' + JSON.stringify(item).replace(/"/g, '&quot;') + ')">';
+        if (type === 'static') {
+            html += '<img src="' + (item.url || '') + '" alt="' + item.name + '" loading="lazy" onerror="this.src=\'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22225%22><rect fill=%221e293b%22 width=%22400%22 height=%22225%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 fill=%2264748b%22 font-size=%2216%22>暂无预览</text></svg>\'">';
+        } else {
+            html += '<video src="' + (item.url || '') + '" muted loop preload="metadata" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"></video>';
+        }
+        html += '<div class="gallery-label">' + item.name + '</div></div>';
+    });
+    html += '</div></div>';
+    app.innerHTML = html;
+}
+window.previewMedia = function (item) {
+    var innerHtml = item.type === 'static'
+        ? '<img src="' + item.url + '" alt="' + item.name + '" style="max-width:100%;max-height:70vh;border-radius:8px;margin:0 auto;display:block;" onerror="this.alt=\'图片加载失败\'">'
+        : '<video src="' + item.url + '" controls autoplay style="max-width:100%;max-height:70vh;border-radius:8px;display:block;" onerror="this.outerHTML=\'<p style=color:var(--text-muted);>视频加载失败</p>\'"></video>';
+    var html = '<div class="modal-overlay" id="modal"><div class="modal-content" style="text-align:center;">' +
+        '<button class="modal-close" id="modalClose">&times;</button>' +
+        '<h2>' + item.name + '</h2>' + innerHtml +
+        (item.download ? '<a href="' + item.download + '" target="_blank" style="display:inline-block;margin-top:12px;padding:8px 24px;background:linear-gradient(135deg,var(--accent-cyan),var(--accent-purple));color:#fff;border-radius:8px;font-weight:600;">下载</a>' : '') +
+        '</div></div>';
+    document.body.insertAdjacentHTML('beforeend', html);
+    var close = function () { document.getElementById('modal').remove(); };
+    document.getElementById('modalClose').addEventListener('click', close);
+    document.getElementById('modal').addEventListener('click', function (e) { if (e.target.id === 'modal') close(); });
+};
+
+// ----- media.js (CG & PV) -----
+window.renderCG = function () { renderMedia('cg', 'CG', '游戏CG动画合集'); };
+window.renderPV = function () { renderMedia('pv', 'PV', '宣传视频合集'); };
+function renderMedia(type, title, subtitle) {
+    var all = window.DATA_MEDIA || [];
+    var data = all.filter(function (m) { return m.type === type; });
+    var app = document.getElementById('app');
+    var html = '<div class="page">';
+    html += '<div class="page-header"><h1>' + title + '</h1><p>' + subtitle + '</p></div>';
+    if (!data.length) {
+        html += '<div style="text-align:center;padding:60px 0;color:var(--text-muted);"><p>暂无数据</p></div></div>';
+        app.innerHTML = html; return;
+    }
+    html += '<div class="gallery-grid">';
+    data.forEach(function (item) {
+        html += '<div class="gallery-item" onclick="playMedia(' + JSON.stringify(item).replace(/"/g, '&quot;') + ')">';
+        if (item.thumbnail) {
+            html += '<img src="' + item.thumbnail + '" alt="' + item.name + '" loading="lazy" onerror="this.style.display=\'none\'">';
+        } else {
+            html += '<div style="width:100%;height:100%;background:linear-gradient(135deg,#1e293b,#0f172a);display:flex;align-items:center;justify-content:center;font-size:3rem;">' + (type === 'cg' ? '🎥' : '📺') + '</div>';
+        }
+        html += '<div class="gallery-label"><span style="display:block;font-size:0.8rem;">' + item.name + '</span>' +
+            (item.duration ? '<span style="font-weight:400;font-size:0.7rem;color:var(--text-muted);">' + item.duration + '</span>' : '') +
+            '</div></div>';
+    });
+    html += '</div></div>';
+    app.innerHTML = html;
+}
+window.playMedia = function (item) {
+    var html = '<div class="modal-overlay" id="modal"><div class="modal-content">' +
+        '<button class="modal-close" id="modalClose">&times;</button>' +
+        '<h2>' + item.name + '</h2>' +
+        '<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;background:#000;">';
+    if (item.embed_url) {
+        html += '<iframe src="' + item.embed_url + '" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" allowfullscreen></iframe>';
+    } else if (item.url) {
+        html += '<video src="' + item.url + '" controls autoplay style="position:absolute;top:0;left:0;width:100%;height:100%;" onerror="this.outerHTML=\'<p style=color:var(--text-muted);text-align:center;padding:40px;>视频加载失败</p>\'"></video>';
+    } else {
+        html += '<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--text-muted);">暂无视频源</div>';
+    }
+    html += '</div>' + (item.desc ? '<p style="color:var(--text-secondary);font-size:0.85rem;margin-top:12px;">' + item.desc + '</p>' : '') + '</div></div>';
+    document.body.insertAdjacentHTML('beforeend', html);
+    var close = function () { document.getElementById('modal').remove(); };
+    document.getElementById('modalClose').addEventListener('click', close);
+    document.getElementById('modal').addEventListener('click', function (e) { if (e.target.id === 'modal') close(); });
+};
+
+// ----- calculator.js -----
+window.renderCalculator = function () {
+    var data = window.DATA_CALCULATOR || { cost_table:{}, rarity_names:{}, max_level:10 };
+    var costTable = data.cost_table || {};
+    var rarityNames = data.rarity_names || {};
+    var maxLevel = data.max_level || 10;
+    var app = document.getElementById('app');
+    var html = '<div class="page">';
+    html += '<div class="page-header"><h1>芯片要求计算器</h1><p>计算芯片从当前等级升至目标等级所需的芯片数量</p></div>';
+    html += '<div class="calc-card"><div class="calc-form">';
+    html += '<div class="calc-row"><label>当前等级</label><div class="calc-input-group">';
+    html += '<button class="calc-btn" onclick="adjustLevel(-1,' + maxLevel + ')">−</button>';
+    html += '<input type="number" id="curLevel" value="1" min="1" max="' + maxLevel + '" readonly>';
+    html += '<button class="calc-btn" onclick="adjustLevel(1,' + maxLevel + ')">+</button></div></div>';
+    html += '<div class="calc-row"><label>目标等级</label><div class="calc-input-group">';
+    html += '<button class="calc-btn" onclick="adjustTarget(-1,' + maxLevel + ')">−</button>';
+    html += '<input type="number" id="tarLevel" value="' + maxLevel + '" min="1" max="' + maxLevel + '" readonly>';
+    html += '<button class="calc-btn" onclick="adjustTarget(1,' + maxLevel + ')">+</button></div></div>';
+    html += '<div class="calc-row"><label>芯片稀有度</label>';
+    html += '<select id="chipRarity" class="calc-select">';
+    Object.keys(rarityNames).forEach(function (k) {
+        html += '<option value="' + k + '"' + (k === 'epic' ? ' selected' : '') + '>' + rarityNames[k] + '</option>';
+    });
+    html += '</select></div>';
+    html += '<button class="calc-submit" onclick="doCalculate()">计算所需芯片</button>';
+    html += '</div><div class="calc-result" id="calcResult" style="display:none;">';
+    html += '<h3>计算结果</h3><div class="result-items" id="resultItems"></div></div></div>';
+    html += '<div class="calc-note"><p><strong>升级规则：</strong></p><ul>';
+    html += '<li>稀有芯片：每级需要 1 个同类型芯片</li>';
+    html += '<li>史诗芯片：1-5级每级 1 个，6-10级每级 2 个</li>';
+    html += '<li>传说芯片：1-3级每级 1 个，4-6级每级 2 个，7-10级每级 3 个</li>';
+    html += '<li>升级不会失败，消耗对应数量的同类型芯片</li></ul></div></div>';
+    app.innerHTML = html;
+};
+window.adjustLevel = function (d, m) {
+    var i = document.getElementById('curLevel');
+    var v = parseInt(i.value,10) + d;
+    var t = parseInt(document.getElementById('tarLevel').value,10);
+    if (v<1) v=1; if (v>m) v=m; if (v>=t) v=t-1; if (v<1) v=1;
+    i.value = v;
+};
+window.adjustTarget = function (d, m) {
+    var i = document.getElementById('tarLevel');
+    var v = parseInt(i.value,10) + d;
+    var c = parseInt(document.getElementById('curLevel').value,10);
+    if (v<2) v=2; if (v>m) v=m; if (v<=c) v=c+1; if (v>m) v=m;
+    i.value = v;
+};
+window.doCalculate = function () {
+    var data = window.DATA_CALCULATOR || { cost_table:{}, rarity_names:{} };
+    var costs = data.cost_table || {};
+    var names = data.rarity_names || {};
+    var cur = parseInt(document.getElementById('curLevel').value,10);
+    var tar = parseInt(document.getElementById('tarLevel').value,10);
+    var rarity = document.getElementById('chipRarity').value;
+    var tbl = costs[rarity] || [];
+    if (cur >= tar) { alert('目标等级必须大于当前等级'); return; }
+    var total = 0, details = [];
+    for (var i = cur+1; i <= tar; i++) { var n = tbl[i]||1; total+=n; details.push({l:i, n:n}); }
+    document.getElementById('calcResult').style.display = '';
+    var h = '<div class="result-summary"><span class="result-total">总计：<strong>' + total + '</strong> 个</span>';
+    h += '<span class="result-meta">' + (names[rarity]||rarity) + '芯片 · ' + cur + '级 → ' + tar + '级</span></div>';
+    h += '<table class="result-table"><tr><th>目标等级</th><th>所需芯片数</th></tr>';
+    details.forEach(function (d) { h += '<tr><td>' + d.l + '级</td><td>' + d.n + ' 个</td></tr>'; });
+    h += '<tr class="result-total-row"><td><strong>总计</strong></td><td><strong>' + total + ' 个</strong></td></tr></table>';
+    document.getElementById('resultItems').innerHTML = h;
+};
+
+// ============================================================
+// 路由
+// ============================================================
+(function () {
+    'use strict';
+    var routes = {
+        '':'renderHome', 'home':'renderHome', 'vehicles':'renderVehicles',
+        'balance':'renderBalance', 'calculator':'renderCalculator', 'chips':'renderChips',
+        'empower':'renderEmpower', 'resources':'renderResources',
+        'wallpaper-static':'renderWallpaperStatic', 'wallpaper-live':'renderWallpaperLive',
+        'cg':'renderCG', 'pv':'renderPV',
+    };
+    function getRoute() {
+        var h = window.location.hash.replace('#/','').replace('#','').split('/')[0].toLowerCase();
+        return routes[h] ? h : 'home';
+    }
+    function navigate() {
+        var route = getRoute();
+        var fn = window[routes[route]];
+        if (typeof fn === 'function') fn();
+        document.querySelectorAll('.nav-links a').forEach(function (a) {
+            a.classList.toggle('active', a.getAttribute('href') === '#/' + route || (route === 'home' && a.getAttribute('href') === '#/'));
+        });
+        document.getElementById('navLinks').classList.remove('open');
+        document.getElementById('navToggle').classList.remove('open');
+    }
+    window.addEventListener('hashchange', navigate);
+    window.Router = { navigate: navigate, getRoute: getRoute };
+})();
+
+// ============================================================
+// 主逻辑
+// ============================================================
+(function () {
+    'use strict';
+    var dataLoaded = false, pendingHash = null;
+    var DATA_FILES = [
+        { key:'DATA_VEHICLES', path:'vehicles.json' },
+        { key:'DATA_BALANCE', path:'balance.json' },
+        { key:'DATA_CALCULATOR', path:'calculator.json' },
+        { key:'DATA_CHIP_RECS', path:'chip_recs.json' },
+        { key:'DATA_CHIPS', path:'chips.json' },
+        { key:'DATA_EMPOWER', path:'empower.json' },
+        { key:'DATA_RESOURCES', path:'resources.json' },
+        { key:'DATA_WALLPAPERS', path:'wallpapers.json' },
+        { key:'DATA_MEDIA', path:'media.json' },
+    ];
+    function loadAllData(cb) {
+        var n = DATA_FILES.length;
+        DATA_FILES.forEach(function (f) {
+            fetch(f.path).then(function (r) { if (!r.ok) throw Error(); return r.json(); })
+                .then(function (d) { window[f.key] = d; })
+                .catch(function () { window[f.key] = []; })
+                .finally(function () { n--; if (n === 0 && cb) cb(); });
+        });
+    }
+    var navToggle = document.getElementById('navToggle');
+    var navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', function () { navLinks.classList.toggle('open'); navToggle.classList.toggle('open'); });
+    navLinks.addEventListener('click', function (e) { if (e.target.tagName === 'A') { navLinks.classList.remove('open'); navToggle.classList.remove('open'); } });
+    window.addEventListener('hashchange', function () {
+        var m = document.getElementById('modal'); if (m) m.remove();
+        if (dataLoaded && window.Router) window.Router.navigate(); else pendingHash = window.location.hash;
+    });
+    loadAllData(function () {
+        dataLoaded = true;
+        if (window.Router) {
+            var h = pendingHash || window.location.hash;
+            if (!h || h === '#') window.location.hash = '#/home';
+            else window.Router.navigate();
+        }
+        console.log('🏎️ 王牌竞速数据整合站已启动');
+    });
+})();
+</script>
+</body>
+</html>
