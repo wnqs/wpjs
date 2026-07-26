@@ -9,13 +9,14 @@
 
     // ===== 数据加载 =====
     var DATA_FILES = [
-        { key: 'DATA_VEHICLES', path: 'data/vehicles.json' },
-        { key: 'DATA_BALANCE', path: 'data/balance.json' },
-        { key: 'DATA_CHIPS', path: 'data/chips.json' },
-        { key: 'DATA_EMPOWER', path: 'data/empower.json' },
-        { key: 'DATA_RESOURCES', path: 'data/resources.json' },
-        { key: 'DATA_WALLPAPERS', path: 'data/wallpapers.json' },
-        { key: 'DATA_MEDIA', path: 'data/media.json' },
+        { key: 'DATA_VEHICLES', path: 'vehicles.json' },
+        { key: 'DATA_BALANCE', path: 'balance.json' },
+        { key: 'DATA_CALCULATOR', path: 'calculator.json' },
+        { key: 'DATA_CHIPS', path: 'chips.json' },
+        { key: 'DATA_EMPOWER', path: 'empower.json' },
+        { key: 'DATA_RESOURCES', path: 'resources.json' },
+        { key: 'DATA_WALLPAPERS', path: 'wallpapers.json' },
+        { key: 'DATA_MEDIA', path: 'media.json' },
     ];
 
     function loadAllData(callback) {
@@ -77,7 +78,6 @@
             if (!hash || hash === '#') {
                 window.location.hash = '#/home';
             } else {
-                // hashchange 事件会触发 Router.navigate()
                 window.Router.navigate();
             }
         }
