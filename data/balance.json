@@ -1,0 +1,25 @@
+[
+  {
+    "version": "S19 赛季更新",
+    "date": "2025-07-15",
+    "summary": "S19 赛季平衡性调整，多辆车辆及芯片系统改动",
+    "changes": [
+      { "target": "Blade", "direction": "削弱", "content": "氮气爆发冷却时间从22秒增加到25秒" },
+      { "target": "Interceptor", "direction": "增强", "content": "电磁干扰范围扩大15%" },
+      { "target": "加速核心芯片", "direction": "调整", "content": "基础加速值提升，但触发条件更严格" }
+    ]
+  },
+  {
+    "version": "S18 赛季更新",
+    "date": "2025-06-01",
+    "content": "S18 版本上线，新增赋能系统，调整了部分车辆的极速和操控属性。"
+  },
+  {
+    "version": "S17 赛季更新",
+    "date": "2025-04-20",
+    "changes": [
+      { "target": "Support-X", "direction": "增强", "content": "团队护盾吸收量提升20%" },
+      { "target": "传说级竞速车辆", "direction": "削弱", "content": "极速上限降低2%" }
+    ]
+  }
+]
