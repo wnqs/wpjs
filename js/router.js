@@ -1,6 +1,5 @@
 /**
  * 王牌竞速数据整合站 — 客户端路由
- * 基于 URL hash 的无刷新 SPA 路由
  */
 (function () {
     'use strict';
@@ -10,6 +9,7 @@
         'home':                 'renderHome',
         'vehicles':             'renderVehicles',
         'balance':              'renderBalance',
+        'calculator':           'renderCalculator',
         'chips':                'renderChips',
         'empower':              'renderEmpower',
         'resources':            'renderResources',
@@ -30,20 +30,16 @@
         if (typeof renderFn === 'function') {
             renderFn();
         }
-        // 更新导航高亮
         document.querySelectorAll('.nav-links a').forEach(function (a) {
-            var nav = a.getAttribute('data-nav');
-            a.classList.toggle('active', nav === route || (route === 'home' && nav === 'home'));
+            var href = a.getAttribute('href');
+            a.classList.toggle('active', href === '#/' + route || (route === 'home' && href === '#/'));
         });
-        // 移动端关闭菜单
         document.getElementById('navLinks').classList.remove('open');
         document.getElementById('navToggle').classList.remove('open');
     }
 
-    // 初始化路由
     window.addEventListener('hashchange', navigate);
 
-    // 暴露给 app.js
     window.Router = {
         navigate: navigate,
         getRoute: getRoute,
