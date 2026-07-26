@@ -30,10 +30,10 @@
         if (typeof renderFn === 'function') {
             renderFn();
         }
-        // 更新导航高亮
+        // 更新导航高亮 — 通过 href 匹配
         document.querySelectorAll('.nav-links a').forEach(function (a) {
-            var nav = a.getAttribute('data-nav');
-            a.classList.toggle('active', nav === route || (route === 'home' && nav === 'home'));
+            var href = a.getAttribute('href');
+            a.classList.toggle('active', href === '#/' + route || (route === 'home' && href === '#/'));
         });
         // 移动端关闭菜单
         document.getElementById('navLinks').classList.remove('open');
