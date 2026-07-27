@@ -730,7 +730,7 @@ function renderVehicleList() {
         var extraRacing = EXTRA_RACING_ICON_CARS.includes(car.name) ? '<div class="v-meta-item"><img src="'+RACING_ICON_URL+'"><span>竞速</span></div>' : '';
         return '<div class="v-car-card '+bClass+'" data-id="'+car.id+'">' +
             '<div class="v-card-img '+qClass+'">' +
-            (car.imageUrl ? '<img src="'+car.imageUrl+'" alt="'+car.name+'" style="width:100%;height:100%;object-fit:contain;background:var(--bg-secondary);" onerror="this.style.display=\'none\';this.parentNode.innerHTML=\'<div class=v-card-img-placeholder>🚗</div>\'">' : '<div class="v-card-img-placeholder">🚗</div>') +
+            (car.imageUrl ? '<img src="'+car.imageUrl+'" alt="'+car.name+'" style="width:100%;height:100%;object-fit:contain;" onerror="this.style.display=\'none\';this.parentNode.innerHTML=\'<div class=v-card-img-placeholder>🚗</div>\'">' : '<div class="v-card-img-placeholder">🚗</div>') +
             (car.acquisitionIcon ? '<div class="v-card-acq"><img src="'+car.acquisitionIcon+'" alt="获取"></div>' : '') +
             '</div>' +
             '<div class="v-card-info"><div class="v-card-title">'+car.name+'</div>' +
