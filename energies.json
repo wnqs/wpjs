@@ -1,0 +1,196 @@
+{
+  "energies": [
+    {
+      "id": "energy_chuangzao_01",
+      "name": "拒绝溢出",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd928c16a.png",
+      "type": "主要",
+      "func": "创造",
+      "effectDescription": "充能效率+5%且大招可充能次数+1"
+    },
+    {
+      "id": "energy_chuangzao_02",
+      "name": "扭曲转换",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd92cb32d.png",
+      "type": "主要",
+      "func": "创造",
+      "effectDescription": "额外的SP技能：使敌方耐久值最低的车辆损失15点耐久值，使自身恢复15点耐久值。 CD：15秒 (注：自带SP技能的车辆携带无效)"
+    },
+    {
+      "id": "energy_chuangzao_03",
+      "name": "疾风步",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdcf7c2075.png",
+      "type": "主要",
+      "func": "创造",
+      "effectDescription": "开局前5秒内每秒自动获得2000集气量但漂移无法获得集气量"
+    },
+    {
+      "id": "energy_chuangzao_04",
+      "name": "节奏赋能",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd913b51e.png",
+      "type": "次要",
+      "func": "创造",
+      "effectDescription": "每4秒内使用至少3次涡轮、氮气或大招，获得4%大招能量"
+    },
+    {
+      "id": "energy_chuangzao_05",
+      "name": "积之跬步",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd9108fe6.png",
+      "type": "次要",
+      "func": "创造",
+      "effectDescription": "在沙地、草地、雪地等特殊地形中不会减速"
+    },
+    {
+      "id": "energy_chuangzao_06",
+      "name": "同舟共济",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdd6d51869.png",
+      "type": "次要",
+      "func": "创造",
+      "effectDescription": "每次点击大招时，使友方全体8秒内极速+4km/h（上限叠加至12km/h）"
+    },
+    {
+      "id": "energy_fangyu_01",
+      "name": "自适应躯壳",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdd8d300f3.png",
+      "type": "主要",
+      "func": "防御",
+      "effectDescription": "每受到1次干扰或辅助效果时，本局内极速+0.8km/h（上限叠加10次），当叠加满10次后再次被干扰或辅助时，本局内极速额外+5km/h"
+    },
+    {
+      "id": "energy_fangyu_02",
+      "name": "护体罡气",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bddbc83407.png",
+      "type": "次要",
+      "func": "防御",
+      "effectDescription": "每20秒解除自身负面效果并进入隐身状态5秒"
+    },
+    {
+      "id": "energy_fangyu_03",
+      "name": "遁入虚空",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd8f7f7a6.png",
+      "type": "主要",
+      "func": "防御",
+      "effectDescription": "额外的SP技能：4秒内无法被干扰和辅助且无法获得大招能量，SP技能结束时获得20%的能量充能。 CD：30秒（开局CD：5秒） (注：自带SP技能的车辆携带无效)"
+    },
+    {
+      "id": "energy_fangyu_04",
+      "name": "救命稻草",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bde4ea5205.png",
+      "type": "主要",
+      "func": "防御",
+      "effectDescription": "当你的车辆耐久值降至0时，不会立即进入修复状态。4秒内若使用大招，则恢复35点耐久值并在3秒内获得一个防护罩，防护罩可以反弹锁定类干扰效果给一个随机敌方目标"
+    },
+    {
+      "id": "energy_fangyu_05",
+      "name": "无畏冲锋",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd93228a0.png",
+      "type": "次要",
+      "func": "防御",
+      "effectDescription": "每4秒清空一次50米范围内可见的放置物，若成功清空，本局内极速+3km/h（上限叠加至15km/h）"
+    },
+    {
+      "id": "energy_fangyu_06",
+      "name": "涅槃审判",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bde8408255.png",
+      "type": "次要",
+      "func": "防御",
+      "effectDescription": "每次修复完成后，使敌方竞速车4秒内无法使用涡轮、氮气和大招"
+    },
+    {
+      "id": "energy_nengliang_01",
+      "name": "源能汲取",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd92c24ef.png",
+      "type": "主要",
+      "func": "能量",
+      "effectDescription": "额外的SP技能：使用SP技能后，当前能量值将会和敌方当前能量值最高的车辆相同并在下一次使用大招时获得35%能量。 CD：45秒 (注：自带SP技能的车辆携带无效)"
+    },
+    {
+      "id": "energy_nengliang_02",
+      "name": "汇风聚气",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdefb1e4b9.png",
+      "type": "主要",
+      "func": "能量",
+      "effectDescription": "每次使用氮气时，20%概率获得5000集气量和一个涡轮"
+    },
+    {
+      "id": "energy_nengliang_03",
+      "name": "复苏之泉",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd8fb29ba.png",
+      "type": "主要",
+      "func": "能量",
+      "effectDescription": "每次使用大招时，若未超过260km/h或耐久值低于25%，则5秒内每秒自充能2.5%"
+    },
+    {
+      "id": "energy_nengliang_04",
+      "name": "未来视界",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bce8a82fc9.png",
+      "type": "次要",
+      "func": "能量",
+      "effectDescription": "大招能量达到90%时可以使用大招"
+    },
+    {
+      "id": "energy_nengliang_05",
+      "name": "花信风",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdf55ac17f.png",
+      "type": "次要",
+      "func": "能量",
+      "effectDescription": "开局时和每10秒获得7%大招能量"
+    },
+    {
+      "id": "energy_nengliang_06",
+      "name": "能源回收",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bcd92e8f09.png",
+      "type": "次要",
+      "func": "能量",
+      "effectDescription": "每次使用大招时，获得10%大招能量"
+    },
+    {
+      "id": "energy_zhandou_01",
+      "name": "腐蚀侵袭",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdf9a3c6e0.png",
+      "type": "主要",
+      "func": "战斗",
+      "effectDescription": "额外的SP技能：释放时使敌方车辆失去隐身效果并在6s内使用大招时损失10%大招能量。 CD：25秒 (注：自带SP技能的车辆携带无效)"
+    },
+    {
+      "id": "energy_zhandou_02",
+      "name": "暴雪季",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdf9a4119d.png",
+      "type": "主要",
+      "func": "战斗",
+      "effectDescription": "当点击大招后2.5秒内再次点击大招时，2.5秒内极速+15km/h且每秒自动获得1200集气量"
+    },
+    {
+      "id": "energy_zhandou_03",
+      "name": "不甘落后",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdfc8a9561.png",
+      "type": "次要",
+      "func": "战斗",
+      "effectDescription": "被超越后6秒内获得持续衰减的加速效果（由45km/h每2秒衰减15km/h至0，CD10秒）"
+    },
+    {
+      "id": "energy_zhandou_04",
+      "name": "与我同在",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdfc8a5a9d.png",
+      "type": "次要",
+      "func": "战斗",
+      "effectDescription": "开启大招时300米范围内每存在一名队友，5秒内极速+3km/h并获得1500集气量"
+    },
+    {
+      "id": "energy_zhandou_05",
+      "name": "缺一不可",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bce8a93f3a.png",
+      "type": "次要",
+      "func": "战斗",
+      "effectDescription": "若友方是完美阵容则每秒自充能0.8%，若敌方不是完美阵容则每秒自充能1.2%（可叠加）"
+    },
+    {
+      "id": "energy_zhandou_06",
+      "name": "势单力薄",
+      "icon": "https://a1.boltp.com/2026/06/24/6a3bdfca18508.png",
+      "type": "主要",
+      "func": "战斗",
+      "effectDescription": "若敌方不是完美阵容，则敌方非辅助车的非辅助充能降低25%（可叠加且无法净化）"
+    }
+  ]
+}
