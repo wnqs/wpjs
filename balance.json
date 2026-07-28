@@ -1,25 +1,79 @@
-[
-  {
-    "version": "S19 赛季更新",
-    "date": "2025-07-15",
-    "summary": "S19 赛季平衡性调整，多辆车辆及芯片系统改动",
-    "changes": [
-      { "target": "Blade", "direction": "削弱", "content": "氮气爆发冷却时间从22秒增加到25秒" },
-      { "target": "Interceptor", "direction": "增强", "content": "电磁干扰范围扩大15%" },
-      { "target": "加速核心芯片", "direction": "调整", "content": "基础加速值提升，但触发条件更严格" }
-    ]
-  },
-  {
-    "version": "S18 赛季更新",
-    "date": "2025-06-01",
-    "content": "S18 版本上线，新增赋能系统，调整了部分车辆的极速和操控属性。"
-  },
-  {
-    "version": "S17 赛季更新",
-    "date": "2025-04-20",
-    "changes": [
-      { "target": "Support-X", "direction": "增强", "content": "团队护盾吸收量提升20%" },
-      { "target": "传说级竞速车辆", "direction": "削弱", "content": "极速上限降低2%" }
-    ]
-  }
-]
+{
+  "versions": [
+    {
+      "version": "1.0",
+      "date": "2021.8.27",
+      "vehicleChanges": [
+        {
+          "name": "禅",
+          "changes": [
+            {
+              "type": "基础数据调整",
+              "content": "氮气充能：25%→26.5%<br>转向能力提升"
+            },
+            {
+              "type": "被动调整",
+              "content": "开局25秒内极速+3km/h→开局25秒内极速+8km/h"
+            }
+          ]
+        },
+        {
+          "name": "柯尼塞格 Regera",
+          "changes": [
+            {
+              "type": "被动调整",
+              "content": "开局45秒后，处于第1名时，免疫碰撞及其他负面效果→开局20秒后，未处于第1名时，免疫碰撞及其他负面效果"
+            }
+          ]
+        },
+        {
+          "name": "法拉第",
+          "changes": [
+            {
+              "type": "大招调整",
+              "content": "加速效果：8km/h→15km/h<br>新增效果：命中敌方车辆时，使其损失6%大招能量"
+            }
+          ]
+        },
+        {
+          "name": "宝马 i8",
+          "changes": [
+            {
+              "type": "大招调整",
+              "content": "加速效果：8km/h→15km/h<br>新增效果：命中敌方车辆时，使其损失6%大招能量"
+            }
+          ]
+        },
+        {
+          "name": "燃烧太阳",
+          "changes": [
+            {
+              "type": "大招调整",
+              "content": "新增效果：被重复灼烧的车辆将在10秒内失去尾流和芯片效果"
+            }
+          ]
+        },
+        {
+          "name": "杂耍者",
+          "changes": [
+            {
+              "type": "大招调整",
+              "content": "使队友隐身时间：5s→7.5s"
+            }
+          ]
+        },
+        {
+          "name": "大众 Beetle",
+          "changes": [
+            {
+              "type": "大招调整",
+              "content": "使队友隐身时间：5s→7.5s"
+            }
+          ]
+        }
+      ],
+      "chipChanges": [],
+      "empowerChanges": []
+    }
+  ]
+}
