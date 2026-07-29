@@ -86,6 +86,62 @@
       ]
     },
      {
+      "version": "1.07",
+      "date": "2022-1-27",
+      "vehicleChanges": [
+        { "name": "坦克300", "changes": [ { "type": "大招调整", "content": "干扰范围：50米→100米" } ] },
+        { "name": "过载先锋", "changes": [ { "type": "大招调整", "content": "副作用期间每秒损失耐久：10→4" } ] },
+        { "name": "法拉第", "changes": [ { "type": "大招调整", "content": "大招加速：15km/h→23km/h" } ] },
+        { "name": "宝马 i8", "changes": [ { "type": "大招调整", "content": "大招加速：15km/h→23km/h" } ] }
+      ]
+    },
+     {
+      "version": "1.08",
+      "date": "2022-3-10",
+      "vehicleChanges": [
+        { "name": "迈凯伦 P1", "changes": [ { "type": "基础数值调整", "content": "基础最高速度：217.3→227.3" } ] },
+        { "name": "保时捷 911 GT2 RS", "changes": [ { "type": "基础数值调整", "content": "基础最高速度：216→220" } ] },
+        { "name": "风神", "changes": [ { "type": "基础数值调整", "content": "氮气充能：35%→45%" } ] },
+        { "name": "阿斯顿马丁 Vanquish", "changes": [{ "type": "大招调整", "content": "辅助范围：500米→600米" }, { "type": "赛道适应性调整", "content": "城市→场地" } ] },
+        { "name": "以太", "changes": [ { "type": "大招调整", "content": "辅助范围：500米→600米" } ] },
+        { "name": "大众 ID.R", "changes": [ { "type": "大招调整", "content": "辅助范围：500米→600米" } ] },
+        { "name": "平行巡洋舰", "changes": [ { "type": "大招调整", "content": "辅助范围：500米→1000米" } ] }
+      ]
+    },
+     {
+      "version": "1.09",
+      "date": "2022-3-22",
+      "vehicleChanges": [
+        { "name": "战神", "changes": [ { "type": "大招调整", "content": "取消自动巡航效果，新增撞毁放置物效果" } ] },
+        { "name": "福特 Mustang", "changes": [ { "type": "大招调整", "content": "取消自动巡航效果，新增撞毁放置物效果" } ] }
+      ]
+    },
+     {
+      "version": "1.10",
+      "date": "2022-3-31",
+      "vehicleChanges": [
+        { "name": "奥迪 TT RS", "changes": [ { "type": "大招调整", "content": "漂移获得能量值：30%→20%<br>大招加速：30km/h→40km/h" } ] },
+        { "name": "穿梭师", "changes": [ { "type": "车辆属性调整", "content": "氮气时间：5.2秒→6.0秒<br>碰撞属性：耐久提升且碰撞不损失集气量" } ] }
+      ]
+    },
+     {
+      "version": "1.11",
+      "date": "2022-4-28",
+      "vehicleChanges": [
+        { "name": "阿斯顿马丁 Vanquish", "changes": [ { "type": "基础数值调整", "content": "氮气充能：35%→40%" } ] },
+        { "name": "英菲尼迪 Prototype", "changes": [ { "type": "被动调整", "content": "每次使用涡轮，获得1. 5%大招能量(紫色涡轮效果翻倍)→每次使用涡轮极速+1km/h并获得1.5%大招能量(紫色涡轮效果翻倍，上限叠加至45km/h)" } ] },
+        { "name": "柯尼塞格 Regera", "changes": [ { "type": "大招调整", "content": "起步时大招初始能量:0→25%<br>大招闪现期间实现超越充能:90%→95%" } ] }
+      ]
+    },
+     {
+      "version": "1.12",
+      "date": "2022-5-5",
+      "vehicleChanges": [
+        { "name": "燃烧太阳", "changes": [ { "type": "基础数值调整", "content": "氮气充能：27%→29%"},{ "type": "大招调整", "content": "大招加速：25km/h→36km/h<br>新增大招8级被动：开局时灼烧敌方全体，使其失去芯片效果持续15秒"} ] },
+        { "name": "领克03 TCR", "changes": [ { "type": "新增进阶", "content": "车辆最高速度提升3km/h<br>车辆耐久提升20" } ] }
+      ]
+    },
+     {
       "version": "2.34",
       "date": "2026-6-11",
       "vehicleChanges": [
