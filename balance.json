@@ -202,7 +202,7 @@
         { "name": "布加迪 LVN", "changes": [ { "type": "大招调整", "content": "第二重推进最长间：6.7秒→8秒<br>第三重推进最长时间：5秒→6秒" } ] },
         { "name": "迈凯轮 600LT", "changes": [ { "type": "8级被动效果调整", "content": "使用大招时会激励300米范围内的队友，使其3秒内极速+30km/h→使用大招时若处于前3名则永久提升自身10%充能效率，同时激励400米范围内的队友，使其本局内极速+6km/h(上限30km/h)" } ] },
         { "name": "燃烧太阳", "changes": [ { "type": "大招调整", "content": "大招加速:36km/h→44km/h" } ] },
-        { "name": "猫眠梦", "changes": [ { "type": 大招调整", "content": "辅助能量:20%→24%" } ] },
+        { "name": "猫眠梦", "changes": [ { "type": "大招调整", "content": "辅助能量:20%→24%" } ] },
         { "name": "道奇 Charger SRT Hellcat", "changes": [ { "type": "大招调整", "content": "辅助能量:20%→24%" } ] },
         { "name": "杂耍者", "changes": [ { "type": "大招调整", "content": "辅助范围：500米→600米" } ] },
         { "name": "大众 Beetle", "changes": [ { "type": "大招调整", "content": "辅助范围：500米→600米" } ] },
