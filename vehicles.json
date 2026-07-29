@@ -324,7 +324,7 @@
       "sp": {
         "name": "飞火流星",
         "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fc36ac06-4dac-40c4-9924-1b2baa97cbe6.png",
-        "desc": "·存储上限:7次<br>·在有使用次数时才可使用，获得1700集气量并向前闪现35米",
+        "desc": "·存储上限:7次<br>·在有使用次数时才可使用，获得1700集气量和6%大招能量并向前闪现35米",
         "cooltime": "0.3秒"
       }
     },
