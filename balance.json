@@ -304,6 +304,51 @@
         { "name": "烛龙", "changes": [ { "type": "被动新增效果", "content": "开局12秒内每秒自充能4%" } ] }
       ]
     },
+    {
+      "version": "1.29",
+      "date": "2023-4-28",
+      "vehicleChanges": [
+        { "name": "侧翼刀锋", "changes": [ { "type": "进阶调整", "content": "车辆最高速度提升25km/h<br>大招期间倾斜方向可以自由切换" } ] }
+      ]
+    },
+    {
+      "version": "1.30",
+      "date": "2023-5-25",
+      "vehicleChanges": [
+        { "name": "路虎 Range Rover Evoque", "changes": [ { "type": "大招调整", "content": "敌方车辆每次使用氮气后5秒内封禁氮气，封禁期间使用1次涡轮或大招可提前解除封禁<br>→敌方车辆每次使用氮气后3.5秒内封禁氮气，封禁期间使用大招可提前解除封禁" } ] },
+        { "name": "终极·异形", "changes": [ { "type": "大招调整", "content": "二阶进化：第4次大招开启时→第3次大招开启时<br>终阶进化：第6次大招开启时→第5次大招开启时" } ] },
+        { "name": "杂耍者", "changes": [ { "type": "大招调整", "content": "大招辅助范围：800米→1200米" } ] },
+        { "name": "大众 Beetle", "changes": [ { "type": "大招调整", "content": "大招辅助范围：800米→1200米" } ] },
+        { "name": "猫眠梦", "changes": [ { "type": "大招调整", "content": "大招辅助能量：24%→26%" } ] },
+        { "name": "道奇 Charger SRT Hellcat", "changes": [ { "type": "大招调整", "content": "大招辅助能量：24%→26%" } ] }
+      ]
+    },
+    {
+      "version": "1.31",
+      "date": "2023-6-15",
+      "vehicleChanges": [
+        { "name": "莲花 Evija", "changes": [ { "type": "大招调整", "content": "大招期间每次使用气使大招加速额外+6km/h (上限叠加至30km/h)<br>→大招期间每次使用氮气使大招加速额外+8km/h(上限叠加至40km/h)" } ] },
+        { "name": "刹那", "changes": [ { "type": "大招调整", "content": "新增8级被动：友方全体每累计闪现10次，自身获得30%大招能量" } ] },
+        { "name": "宝马 MB GTE", "changes": [ { "type": "大招调整", "content": "新增8级被动：友方全体每累计闪现10次，自身获得30%大招能量" } ] },
+        { "name": "奥迪 RS7 Sportback", "changes": [ { "type": "大招调整", "content": "效果调整：1/5/7/9/10级加速：35/40/50/60/75km/h<br>→50/55/60/65/75km/h" } ] },
+        { "name": "极狐GT", "changes": [ { "type": "大招调整", "content": "1/5/7/9/10级加速：45/50/55/65/75km/h<br>→55/60/65/75/85km/h" } ] },
+        { "name": "AITO问界 M5 EV", "changes": [ { "type": "被动调整", "content": "被动新增效果:全部队友开局时获得5000集气量" } ] },
+        { "name": "法拉第", "changes": [ { "type": "大招调整", "content": "大招加速：23km/h→36km/h" } ] },
+        { "name": "宝马 i8", "changes": [ { "type": "大招调整", "content": "大招加速：23km/h→36km/h" } ] }
+      ]
+    },
+    {
+      "version": "1.32",
+      "date": "2023-7-6",
+      "vehicleChanges": [
+        { "name": "宙斯", "changes": [ { "type": "大招调整", "content": "大招1/5/7/9/10级加速：50/55/60/65/75km/h<br>→65 70/75/80/90km/h" },{ "type": "被动调整", "content": "敌方车辆开局前10秒内无法解除自身负面效果<br>→敌方车辆开局前18秒内无法解除自身负面效果" }  ] },
+        { "name": "春风 450SR", "changes": [ { "type": "大招调整", "content": "大招新增效果：开启大招时获得一个涡轮" } ] },
+        { "name": "鹤羽", "changes": [ { "type": "基础数值调整", "content": "平跑速度上限： 210km/h→214km/h" } ] },
+        { "name": "路虎 Range Rover Evoque", "changes": [ { "type": "大招调整", "content": "大招1/5/7/9/10级加速：35/37/40/45/50km/h<br>→45/47/50/55/60km/h" } ] },
+        { "name": "承重钢轮", "changes": [ { "type": "大招调整", "content": "干扰范围：20米→25米" } ] },
+        { "name": "神剑号", "changes": [ { "type": "基础数值调整", "content": "平跑速度上限：223km/→ 232km/h" } ] }
+      ]
+    },
      {
       "version": "2.34",
       "date": "2026-6-11",
