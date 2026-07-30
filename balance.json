@@ -740,7 +740,7 @@
       ]
     },
 {
-"version": "2.13a",
+"version": "2.131",
       "date": "2024-8-9",
       "vehicleChanges": [
         { "name": "福特 Mustang", "changes": [ { "type": "基础数值调整", "content": "平跑速度上限：212→207" }, { "type": "大招调整", "content": "飞马飞行速度：320km/h→270km/h<br>干扰范围：50米→15米" } ] }
