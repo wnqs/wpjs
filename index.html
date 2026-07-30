@@ -1178,7 +1178,7 @@ function bindTooltips(isMobile) {
 var CHIP_ORDER = { 'circle':0, 'triangle':1, 'rhombus':2, 'hexagon':3, 'vslot':4, '圆形':0, '三角形':1, '菱形':2, '六边形':3, 'V型':4, '圆形芯片':0, '三角形芯片':1, '菱形芯片':2, '六边形芯片':3, 'V型芯片':4 };
 function sortChipSlots(slots) {
     if (!slots || !slots.length) return [];
-    return slots.slice().sort(function(a, b) { return (CHIP_ORDER[a]||99) - (CHIP_ORDER[b]||99); });
+    return slots.slice().sort(function(a, b) { return (CHIP_ORDER[a]!==undefined?CHIP_ORDER[a]:99) - (CHIP_ORDER[b]!==undefined?CHIP_ORDER[b]:99); });
 }
 
 // ----- balance.js -----
