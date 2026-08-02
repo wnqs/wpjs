@@ -9,7 +9,7 @@
       "position": "辅助",
       "specialty": "场地",
       "imageUrl": "https://a1.boltp.com/2026/06/24/6a3be67a27ed9.png",
-      """skins""": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c550b6b2-e2bb-42d8-a4de-7001586e7dfa.png",
+      "skins": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c550b6b2-e2bb-42d8-a4de-7001586e7dfa.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/06101648-2d3d-4e7b-a0b6-cc5ee67dc764.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/045497f4-dc30-4fe6-a3d2-db241f46a13c.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0df3100c-769e-4cc4-bc76-27cdec27281e.png",
