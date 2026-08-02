@@ -3418,8 +3418,10 @@ window.renderCalculator = function () {
             var af=1-p.antiVal/100,ef=1+p.eff/100,lt=(p.isOdd&&p.liexin==='yes')?16*af*ef:0;
             var np=(p.nitro+p.nitro*p.hui/100+p.zhuan)*ef*af*p.nCount*p.nRatio;
             var vp=(p.fixedC+p.floatC)*af*ef,ep=p.floatE*af*ef,xp=p.isFirst?p.xianJi*af:0;
-            var asF=p.assistCore==='on'?1.3:1.0,tp=p.tuanHun/100*p.assist*asF*af*ef;
-            var sp=p.isFirst?(p.start+p.startExtra*af*ef):0,total=prev+sp+np+vp+ep+xp+tp+lt;
+            var asF=p.assistCore==='on'?1.3:1.0;
+            var ap=p.assist*asF*af*ef;                 // 新增：辅助充能独立计入
+            var tp=p.tuanHun/100*p.assist*asF*af*ef;   // 团魂额外贡献
+            var sp=p.isFirst?(p.start+p.startExtra*af*ef):0,total=prev+sp+np+vp+ep+xp+ap+tp+lt;
             var maxE=document.getElementById('_calc_mainEnerg').value==='refuse'?300:200;
             if(total>maxE)total=maxE; return{total:total,surplus:total>100?total-100:0};
         }
