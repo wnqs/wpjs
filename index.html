@@ -3659,7 +3659,7 @@ window.renderCalculator = function () {
                 else{outputC='未找到满足要求的团魂组合';}
             }
             document.getElementById('_calc_outputSummary').innerHTML='车辆: '+vn+' | 氮气配置: '+document.getElementById('_calc_nitroConfig').value+' | 专精: '+(document.getElementById('_calc_zhuanjing').value==='yes'?'是':'否')+' | 猎芯: '+(document.getElementById('_calc_liexin').value==='yes'?'是':'否');
-            document.getElementById('_calc_outputCombination').innerHTML='<div class="combination-result"><span class="label">先机+汇能+团魂组合：</span><br><br><span class="value">'+outputC.replace(/\n/g,'<br>')+'</span></div>';
+            document.getElementById('_calc_outputCombination').innerHTML='<div class="combination-result"><span class="label">'+(isA?'先机+汇能组合：':'先机+汇能+团魂组合：')+'</span><br><br><span class="value">'+outputC.replace(/\n/g,'<br>')+'</span></div>';
             if(results&&results.length){document.getElementById('_calc_outputDetail').innerHTML=_calc_buildDetail(results);}
             else{document.getElementById('_calc_outputDetail').innerHTML='<div class="output-block" style="border-left-color:#f28b82;"><span class="text-red">❌ 未找到满足条件的组合</span></div>';}
         });
