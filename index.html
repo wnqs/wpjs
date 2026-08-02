@@ -2183,11 +2183,16 @@ window.renderCalculator = function () {
     // ===== 核心逻辑 =====
     (function(){
         var _calc_vehicleList = [
-            {name:"幻海之汐", chips:"346", start:40, nitro:40, type:"辅助",
+            {name:"幻海之汐", chips:"334", start:36, nitro:36, type:"辅助",
   img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/85500f4d-513f-47f7-81ac-2040342732a3.png",
   skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e2bb6662-ae28-46a0-96e0-1c8f1ea09d98.png",
          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ceffbc72-b4ea-4b91-8ba7-1c4e864150e3.png"
         ]},
+        {name:"五菱宏光 MINI EV", chips:"346", start:40, nitro:40, type:"辅助",
+  img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b69062f9-0e91-404e-8521-ceaa1fe2df5c.png",
+  skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b070c793-4471-4cd8-b3ef-9b70f399a7ae.png",
+          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6fe24e4d-527c-4cef-9e3b-4ecfc0e861d1.png"
+]},    
     {name:"比亚迪 汉", chips:"336", start:37.5, nitro:37.5, type:"辅助",
   img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/1742c912-788f-4696-9d16-2fd608a3122c.png",
   skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c550b6b2-e2bb-42d8-a4de-7001586e7dfa.png",
@@ -2696,11 +2701,27 @@ window.renderCalculator = function () {
     {name:"雪佛兰 Corvette C8", chips:"344", start:29, nitro:29, type:"竞速",
   img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/adcef786-75bd-40aa-888c-9f61302d0984.png",
   skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8aae28a0-a625-4213-a42b-d5ecde6c9029.png"]},
+   {name:"燃烧太阳", chips:"366", start:35, nitro:35, type:"干扰",
+  img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9cb738d7-82cd-48c2-9d4f-737e1cc2a9dd.png",
+  skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/135d138a-f677-49a7-9e39-86c566942531.png",
+          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d49278bb-dbd3-4cd4-8828-78a53a1d94d2.png",
+          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/33d1cc27-229e-4f8c-90c7-d1be66251306.png",
+          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/1300f9b1-8324-40d6-a90f-85b38a3cadcb.png",
+          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/54c3b67f-57a7-4a13-8d77-180fe1c22e7f.png"
+]},         
     {name:"逐浪", chips:"466", start:47, nitro:27, type:"干扰",
-  img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0dedd495-3850-493a-899d-f19a758450c3.png"},
+  img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0dedd495-3850-493a-899d-f19a758450c3.png",
+  skins: [skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/dd8e1723-fd85-4e2e-a0b2-6b98c35d0ace.png",
+         "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/15aac5d7-3093-4350-9dc6-aaa36fade43c.png",
+        "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9c8ebedf-244f-46e8-856f-ba6cf538e369.png",
+         "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/7e52267b-68cb-4e32-8268-7c6336b24c3c.png",
+         "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/74434121-9d2f-493f-abd9-4c1e58c2f5d3.png",
+         "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/3cb3c2fa-6dc4-4134-a1c1-5063952eb629.png"
+]},
     {name:"魔王", chips:"466", start:34, nitro:34, type:"干扰",
   img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c0ff137c-ed45-48ce-8b3b-ec3dd560d560.png",
-  skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/37289d66-8b17-4872-a66a-c9abb2b045ff.png"
+  skins: ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/37289d66-8b17-4872-a66a-c9abb2b045ff.png",
+        "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/2bd6ec26-9da9-4b8a-a715-5c19ab89f579.png"
 ]},
     {name: "丰田 GR SUPRA",chips: "344",start: 32,nitro: 32,type: "干扰",
   img: "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/386213c3-86df-47cf-8da8-314d013a4b42.png",
