@@ -195,7 +195,10 @@ main{max-width:var(--max-width);margin:0 auto;padding:calc(var(--nav-height) + 0
     content:'';position:absolute;top:0;left:0;right:0;height:1px;
     background:linear-gradient(90deg,transparent,#22c55e,transparent);
 }
-.v-card-img img{-webkit-touch-callout:none;pointer-events:none}
+.v-card-img img{-webkit-touch-callout:none;pointer-events:none;transition:transform .35s cubic-bezier(.2,.6,.3,1)}
+@media(min-width:769px){
+.v-car-card:hover .v-card-img img{transform:scale(1.12)}
+}        
 .v-card-img-placeholder{font-size:3.5rem;filter:drop-shadow(0 2px 8px rgba(0,0,0,.3))}
 .v-card-acq{position:absolute;bottom:8px;right:8px;width:auto;height:44px;display:flex;align-items:center;justify-content:center}
 .v-card-acq img{height:44px;width:auto;display:block;pointer-events:none}
