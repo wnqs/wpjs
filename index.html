@@ -3586,15 +3586,15 @@ window.renderCalculator = function () {
             var qGear=parseFloat(document.getElementById('_calc_queYiGear').value)||0;
             var subE=document.getElementById('_calc_subEnerg').value;
             var mainE=document.getElementById('_calc_mainEnerg').value;
-            function getFloatE(qs,rc) {
-                if(subE==='queYi')return qGear*qs; if(subE==='rhythm')return 4*rc; if(subE==='huaxinfeng')return 7;
-                if(subE==='energyRec')return 10; return 0;
-            }
+            function getFloatE(qs,rc,first) {
+    if(subE==='queYi')return qGear*qs; if(subE==='rhythm')return 4*rc; if(subE==='huaxinfeng')return 7;
+    if(subE==='energyRec' && !first)return 10; return 0;
+}
             // 首大
             var ef1=parseFloat(document.getElementById('_calc_effFirst').value)||0,n1=parseFloat(document.getElementById('_calc_nitroCountFirst').value)||0;
             var fl1=parseFloat(document.getElementById('_calc_floatFirst').value)||0,qs1=parseFloat(document.getElementById('_calc_queYiSecFirst').value)||0;
             var rc1=parseFloat(document.getElementById('_calc_rhythmCountFirst').value)||0,as1=parseFloat(document.getElementById('_calc_assistFirst').value)||0;
-            var fe1=getFloatE(qs1,rc1);
+            var fe1=getFloatE(qs1,rc1,true);
             var ults=[{label:'首大',eff:ef1,nCount:n1,floatC:fl1,fixedC:0,floatE:fe1,queYiSec:qs1,rhythmCount:rc1,assist:as1,isOdd:false,isFirst:true}];
             // 动态区域
             document.querySelectorAll('[id^="_calc_areaDynamic_"]').forEach(function(el){
