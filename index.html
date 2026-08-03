@@ -3942,8 +3942,15 @@ window._calc_toggleDetail = function(btn) {
   var w = document.getElementById('cyberWelcome');
   var c = document.getElementById('cyberClose');
   if (w && c) {
-    c.addEventListener('click', function(){ w.style.display = 'none'; });
-    w.addEventListener('click', function(e){ if (e.target === w) w.style.display = 'none'; });
+    // 关闭欢迎弹窗并记录：同标签页刷新/重置后不再弹出，重开标签页仍会显示
+    function closeWelcome(){
+      w.style.display = 'none';
+      try{ sessionStorage.setItem('wwClosed','1'); }catch(e){}
+    }
+    // 本次会话已关闭过（例如点过重置刷新页面）：直接隐藏
+    if (sessionStorage.getItem('wwClosed')) { w.style.display = 'none'; }
+    c.addEventListener('click', closeWelcome);
+    w.addEventListener('click', function(e){ if (e.target === w) closeWelcome(); });
   }
   // 社交图标点击代理（tracker 层会拦截原生链接，用坐标命中判断跳转）
   var canvas = document.querySelector('.ww-canvas');
