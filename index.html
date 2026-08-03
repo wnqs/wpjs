@@ -3544,7 +3544,7 @@ window.renderCalculator = function () {
     document.querySelectorAll('.dyn-queYiSec').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='queYi'?'':'none';});
     document.querySelectorAll('.dyn-rhythmCount').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='rhythm'?'':'none';});
     // 仅切换为"未来"时按规则重置大招能量，其余赋能保持用户手动输入的值
-    if(!skipUlt && sv==='future'){
+    if(skipUlt!==true && sv==='future'){
         var v=document.getElementById('_calc_vehicleSelect').value;
         var sp=_calc_specialFirstEnergy[v]||100;
         document.getElementById('_calc_ultEnergy').value=(sp>90)?90:sp;
