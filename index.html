@@ -3537,18 +3537,28 @@ window.renderCalculator = function () {
                 el.innerHTML=tip2;el.style.display=tip2?'inline-block':'none';
             });
         }
-        function _calc_togSub(skipUlt) {
+        var _calc_prevSubEnerg='none'; // 记录上一次选择的次赋能，用于从"未来"切走时恢复车辆本身大招能量
+function _calc_togSub(skipUlt) {
     var sv=document.getElementById('_calc_subEnerg').value;
     ['_calc_queYiGear'].forEach(function(id){var e=document.getElementById(id);if(e&&e.closest('.fDR'))e.closest('.fDR').style.display=sv==='queYi'?'':'none';});
     ['_calc_queYiSecFirst','_calc_rhythmCountFirst'].forEach(function(id){var e=document.getElementById(id);if(e&&e.closest('.fDR'))e.closest('.fDR').style.display=sv==='queYi'&&id.includes('queYi')||sv==='rhythm'&&id.includes('rhythm')?'':'none';});
     document.querySelectorAll('.dyn-queYiSec').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='queYi'?'':'none';});
     document.querySelectorAll('.dyn-rhythmCount').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='rhythm'?'':'none';});
-    // 仅切换为"未来"时按规则重置大招能量，其余赋能保持用户手动输入的值
-    if(skipUlt!==true && sv==='future'){
+    // 添加区域等场景（skipUlt=true）：只更新显隐，不碰大招能量、不更新上次赋能记录
+    if(skipUlt===true)return;
+    if(_calc_prevSubEnerg==='future' && sv!=='future'){
+        // 从"未来"切走：大招能量恢复为车辆本身默认值
+        var v=document.getElementById('_calc_vehicleSelect').value;
+        var sp=_calc_specialFirstEnergy[v]||100;
+        document.getElementById('_calc_ultEnergy').value=sp;
+    } else if(sv==='future'){
+        // 切到"未来"：按规则设置（车辆本身大招能量>90 时封顶 90）
         var v=document.getElementById('_calc_vehicleSelect').value;
         var sp=_calc_specialFirstEnergy[v]||100;
         document.getElementById('_calc_ultEnergy').value=(sp>90)?90:sp;
     }
+    // 其它情况：保持用户手动输入的大招能量
+    _calc_prevSubEnerg=sv;
 }
         
         // ===== 计算核心函数 =====
