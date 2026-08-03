@@ -760,57 +760,12 @@ will-change:background-position;
 -webkit-mask-image:linear-gradient(to top,rgba(0,0,0,.95) 22%,rgba(0,0,0,.35) 62%,transparent 96%);
 mask-image:linear-gradient(to top,rgba(0,0,0,.95) 22%,rgba(0,0,0,.35) 62%,transparent 96%)}
 @keyframes gridRun{from{background-position:0 0,0 0,0 0}to{background-position:0 44px,0 44px,0 88px}}
-/* ===== 赛博欢迎弹窗 ===== */
-.cyber-welcome{position:fixed;inset:0;z-index:9999;background:rgba(3,6,14,.82);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:center;padding:20px;animation:_cyberFade .35s ease}
-@keyframes _cyberFade{from{opacity:0}to{opacity:1}}
-.cyber-card{position:relative;width:min(380px,100%);border-radius:24px;padding:34px 26px 28px;text-align:center;background:linear-gradient(150deg,#0b1020 0%,#121a33 55%,#0d1428 100%);border:1px solid rgba(0,240,255,.45);box-shadow:0 0 28px rgba(0,240,255,.25),0 0 60px rgba(255,45,149,.18),inset 0 0 30px rgba(0,240,255,.05);animation:_cyberCardIn .5s ease}
-@keyframes _cyberCardIn{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
-.cyber-card::before{content:'';position:absolute;inset:-2px;border-radius:26px;padding:1.5px;background:linear-gradient(120deg,#00f0ff,#ff2d95 50%,#00f0ff);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.55}
-.cyber-close{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,71,87,.6);background:rgba(255,71,87,.1);color:#ff4757;font-size:1.05rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s;z-index:5}
-.cyber-close:hover{background:rgba(255,71,87,.9);color:#fff;box-shadow:0 0 16px rgba(255,71,87,.7)}
-.cyber-logo{position:relative;width:110px;height:110px;margin:0 auto 18px;display:grid;place-content:center}
-.cyber-ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(0,240,255,.5);animation:_cyberSpin 6s linear infinite}
-.cyber-ring.r2{inset:12px;border-color:rgba(255,45,149,.55);animation-duration:4.5s;animation-direction:reverse}
-.cyber-ring.r3{inset:24px;border-color:rgba(255,215,0,.5);animation-duration:3.5s}
-@keyframes _cyberSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
-.cyber-core{width:52px;height:52px;border-radius:50%;display:grid;place-content:center;font-size:1.6rem;background:radial-gradient(circle at 30% 30%,#0e1830,#05080f);border:1px solid rgba(0,240,255,.6);box-shadow:0 0 18px rgba(0,240,255,.5),inset 0 0 12px rgba(0,240,255,.25);animation:_cyberPulse 2.2s ease-in-out infinite}
-@keyframes _cyberPulse{0%,100%{box-shadow:0 0 12px rgba(0,240,255,.35),inset 0 0 10px rgba(0,240,255,.2)}50%{box-shadow:0 0 26px rgba(0,240,255,.8),inset 0 0 16px rgba(0,240,255,.4)}}
-.cyber-title{display:block;font-size:1.15rem;font-weight:800;letter-spacing:2px;background:linear-gradient(90deg,#00f0ff,#ff2d95,#00f0ff);background-size:200% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:_cyberText 4s linear infinite}
-@keyframes _cyberText{to{background-position:200% 0}}
-.cyber-text{display:block;margin-top:14px;font-size:.85rem;line-height:1.8;color:#b8c4e8}
-.cyber-socials{display:flex;justify-content:center;gap:16px;margin-top:22px}
-.cyber-social{width:52px;height:52px;border-radius:50%;display:grid;place-content:center;font-size:1.35rem;color:#d8e4ff;background:rgba(255,255,255,.04);border:1px solid rgba(0,240,255,.35);transition:all .25s;text-decoration:none}
-.cyber-social:hover{transform:translateY(-4px);border-color:#ff2d95;box-shadow:0 0 18px rgba(255,45,149,.5);color:#fff}
-.cyber-social img{width:26px;height:26px;object-fit:contain;display:block;pointer-events:none}        
-@media(max-width:600px){.cyber-card{padding:28px 18px 24px}.cyber-title{font-size:1rem}.cyber-text{font-size:.8rem}}
+
 </style>
     <link rel="icon" href="https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8c8d4df2-bcf0-4e3b-95be-68ed722c05df.png">
 </head>
 <body>
     <div class="bg-hud" aria-hidden="true"><img class="bg-hud-center" src="https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/18cd7217-3ade-45c2-9a1d-21342fd644ec.webp" alt=""></div>
-    <!-- 赛博欢迎弹窗 -->
-<div class="cyber-welcome" id="cyberWelcome">
-  <div class="cyber-card">
-    <button class="cyber-close" id="cyberClose">✕</button>
-    <div class="cyber-logo">
-      <span class="cyber-ring r1"></span>
-      <span class="cyber-ring r2"></span>
-      <span class="cyber-ring r3"></span>
-      <span class="cyber-core">🏁</span>
-    </div>
-    <span class="cyber-title">王牌竞速数据整合站</span>
-    <span class="cyber-text">本网站为公益网站，欢迎王牌玩家免费使用，纯热爱，<br>喜欢支持的可以关注下面几个账号</span>
-    <div class="cyber-socials">
-  <a class="cyber-social" href="https://v.douyin.com/yuIzs4DY2Jc" target="_blank" rel="noopener" title="抖音">
-    <img src="https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/7ce6af92-39b8-46d3-bde6-b08737f03724.png/webp" alt="抖音">
-  </a>
-  <a class="cyber-social" href="https://v.kuaishou.com/nAHNMox5" target="_blank" rel="noopener" title="快手">
-    <img src="https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6ece6537-bbd0-4b97-8f7d-b670dc911703.png/webp" alt="快手">
-  </a>
-  <a class="cyber-social" href="https://b23.tv/97lEb0D" target="_blank" rel="noopener" title="B站">
-    <img src="https://img.pagehost.cn/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ffe49905-bf32-4472-8d33-25a6cb066777.webp/webp" alt="B站">
-  </a>
-</div>
     <nav class="navbar" id="navbar">
         <div class="nav-inner">
             <a href="#/" class="nav-logo">
@@ -3848,15 +3803,5 @@ window._calc_toggleDetail = function(btn) {
     });
 })();
 </script>
-<script>
-(function(){
-  var w = document.getElementById('cyberWelcome');
-  var c = document.getElementById('cyberClose');
-  if (w && c) {
-    c.addEventListener('click', function(){ w.style.display = 'none'; });
-    w.addEventListener('click', function(e){ if (e.target === w) w.style.display = 'none'; });
-  }
-})();
-</script>    
 </body>
 </html>
