@@ -3537,16 +3537,19 @@ window.renderCalculator = function () {
                 el.innerHTML=tip2;el.style.display=tip2?'inline-block':'none';
             });
         }
-        function _calc_togSub() {
-            var sv=document.getElementById('_calc_subEnerg').value;
-            ['_calc_queYiGear'].forEach(function(id){var e=document.getElementById(id);if(e&&e.closest('.fDR'))e.closest('.fDR').style.display=sv==='queYi'?'':'none';});
-            ['_calc_queYiSecFirst','_calc_rhythmCountFirst'].forEach(function(id){var e=document.getElementById(id);if(e&&e.closest('.fDR'))e.closest('.fDR').style.display=sv==='queYi'&&id.includes('queYi')||sv==='rhythm'&&id.includes('rhythm')?'':'none';});
-            document.querySelectorAll('.dyn-queYiSec').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='queYi'?'':'none';});
-            document.querySelectorAll('.dyn-rhythmCount').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='rhythm'?'':'none';});
-            var v=document.getElementById('_calc_vehicleSelect').value;
-            var sp=_calc_specialFirstEnergy[v]||100;
-            document.getElementById('_calc_ultEnergy').value=(sv==='future'&&sp>90)?90:sp;
-        }
+        function _calc_togSub(skipUlt) {
+    var sv=document.getElementById('_calc_subEnerg').value;
+    ['_calc_queYiGear'].forEach(function(id){var e=document.getElementById(id);if(e&&e.closest('.fDR'))e.closest('.fDR').style.display=sv==='queYi'?'':'none';});
+    ['_calc_queYiSecFirst','_calc_rhythmCountFirst'].forEach(function(id){var e=document.getElementById(id);if(e&&e.closest('.fDR'))e.closest('.fDR').style.display=sv==='queYi'&&id.includes('queYi')||sv==='rhythm'&&id.includes('rhythm')?'':'none';});
+    document.querySelectorAll('.dyn-queYiSec').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='queYi'?'':'none';});
+    document.querySelectorAll('.dyn-rhythmCount').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='rhythm'?'':'none';});
+    // 仅切换为"未来"时按规则重置大招能量，其余赋能保持用户手动输入的值
+    if(!skipUlt && sv==='future'){
+        var v=document.getElementById('_calc_vehicleSelect').value;
+        var sp=_calc_specialFirstEnergy[v]||100;
+        document.getElementById('_calc_ultEnergy').value=(sp>90)?90:sp;
+    }
+}
         
         // ===== 计算核心函数 =====
         function _calc_getNitroRatio(t) { return t==='1x5'?1.0:t==='2x2'?0.5:t==='3x2'?1/3:1.0; }
@@ -3652,7 +3655,7 @@ window.renderCalculator = function () {
             renderCalculatorSV(sv);
         });
         document.getElementById('_calc_subEnerg').addEventListener('change',_calc_togSub);
-        _calc_togSub(); // 初始化隐藏缺一/节奏字段
+        _calc_togSub(true); // 仅更新缺一/节奏字段显隐，不重置大招能量
         document.getElementById('_calc_guideToggle').addEventListener('click',function(){
             var d=document.getElementById('_calc_guideDropdown');d.classList.toggle('s');
             var ch=this.querySelector('.gR-chev');if(ch)ch.classList.toggle('open');
