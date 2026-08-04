@@ -8,14 +8,14 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "场地",
-      "imageUrl": "https://a1.boltp.com/2026/06/24/6a3be67a27ed9.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c550b6b2-e2bb-42d8-a4de-7001586e7dfa.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/06101648-2d3d-4e7b-a0b6-cc5ee67dc764.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/045497f4-dc30-4fe6-a3d2-db241f46a13c.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0df3100c-769e-4cc4-bc76-27cdec27281e.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ee96988b-b21c-48ab-aa20-33226ae91d78.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/61a12c9a-39e8-4f90-9872-9c8224afbc99.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/3f680506-49fb-489c-a27e-ea3ae687b03e.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be67a27ed9.png/webp",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c550b6b2-e2bb-42d8-a4de-7001586e7dfa.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/06101648-2d3d-4e7b-a0b6-cc5ee67dc764.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/045497f4-dc30-4fe6-a3d2-db241f46a13c.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/0df3100c-769e-4cc4-bc76-27cdec27281e.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ee96988b-b21c-48ab-aa20-33226ae91d78.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/61a12c9a-39e8-4f90-9872-9c8224afbc99.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/3f680506-49fb-489c-a27e-ea3ae687b03e.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "场地",
@@ -26,7 +26,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "比亚迪",
       "acquisition": "补给箱/赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "214.2 km/h",
         "power": "7.47",
@@ -67,7 +67,7 @@
       "quality": "传说",
       "position": "天平",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/32dbad77-98e9-43d1-b1b1-82666b91a365.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/32dbad77-98e9-43d1-b1b1-82666b91a365.png",
       "positionIcon": "天平",
       "specialtyIcon": "山路",
       "description": "模仿触碰到的车辆",
@@ -77,7 +77,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5f49f1f3-7441-4b1b-a432-a497b8440304.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5f49f1f3-7441-4b1b-a432-a497b8440304.png",
       "stats": {
         "topSpeed": "222.0 km/h",
         "power": "8.14",
@@ -108,8 +108,8 @@
           { "name": "自充能", "desc": "技能可以补充大招能量", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9c6df0c5-4517-4cd2-b96e-9614b2b6b5cf.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/76d11b62-a021-4f92-bfac-a7fdd24be959.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9c6df0c5-4517-4cd2-b96e-9614b2b6b5cf.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/76d11b62-a021-4f92-bfac-a7fdd24be959.png"
     },
     {
   "id": "shenjianhao",
@@ -117,20 +117,20 @@
   "quality": "传说",
   "position": "竞速",
   "specialty": "山路",
-  "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/39cc904e-f6f8-4d47-84e9-ae6b1befa2d2.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/aa046d5c-6125-441a-ae0c-4f9b8d76fc72.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d930f3b6-c3cb-4da0-9123-d2d34702ae6a.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b8e1766f-0d19-4595-9065-e87b7d2d6119.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/81c9a088-042d-4ac6-a491-6e330d1b1a0c.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/36ef2c80-95f6-4f4f-997c-059f247978d7.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/32a0791f-6cf4-475e-bd06-ab274686db8c.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ed2b8678-15e0-4b39-97b1-882f13d16882.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/3e409927-5c66-4a19-a06b-a094df98ba6b.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a5eb2fa2-5547-4811-bf78-9be9f21dfacb.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c3b0d185-357f-44c5-b574-6ea78260a495.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/825ed1ea-76f7-4271-9930-4d04462990b5.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/3805e5b3-2d9a-4711-9273-4567814b818a.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6981e4b5-9029-434f-9faf-de6bc9f854fd.png"
+  "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/39cc904e-f6f8-4d47-84e9-ae6b1befa2d2.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/aa046d5c-6125-441a-ae0c-4f9b8d76fc72.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/d930f3b6-c3cb-4da0-9123-d2d34702ae6a.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b8e1766f-0d19-4595-9065-e87b7d2d6119.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/81c9a088-042d-4ac6-a491-6e330d1b1a0c.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/36ef2c80-95f6-4f4f-997c-059f247978d7.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/32a0791f-6cf4-475e-bd06-ab274686db8c.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ed2b8678-15e0-4b39-97b1-882f13d16882.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/3e409927-5c66-4a19-a06b-a094df98ba6b.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a5eb2fa2-5547-4811-bf78-9be9f21dfacb.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c3b0d185-357f-44c5-b574-6ea78260a495.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/825ed1ea-76f7-4271-9930-4d04462990b5.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/3805e5b3-2d9a-4711-9273-4567814b818a.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6981e4b5-9029-434f-9faf-de6bc9f854fd.png"
 ],
   "positionIcon": "竞速",
   "specialtyIcon": "山路",
@@ -141,7 +141,7 @@
   "vehicleType": "幻想阵营",
   "manufacturer": "平行世界",
   "acquisition": "王牌补给",
-  "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+  "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
   "stats": {
     "topSpeed": "234.0 km/h",
     "power": "7.53",
@@ -174,8 +174,8 @@
       { "name": "自动集气", "desc": "技能可以自动获取氮气", "color": "蓝" }
     ]
   },
-  "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e5b4e44b-da1d-40dc-84e5-e52245b133da.png",
-  "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a1f786db-26cb-4ac4-ac6a-40109b373017.png"
+  "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/e5b4e44b-da1d-40dc-84e5-e52245b133da.png",
+  "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a1f786db-26cb-4ac4-ac6a-40109b373017.png"
 },
     {
       "id": "ether",
@@ -183,14 +183,14 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/631f9877-4ef2-4396-bc7a-095ec4e34274.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/1d8137b8-8786-4041-8a85-f8e1d63ce8e6.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6c16124a-f768-451e-82e7-df63e04092c5.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/4d49dfe9-7e83-4af7-b65f-00518cb2551d.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/bbb01fa8-0001-4cd3-b210-813f5ce109f1.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/bc971735-98c4-4c14-b6b3-70bb2c9c9aca.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/bfc3a82e-cc36-4fae-9843-9389579d7264.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/95e36654-a121-40ee-a323-9a36efd4acf4.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/631f9877-4ef2-4396-bc7a-095ec4e34274.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/1d8137b8-8786-4041-8a85-f8e1d63ce8e6.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6c16124a-f768-451e-82e7-df63e04092c5.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/4d49dfe9-7e83-4af7-b65f-00518cb2551d.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/bbb01fa8-0001-4cd3-b210-813f5ce109f1.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/bc971735-98c4-4c14-b6b3-70bb2c9c9aca.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/bfc3a82e-cc36-4fae-9843-9389579d7264.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/95e36654-a121-40ee-a323-9a36efd4acf4.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
@@ -201,7 +201,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "补给箱/赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "213.3 km/h",
         "power": "7.53",
@@ -242,9 +242,9 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "场地",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/85500f4d-513f-47f7-81ac-2040342732a3.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/85500f4d-513f-47f7-81ac-2040342732a3.png",
       "images": [
-    "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ceffbc72-b4ea-4b91-8ba7-1c4e864150e3.png",
+    "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ceffbc72-b4ea-4b91-8ba7-1c4e864150e3.png",
     "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e2bb6662-ae28-46a0-96e0-1c8f1ea09d98.png"
   ],
       "positionIcon": "辅助",
@@ -256,7 +256,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "元素",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "216.0 km/h",
         "power": "7.81",
@@ -290,11 +290,11 @@
           { "name": "无视地形", "desc": "不受特殊地形的减速效果影响", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/00b524c4-bf42-47d2-8f3d-8824be7534bb.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8ebb2669-4464-4f42-9204-f26f52ce37b1.png",
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/00b524c4-bf42-47d2-8f3d-8824be7534bb.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8ebb2669-4464-4f42-9204-f26f52ce37b1.png",
       "sp": {
         "name": "汐之歌",
-        "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9d6de81f-2f94-44d7-9865-bea86cfc3063.png",
+        "icon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9d6de81f-2f94-44d7-9865-bea86cfc3063.png",
         "desc": "净化队友的负面效果，永久提升自身2%充能效率",
         "cooltime": "12秒"
       }
@@ -305,11 +305,11 @@
       "quality": "耀世",
       "position": "竞速",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/07b093b9-2086-4d68-96a4-45584ba2db83.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/07b093b9-2086-4d68-96a4-45584ba2db83.png",
       "images": [
-    "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/2d6d8852-d9e8-4d07-924e-7674158a3cde.png",
-    "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8e8e01d6-1452-4d52-b4d0-f1748b5a8b18.png",
-    "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d2fee2d5-c0ec-4a76-bc58-d6b43506b9af.png"
+    "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/2d6d8852-d9e8-4d07-924e-7674158a3cde.png",
+    "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8e8e01d6-1452-4d52-b4d0-f1748b5a8b18.png",
+    "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/d2fee2d5-c0ec-4a76-bc58-d6b43506b9af.png"
   ],
       "positionIcon": "竞速",
       "specialtyIcon": "山路",
@@ -320,7 +320,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "布加迪",
       "acquisition": "耀世臻藏",
-      "acquisitionIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b8525901-ca4f-47ab-b5fe-dbc160f33f12.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b8525901-ca4f-47ab-b5fe-dbc160f33f12.png",
       "stats": {
         "topSpeed": "208.0 km/h",
         "power": "8.6",
@@ -354,11 +354,11 @@
           { "name": "净化", "desc": "解除持续性的负面效果", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/09613d2e-b431-4c48-9580-b4188617b087.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/524eaae2-08be-4427-bb32-88b7c78d2d65.png",
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/09613d2e-b431-4c48-9580-b4188617b087.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/524eaae2-08be-4427-bb32-88b7c78d2d65.png",
       "sp": {
         "name": "飞火流星",
-        "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fc36ac06-4dac-40c4-9924-1b2baa97cbe6.png",
+        "icon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/fc36ac06-4dac-40c4-9924-1b2baa97cbe6.png",
         "desc": "·存储上限:7次<br>·在有使用次数时才可使用，获得1700集气量和6%大招能量并向前闪现35米",
         "cooltime": "0.3秒"
       }
@@ -369,10 +369,10 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5589422c-3f78-4aa9-bfa0-22368ceea8b1.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8cd9600d-3655-40bc-8164-e41c94e53478.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fe6f9e01-3e84-41de-8302-a4a1cab4ac30.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9499261e-4b75-4a51-9a85-b5aac544f880.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5589422c-3f78-4aa9-bfa0-22368ceea8b1.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8cd9600d-3655-40bc-8164-e41c94e53478.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/fe6f9e01-3e84-41de-8302-a4a1cab4ac30.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9499261e-4b75-4a51-9a85-b5aac544f880.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "山路",
@@ -383,7 +383,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "开拓者",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "222.0 km/h",
         "power": "7.66",
@@ -416,8 +416,8 @@
           { "name": "单次充能", "desc": "为友方提供单次辅助充能", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5b9c3a92-2fb5-479d-bd8a-01d32b6409ba.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e1ff195e-a6e6-4df2-9afc-bbc6a257a13b.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5b9c3a92-2fb5-479d-bd8a-01d32b6409ba.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/e1ff195e-a6e6-4df2-9afc-bbc6a257a13b.png"
     },
     {
       "id": "niuwang",
@@ -425,8 +425,8 @@
   "quality": "传说",
   "position": "干扰",
   "specialty": "山路",
-  "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/386213c3-86df-47cf-8da8-314d013a4b42.png",
-  "images":["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/7af9f806-0e7f-43d0-92cd-769c3f42da1d.png"],
+  "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/386213c3-86df-47cf-8da8-314d013a4b42.png",
+  "images":["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/7af9f806-0e7f-43d0-92cd-769c3f42da1d.png"],
   "positionIcon": "干扰",
   "specialtyIcon": "山路",
   "description": "召唤蛮牛，野蛮冲撞",
@@ -436,7 +436,7 @@
   "vehicleType": "真实阵营",
   "manufacturer": "丰田",
   "acquisition": "黑金会员",
-  "acquisitionIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b60e2e6e-6315-47c3-96ec-ca9a0eb3e628.png",
+  "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b60e2e6e-6315-47c3-96ec-ca9a0eb3e628.png",
   "stats": {
     "topSpeed": "214.0 km/h",
     "power": "8.00",
@@ -469,8 +469,8 @@
       { "name": "涡轮消失", "desc": "使敌方的涡轮按键消失", "color": "红" }
     ]
   },
-  "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/535cd977-22a0-4e46-a9ac-b65e55ae5df5.png",
-  "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/be6f7725-5e20-426a-a5e2-e8f966cfe384.png"
+  "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/535cd977-22a0-4e46-a9ac-b65e55ae5df5.png",
+  "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/be6f7725-5e20-426a-a5e2-e8f966cfe384.png"
  },
     {
       "id": "weilai_et9",
@@ -478,7 +478,7 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ee036bb3-dc7b-4735-8619-08eab63da7bb.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ee036bb3-dc7b-4735-8619-08eab63da7bb.png",
       "positionIcon": "辅助",
       "specialtyIcon": "山路",
       "description": "为队友高效补能",
@@ -488,7 +488,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "蔚来",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "217.0 km/h",
         "power": "8.46",
@@ -522,8 +522,8 @@
           { "name": "自动集气", "desc": "技能可以自动获取氮气", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/659f0abe-070c-4a6b-a551-87bd63da5bd1.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/88669795-c768-40fa-9c49-9eaee3eb443f.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/659f0abe-070c-4a6b-a551-87bd63da5bd1.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/88669795-c768-40fa-9c49-9eaee3eb443f.png"
     },
     {
       "id": "volkswagen_idr",
@@ -531,11 +531,11 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "山路",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/298a26d8-5856-4469-b7c5-9045b22d893f.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5dfd92ad-0c70-4947-a418-db6288f2b57e.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8cc76a83-b95a-4851-ad2b-8cf00c788bd2.png"
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/298a26d8-5856-4469-b7c5-9045b22d893f.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5dfd92ad-0c70-4947-a418-db6288f2b57e.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8cc76a83-b95a-4851-ad2b-8cf00c788bd2.png"
 ],
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/2aa0d43c-0b30-4d6c-996c-2d14c0017b5b.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/2aa0d43c-0b30-4d6c-996c-2d14c0017b5b.png",
       "positionIcon": "辅助",
       "specialtyIcon": "山路",
       "description": "让队友可以立刻使用大招",
@@ -545,7 +545,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "大众",
       "acquisition": "补给箱/赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "218.6 km/h",
         "power": "7.63",
@@ -576,8 +576,8 @@
           { "name": "单次充能", "desc": "为友方提供单次辅助充能", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/142f6dfe-bcc6-461e-83bb-bb69e5576813.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6cb13b54-b6e6-47ec-aba7-4520bbb872f7.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/142f6dfe-bcc6-461e-83bb-bb69e5576813.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6cb13b54-b6e6-47ec-aba7-4520bbb872f7.png"
     },
     {
       "id": "chayunxingzhe",
@@ -585,8 +585,8 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a1a81cf0-97c2-40f2-9209-d88f0e0a6566.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9d43e46e-60db-468c-8a89-ea1eabd75a89.png"],
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a1a81cf0-97c2-40f2-9209-d88f0e0a6566.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9d43e46e-60db-468c-8a89-ea1eabd75a89.png"],
       "positionIcon": "辅助",
       "specialtyIcon": "山路",
       "description": "为队友提供SP技能并刷新冷却",
@@ -596,7 +596,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "214.0 km/h",
         "power": "7.71",
@@ -630,11 +630,11 @@
           { "name": "自动集气", "desc": "技能可以自动获取氮气", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/773a0f0e-5287-4170-b53c-093c71a42a8c.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b85114cc-fc4a-4e45-9fd5-c01e15544486.png",
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/773a0f0e-5287-4170-b53c-093c71a42a8c.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b85114cc-fc4a-4e45-9fd5-c01e15544486.png",
       "sp": {
         "name": "沁人心脾",
-        "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5ee20dc1-fba1-4013-b801-9e3f7599f6ce.png",
+        "icon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5ee20dc1-fba1-4013-b801-9e3f7599f6ce.png",
         "desc": "净化自身负面效果并获得2500集气量",
         "cooltime": "15秒"
       }
@@ -645,8 +645,8 @@
   "quality": "传说",
   "position": "干扰",
   "specialty": "山路",
-  "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8194b136-4c59-4a21-b9f3-dc1f13d77427.png",
-   "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5b08ced0-362e-4b1f-9c6a-14c464c1c16d.png"
+  "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8194b136-4c59-4a21-b9f3-dc1f13d77427.png",
+   "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5b08ced0-362e-4b1f-9c6a-14c464c1c16d.png"
 ],
   "positionIcon": "干扰",
   "specialtyIcon": "山路",
@@ -691,11 +691,11 @@
       { "name": "耐久损失", "desc": "使敌方耐久损失", "color": "红" }
     ]
   },
-  "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b08d2fd4-a215-46d0-96d1-f5b79d44c529.png",
-  "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/91398835-e612-4dbb-a0bb-923206fece3a.png",
+  "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b08d2fd4-a215-46d0-96d1-f5b79d44c529.png",
+  "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/91398835-e612-4dbb-a0bb-923206fece3a.png",
   "sp": {
     "name": "万剑归宗",
-    "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/827b80e2-e9b0-4a43-bc38-8c967ea1f9a5.png",
+    "icon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/827b80e2-e9b0-4a43-bc38-8c967ea1f9a5.png",
     "desc": "5秒内极速+40km/h并进入御剑飞行状态，期间过弯不减速",
     "cooltime": "15秒"
    }
@@ -706,13 +706,13 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/70228e62-c51c-4756-bb2b-faf8a8b3973f.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/663131ab-0762-473a-8198-de4530703ba5.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6188248b-11cd-436e-8301-a5e5d1cce3c5.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/f0179a43-cb93-4e61-bed0-8f9de2abcb27.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/67d7e6f3-a34b-45ba-9ad0-efab8a9f0f4f.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/69c1270d-74cf-4443-95c3-12cfc9ab4dd0.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/4fc642be-5bbd-448c-a817-6c6bab588dca.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/70228e62-c51c-4756-bb2b-faf8a8b3973f.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/663131ab-0762-473a-8198-de4530703ba5.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6188248b-11cd-436e-8301-a5e5d1cce3c5.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/f0179a43-cb93-4e61-bed0-8f9de2abcb27.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/67d7e6f3-a34b-45ba-9ad0-efab8a9f0f4f.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/69c1270d-74cf-4443-95c3-12cfc9ab4dd0.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/4fc642be-5bbd-448c-a817-6c6bab588dca.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
@@ -723,7 +723,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/221fb770-6495-46ca-afcf-975e1a540f7f.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/221fb770-6495-46ca-afcf-975e1a540f7f.png",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.76",
@@ -757,11 +757,11 @@
           { "name": "友方净化", "desc": "为队友净化负面效果", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/57ad5524-9843-4ea0-8479-afe73d9addb2.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/443d4ab0-de27-491a-807f-df96223933c9.png",
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/57ad5524-9843-4ea0-8479-afe73d9addb2.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/443d4ab0-de27-491a-807f-df96223933c9.png",
       "sp": {
         "name": "鲤跃龙门",
-        "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8f7ab04a-f1c2-42fe-ac4f-5466f11dafd7.png",
+        "icon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8f7ab04a-f1c2-42fe-ac4f-5466f11dafd7.png",
         "desc": "在自身和队友前方50米处召唤持续存在1秒的龙门，每次成功穿过龙门本局内极速+5km/h（上限叠加至25km/h）",
         "cooltime": "15秒"
       }
@@ -772,13 +772,13 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/898854e9-782c-4d40-9aed-0d747edad7ff.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c7080e1e-8a61-4d5a-b2f2-648b9193004a.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/391830e2-6ef1-4b06-855f-687d86f93110.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9b6d8046-bb51-451a-b4ab-4981cdd34b39.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0c7d5a62-83ed-43f9-94d5-3011a46a0473.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a85de075-4d77-49e3-ab87-172ef69dec3e.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0c3034a1-c63b-4a8d-95c5-52d349034176.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/898854e9-782c-4d40-9aed-0d747edad7ff.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c7080e1e-8a61-4d5a-b2f2-648b9193004a.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/391830e2-6ef1-4b06-855f-687d86f93110.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9b6d8046-bb51-451a-b4ab-4981cdd34b39.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/0c7d5a62-83ed-43f9-94d5-3011a46a0473.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a85de075-4d77-49e3-ab87-172ef69dec3e.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/0c3034a1-c63b-4a8d-95c5-52d349034176.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
@@ -789,7 +789,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "奥迪",
       "acquisition": "首充/补给箱/赛车学院",
-      "acquisitionIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e332706a-3c25-4314-83f0-c1d8e3748198.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/e332706a-3c25-4314-83f0-c1d8e3748198.png",
       "stats": {
         "topSpeed": "215.0 km/h",
         "power": "8.37",
@@ -821,8 +821,8 @@
           { "name": "自充能", "desc": "技能可以补充大招能量", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8fd02e3b-6ab0-45ce-ae3c-1635640c0f85.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/cb1e0ca0-8156-4617-9b34-10848a61b1df.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8fd02e3b-6ab0-45ce-ae3c-1635640c0f85.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/cb1e0ca0-8156-4617-9b34-10848a61b1df.png"
     },
     {
       "id": "jiandun",
@@ -830,9 +830,9 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/722c9a50-13f2-4500-8b9c-85158b0ec53e.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/71055c8e-f05e-4cf5-81ee-95720669b446.png",
-         "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c3842619-4b78-4584-b54d-b1bd06b9d6c1.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/722c9a50-13f2-4500-8b9c-85158b0ec53e.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/71055c8e-f05e-4cf5-81ee-95720669b446.png",
+         "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c3842619-4b78-4584-b54d-b1bd06b9d6c1.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
@@ -843,7 +843,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "开拓者",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "218.0 km/h",
         "power": "7.76",
@@ -875,8 +875,8 @@
           { "name": "友方充能", "desc": "为队友提供大招充能", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/78f293d3-10b3-4541-97a5-94a6008522b2.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/244a4c6d-9966-4dd7-a226-3f7b130547eb.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/78f293d3-10b3-4541-97a5-94a6008522b2.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/244a4c6d-9966-4dd7-a226-3f7b130547eb.png"
     },
     {
       "id": "fangchengbao_bao8",
@@ -885,7 +885,7 @@
       "position": "辅助",
       "specialty": "城市",
       "imageUrl": "https://a1.boltp.com/2026/06/24/6a3be1c085d96.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ba447563-6e7d-4589-b44a-c9aacfd66c39.png"],
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ba447563-6e7d-4589-b44a-c9aacfd66c39.png"],
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
       "description": "远距离高能量，释放氮气破隐，无法选中",
@@ -895,7 +895,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "比亚迪",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "210.10 km/h",
         "power": "8.3",
@@ -936,7 +936,7 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "场地",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ce943c78-23ac-45a6-a8c0-91f3a37c3d5a.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ce943c78-23ac-45a6-a8c0-91f3a37c3d5a.png",
       "positionIcon": "辅助",
       "specialtyIcon": "场地",
       "description": "突破自我，芯片共享",
@@ -946,7 +946,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "宝马",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "215.0 km/h",
         "power": "7.71",
@@ -977,8 +977,8 @@
           { "name": "芯片增幅", "desc": "百分比提升队友的芯片效果", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fb341148-4315-4281-9da5-0737bc7aacc0.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/926617e6-e75c-4c64-bd6c-e2f4c9d7b6dd.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/fb341148-4315-4281-9da5-0737bc7aacc0.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/926617e6-e75c-4c64-bd6c-e2f4c9d7b6dd.png"
     },
     {
       "id": "aston_martin_valkyrie",
@@ -986,10 +986,10 @@
       "quality": "传说",
       "position": "天平",
       "specialty": "场地",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/41319ad8-4e7c-4dcd-840c-6e1bcb3144bb.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b4848d96-d14c-4dbf-b1f3-04ef724d14aa.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8c98f4da-dcb3-4eaf-8fb4-d4e626b2a5bc.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/04ce2cc6-0d4a-4864-8996-abd6058c75ea.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/41319ad8-4e7c-4dcd-840c-6e1bcb3144bb.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b4848d96-d14c-4dbf-b1f3-04ef724d14aa.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8c98f4da-dcb3-4eaf-8fb4-d4e626b2a5bc.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/04ce2cc6-0d4a-4864-8996-abd6058c75ea.png"
 ],
       "positionIcon": "天平",
       "specialtyIcon": "场地",
@@ -1034,8 +1034,8 @@
           { "name": "自动集气", "desc": "技能可以自动获取氮气", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/441f700c-26b2-475e-a567-8675ae554bf3.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a541e7de-0089-4654-8893-34bded0b4a62.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/441f700c-26b2-475e-a567-8675ae554bf3.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a541e7de-0089-4654-8893-34bded0b4a62.png"
     },
     {
       "id": "lamborghini_veneno",
@@ -1043,11 +1043,11 @@
       "quality": "耀世",
       "position": "竞速",
       "specialty": "场地",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0565859e-a871-49da-bf7c-5205807ff357.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/35f9d0b8-d75b-484f-9d8e-e243b648c339.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/cd527721-429d-4133-b4e0-38c58c70a2e2.png"
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/0565859e-a871-49da-bf7c-5205807ff357.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/35f9d0b8-d75b-484f-9d8e-e243b648c339.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/cd527721-429d-4133-b4e0-38c58c70a2e2.png"
 ],
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/bf74c0ca-e3fc-46a9-8ed4-e2645cc83631.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/bf74c0ca-e3fc-46a9-8ed4-e2645cc83631.png",
       "positionIcon": "竞速",
       "specialtyIcon": "场地",
       "description": "生成空气利刃和空气屏障",
@@ -1090,8 +1090,8 @@
           { "name": "自动集气", "desc": "技能可以自动获取氮气", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/92369893-db76-466a-a76a-2edb16952830.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9f898f12-caee-4dee-85b3-1ff1b8f37de9.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/92369893-db76-466a-a76a-2edb16952830.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9f898f12-caee-4dee-85b3-1ff1b8f37de9.png"
     },
     {
       "id": "audi_rs6_avant",
@@ -1099,8 +1099,8 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/acc1eab2-ec44-4091-8111-b33f8a6bb5c6.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a84fedb1-6425-4b5c-8ba1-42913b18b9b2.png"],
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/acc1eab2-ec44-4091-8111-b33f8a6bb5c6.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a84fedb1-6425-4b5c-8ba1-42913b18b9b2.png"],
       "positionIcon": "辅助",
       "specialtyIcon": "场地",
       "description": "超远距离辅助，提供大量能量",
@@ -1110,7 +1110,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "奥迪",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "210.0 km/h",
         "power": "7.71",
@@ -1142,8 +1142,8 @@
           { "name": "友方耐久", "desc": "为友方恢复耐久值", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d73ecf3e-d774-485e-9d1d-58f50b9fc1c3.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/f276c609-5b69-4963-a527-0b2f138f0ffc.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/d73ecf3e-d774-485e-9d1d-58f50b9fc1c3.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/f276c609-5b69-4963-a527-0b2f138f0ffc.png"
     },
     {
       "id": "infiniti_prototype",
@@ -1151,7 +1151,7 @@
       "quality": "传说",
       "position": "竞速",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c67f8959-a0a7-45a2-8db8-b91d5df511f4.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c67f8959-a0a7-45a2-8db8-b91d5df511f4.png",
       "positionIcon": "竞速",
       "specialtyIcon": "城市",
       "description": "如流星般无限冲刺",
@@ -1192,8 +1192,8 @@
           { "name": "隐身", "desc": "无视车辆间的碰撞/不会被锁定类、触碰类干扰命中", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/4c2f72ab-8a54-4e81-bef0-97bd185a4495.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/0dcc38b8-0370-42e7-81eb-928eb6759153.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/4c2f72ab-8a54-4e81-bef0-97bd185a4495.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/0dcc38b8-0370-42e7-81eb-928eb6759153.png"
     },
     {
       "id": "mercedes_amg_g63",
@@ -1201,10 +1201,10 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/67f0136d-5aac-455e-a60e-6034adc82e33.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/cf4b2b06-a7c7-4355-960b-1de7a15ed053.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fae5b4d0-5dbd-47f9-9ba8-695ac1b006b3.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/659e8371-1d6c-416e-80f7-52acaeb31c15.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/67f0136d-5aac-455e-a60e-6034adc82e33.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/cf4b2b06-a7c7-4355-960b-1de7a15ed053.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/fae5b4d0-5dbd-47f9-9ba8-695ac1b006b3.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/659e8371-1d6c-416e-80f7-52acaeb31c15.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
@@ -1215,7 +1215,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "梅赛德斯",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "212.0 km/h",
         "power": "7.52",
@@ -1248,8 +1248,8 @@
           { "name": "友方隐身", "desc": "为友方提供隐身效果", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/34589ec5-bf32-4900-bbef-619391049a5a.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/7141b724-9513-4f8e-b085-c1de5c533e15.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/34589ec5-bf32-4900-bbef-619391049a5a.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/7141b724-9513-4f8e-b085-c1de5c533e15.png"
     },
     {
       "id": "ferrari_laferrari",
@@ -1257,10 +1257,10 @@
       "quality": "耀世",
       "position": "竞速",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e617f88b-2ecc-4494-a0e3-911bc2598961.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/257a37b8-afa2-40fe-91b2-dfea41bd6333.png",
-         "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9639d9a1-b823-469e-9ad2-cfae6bc569b7.png",
-         "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5083225d-c934-4a8d-a5b5-c79ae5b1c21f.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/e617f88b-2ecc-4494-a0e3-911bc2598961.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/257a37b8-afa2-40fe-91b2-dfea41bd6333.png",
+         "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9639d9a1-b823-469e-9ad2-cfae6bc569b7.png",
+         "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5083225d-c934-4a8d-a5b5-c79ae5b1c21f.png"
         ],
       "positionIcon": "竞速",
       "specialtyIcon": "城市",
@@ -1305,11 +1305,11 @@
           { "name": "自动集气", "desc": "技能可以自动获取氮气", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/7f00b50f-0dc6-4578-9c90-75c99b64c187.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/f78395f2-310b-42b7-a60e-7b8b17ee3b0b.png",
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/7f00b50f-0dc6-4578-9c90-75c99b64c187.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/f78395f2-310b-42b7-a60e-7b8b17ee3b0b.png",
       "sp": {
         "name": "火力全开",
-        "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d69b86fc-8116-408b-80f2-c260303607d9.png",
+        "icon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/d69b86fc-8116-408b-80f2-c260303607d9.png",
         "desc": "获得一个涡轮，将蓝色涡轮和氮气变为紫色涡轮和氮气",
         "cooltime": "8秒（开局冷却时间：3秒）"
       }
@@ -1320,10 +1320,10 @@
       "quality": "耀世",
       "position": "竞速",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6e4de72f-f956-491c-b6ad-50fa90ee7977.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b54cdcff-e8ff-4f7f-bc7e-a5e342c9d528.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c84c0523-27cd-4d8c-a6fa-9ca30720134a.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c0fccf9d-1fdc-45ca-9071-be4a9fd37718.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6e4de72f-f956-491c-b6ad-50fa90ee7977.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b54cdcff-e8ff-4f7f-bc7e-a5e342c9d528.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c84c0523-27cd-4d8c-a6fa-9ca30720134a.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c0fccf9d-1fdc-45ca-9071-be4a9fd37718.png"
 ],
       "positionIcon": "竞速",
       "specialtyIcon": "城市",
@@ -1369,8 +1369,8 @@
           { "name": "漂移集气效率增加", "desc": "漂移集气效率基础数值+10%", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b14c78be-e410-4984-89d1-8878416af1d3.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/976f2993-18a5-4d69-96c0-8e83c1ab882e.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b14c78be-e410-4984-89d1-8878416af1d3.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/976f2993-18a5-4d69-96c0-8e83c1ab882e.png"
     },
     {
       "id": "yaowei_mengmeng_hu",
@@ -1378,14 +1378,14 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8cb1a1b0-3541-4c80-8c85-e9199eba2772.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fd4801ea-135a-4a3c-ab42-2e5642f44386.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b93f4d05-2370-4915-a325-edce0bfe8a87.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6cbcfc1f-bffe-4068-9753-be6d78bb3d3a.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d1959cdc-4d71-4e54-ad6e-11fcb7536e78.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/73316917-b9d5-4fe7-a927-f3bf03ba1ec3.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/2f67bf06-d955-49f2-808e-169adbc94d53.png",
-          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9c26553b-6998-45cb-9017-fc7663cc590d.png"
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8cb1a1b0-3541-4c80-8c85-e9199eba2772.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/fd4801ea-135a-4a3c-ab42-2e5642f44386.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b93f4d05-2370-4915-a325-edce0bfe8a87.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6cbcfc1f-bffe-4068-9753-be6d78bb3d3a.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/d1959cdc-4d71-4e54-ad6e-11fcb7536e78.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/73316917-b9d5-4fe7-a927-f3bf03ba1ec3.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/2f67bf06-d955-49f2-808e-169adbc94d53.png",
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9c26553b-6998-45cb-9017-fc7663cc590d.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "山路",
@@ -1428,8 +1428,8 @@
           { "name": "自动集气", "desc": "技能可以自动获取氮气", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9eb7e8b4-8407-4266-9a21-0c29d8a6dc32.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/f24bb772-c142-4145-ba33-df253327ddda.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/9eb7e8b4-8407-4266-9a21-0c29d8a6dc32.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/f24bb772-c142-4145-ba33-df253327ddda.png"
     },
     {
       "id": "mini_jcw",
@@ -1437,8 +1437,8 @@
       "quality": "稀有",
       "position": "辅助",
       "specialty": "城市",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/b0e08cd2-cc0e-4dc7-a9d2-df8ac645afc3.png",
-     "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/ee50aac0-b268-423a-9a99-7bce82171167.png"], 
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b0e08cd2-cc0e-4dc7-a9d2-df8ac645afc3.png",
+     "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/ee50aac0-b268-423a-9a99-7bce82171167.png"], 
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
       "description": "缩小全队车型",
@@ -1448,7 +1448,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "MINI",
       "acquisition": "训练计划/补给箱/赛车学院",
-      "acquisitionIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8f481788-a469-4a28-8c06-a1acf72fc743.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8f481788-a469-4a28-8c06-a1acf72fc743.png",
       "stats": {
         "topSpeed": "212.8 km/h",
         "power": "7.16",
@@ -1479,8 +1479,8 @@
           { "name": "先手", "desc": "适合争夺开局", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6cc6d346-76e5-4573-88b8-7643f17a4a2b.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/71909d50-0bfe-434c-9e48-279371cc90b8.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/6cc6d346-76e5-4573-88b8-7643f17a4a2b.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/71909d50-0bfe-434c-9e48-279371cc90b8.png"
     },
     {
       "id": "taxue_baiju",
@@ -1488,7 +1488,7 @@
       "quality": "传说",
       "position": "竞速",
       "specialty": "场地",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/8b548917-f91f-4470-bc32-494e7b1ca941.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/8b548917-f91f-4470-bc32-494e7b1ca941.png",
       "positionIcon": "竞速",
       "specialtyIcon": "场地",
       "description": "提前出发，白驹过隙，踏雪无痕！",
@@ -1531,8 +1531,8 @@
           { "name": "自充能", "desc": "技能可以补充大招能量", "color": "蓝" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/3ae4f627-69cd-480c-b185-84a6fcec53f8.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/89cf5762-a50e-4aa6-8338-6239647a93fb.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/3ae4f627-69cd-480c-b185-84a6fcec53f8.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/89cf5762-a50e-4aa6-8338-6239647a93fb.png"
     },
     {
       "id": "dodge_charger_hellcat",
@@ -1540,8 +1540,8 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/58bae110-d323-4b57-880b-dc173a7022df.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/7092edeb-a564-4a00-aeb0-7103adfe27f1.png"],
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/58bae110-d323-4b57-880b-dc173a7022df.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/7092edeb-a564-4a00-aeb0-7103adfe27f1.png"],
       "positionIcon": "辅助",
       "specialtyIcon": "山路",
       "description": "自动导航并为队友解控",
@@ -1585,8 +1585,8 @@
           { "name": "自动巡航", "desc": "沿预设路线自动行驶/通过弯道时会失速/不会脱离预设路线", "color": "黄" }
         ]
       },
-      "ultIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d3a74f05-31be-4407-92f7-2868733ea042.png",
-      "passiveIcon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/315b3be9-6fc2-4379-ad4b-11068dd708f2.png"
+      "ultIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/d3a74f05-31be-4407-92f7-2868733ea042.png",
+      "passiveIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/315b3be9-6fc2-4379-ad4b-11068dd708f2.png"
     },
     {   
       "id": "catalyst",
@@ -1594,8 +1594,8 @@
       "quality": "传说",
       "position": "辅助",
       "specialty": "山路",
-      "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5f6c0a1a-8bbe-4774-8e60-be16869145f0.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/e7369c48-559b-4f07-af62-68c0a1872ec1.png",
+      "imageUrl": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5f6c0a1a-8bbe-4774-8e60-be16869145f0.png",
+      "images": ["https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/e7369c48-559b-4f07-af62-68c0a1872ec1.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/371ac8d6-4211-4bcf-94ce-64f8f5a58297.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/1e816dd3-b8aa-4ae6-9f3d-1e1dce810fa0.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/9c3a4262-c6c8-4177-8ea4-fc6f14b00807.png",
@@ -1615,7 +1615,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "223.0 km/h",
         "power": "6.95",
@@ -1722,7 +1722,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "补给箱",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "213.0 km/h",
         "power": "7.81",
@@ -1840,7 +1840,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "208.0 km/h",
         "power": "7.62",
@@ -2096,7 +2096,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "宝马",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "208.5 km/h",
         "power": "6.92",
@@ -2209,7 +2209,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "224.6 km/h",
         "power": "7.57",
@@ -2268,7 +2268,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "开拓者",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "212.2 km/h",
         "power": "7.47",
@@ -2322,7 +2322,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "五菱",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "215.0 km/h",
         "power": "7.25",
@@ -2372,7 +2372,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "极狐",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "218.0 km/h",
         "power": "7.62",
@@ -2428,7 +2428,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "214.0 km/h",
         "power": "7.16",
@@ -2484,7 +2484,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "未知空间",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.31",
@@ -2596,7 +2596,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "AITO",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "224.0 km/h",
         "power": "7.62",
@@ -2864,7 +2864,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "玛莎拉蒂",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "207.8 km/h",
         "power": "7.03",
@@ -2920,7 +2920,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "211.2 km/h",
         "power": "7.24",
@@ -2973,7 +2973,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "雪佛兰",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "219.0 km/h",
         "power": "7.62",
@@ -3027,7 +3027,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "218.0 km/h",
         "power": "7.57",
@@ -3083,7 +3083,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "221.8 km/h",
         "power": "7.35",
@@ -3137,7 +3137,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "奥迪",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "230.0 km/h",
         "power": "7.71",
@@ -3189,7 +3189,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "蔚来",
       "acquisition": "补给箱",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "224.0 km/h",
         "power": "7.65",
@@ -3307,7 +3307,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "保时捷",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "219.0 km/h",
         "power": "7.47",
@@ -3470,7 +3470,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "224.0 km/h",
         "power": "7.47",
@@ -3581,7 +3581,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "阿斯顿·马丁",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "221.7 km/h",
         "power": "7.48",
@@ -3634,7 +3634,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "元素",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "231.0 km/h",
         "power": "8.23",
@@ -3812,7 +3812,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "曙光",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "224.4 km/h",
         "power": "7.57",
@@ -3933,7 +3933,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "梅赛德斯-奔驰",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "205.0 km/h",
         "power": "7.76",
@@ -3985,7 +3985,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "仰望",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "227.0 km/h",
         "power": "8.32",
@@ -4038,7 +4038,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "讴歌",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "219.0 km/h",
         "power": "8.00",
@@ -4143,7 +4143,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "216.0 km/h",
         "power": "8.00",
@@ -4203,7 +4203,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "梅赛德斯-奔驰",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "219.0 km/h",
         "power": "7.71",
@@ -4318,7 +4318,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "保时捷",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "229.0 km/h",
         "power": "8.41",
@@ -4371,7 +4371,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "曙光",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "232.0 km/h",
         "power": "8.05",
@@ -4426,7 +4426,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "宾利",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "229.0 km/h",
         "power": "8.54",
@@ -4535,7 +4535,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "兰博基尼",
       "acquisition": "补给箱",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "224.0 km/h",
         "power": "7.66",
@@ -4759,7 +4759,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.66",
@@ -4819,7 +4819,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "保时捷",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "219.0 km/h",
         "power": "7.91",
@@ -4869,7 +4869,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "深渊",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.57",
@@ -5083,7 +5083,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "平行世界",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.81",
@@ -5134,7 +5134,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "平行世界",
       "acquisition": "补给箱 / 乐园商店",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "232.0 km/h",
         "power": "8.37",
@@ -5238,7 +5238,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "创世纪",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.76",
@@ -5350,7 +5350,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "222.0 km/h",
         "power": "7.66",
@@ -5466,7 +5466,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "227.0 km/h",
         "power": "7.71",
@@ -5634,7 +5634,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "极狐",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "230.0 km/h",
         "power": "7.62",
@@ -5736,7 +5736,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "开拓者",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "222.0 km/h",
         "power": "7.42",
@@ -5792,7 +5792,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "深渊",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "227.0 km/h",
         "power": "7.81",
@@ -5849,7 +5849,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "225.0 km/h",
         "power": "7.45",
@@ -5905,7 +5905,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "宝马",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "215.5 km/h",
         "power": "7.19",
@@ -6018,7 +6018,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "216.8 km/h",
         "power": "7.43",
@@ -6072,7 +6072,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "领克",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "209.2 km/h",
         "power": "7.19",
@@ -6128,7 +6128,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "221.0 km/h",
         "power": "8.09",
@@ -6188,7 +6188,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "补给箱 / 王牌闯关 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "216.3 km/h",
         "power": "7.47",
@@ -6296,7 +6296,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "兰博基尼",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "212.0 km/h",
         "power": "7.91",
@@ -6465,7 +6465,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "深渊",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "225.0 km/h",
         "power": "7.86",
@@ -6579,7 +6579,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "未知空间",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "219.0 km/h",
         "power": "7.62",
@@ -6633,7 +6633,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "捷豹",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "223.0 km/h",
         "power": "7.91",
@@ -6689,7 +6689,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "丰田",
       "acquisition": "补给箱",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "239.0 km/h",
         "power": "7.52",
@@ -6742,7 +6742,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "222.0 km/h",
         "power": "7.86",
@@ -6902,7 +6902,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "大众",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "219.0 km/h",
         "power": "7.71",
@@ -6961,7 +6961,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "元素",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "227.0 km/h",
         "power": "7.66",
@@ -7188,7 +7188,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "进化",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "232.0 km/h",
         "power": "7.37",
@@ -7242,7 +7242,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "小鹏",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "209.2 km/h",
         "power": "7.47",
@@ -7420,7 +7420,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "217.0 km/h",
         "power": "7.61",
@@ -7529,7 +7529,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "229.0 km/h",
         "power": "7.52",
@@ -7584,7 +7584,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "元素",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "216.0 km/h",
         "power": "7.52",
@@ -7695,7 +7695,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "228.3 km/h",
         "power": "7.62",
@@ -7754,7 +7754,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "未知空间",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.00",
@@ -7864,7 +7864,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "229.0 km/h",
         "power": "7.54",
@@ -7922,7 +7922,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "深渊",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "229.0 km/h",
         "power": "8.00",
@@ -8035,7 +8035,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "路虎",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "216.2 km/h",
         "power": "7.59",
@@ -8089,7 +8089,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "MINI",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "210.3 km/h",
         "power": "6.98",
@@ -8154,7 +8154,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "深渊",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.66",
@@ -8271,7 +8271,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "221.0 km/h",
         "power": "7.32",
@@ -8390,7 +8390,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "MG",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "215.8 km/h",
         "power": "7.21",
@@ -8503,7 +8503,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "宝马",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "211.5 km/h",
         "power": "7.52",
@@ -8616,7 +8616,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "225.0 km/h",
         "power": "7.66",
@@ -8734,7 +8734,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "平行世界",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "230.0 km/h",
         "power": "8.05",
@@ -8786,7 +8786,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.86",
@@ -8841,7 +8841,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "兰博基尼",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "8.41",
@@ -8894,7 +8894,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "212.0 km/h",
         "power": "7.42",
@@ -9001,7 +9001,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "深渊",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "231.0 km/h",
         "power": "7.81",
@@ -9112,7 +9112,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "比亚迪",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
       "stats": {
         "topSpeed": "226.0 km/h",
         "power": "8.14",
@@ -9327,7 +9327,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "黑金会员",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e24385.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e24385.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.81",
@@ -9504,7 +9504,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "平行世界",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "225.0 km/h",
         "power": "7.81",
@@ -9618,7 +9618,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "创世纪",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "220.0 km/h",
         "power": "7.42",
@@ -9965,7 +9965,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "元素",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "236.0 km/h",
         "power": "7.81",
@@ -10018,7 +10018,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "开拓者",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "224.0 km/h",
         "power": "7.42",
@@ -10081,7 +10081,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "深渊",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "232.0 km/h",
         "power": "7.71",
@@ -10209,7 +10209,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "王牌补给",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be280327ac.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be280327ac.png/webp",
       "stats": {
         "topSpeed": "226.0 km/h",
         "power": "7.52",
@@ -10262,7 +10262,7 @@
       "vehicleType": "真实阵营",
       "manufacturer": "保时捷",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "215.0 km/h",
         "power": "7.21",
@@ -10541,7 +10541,7 @@
       "vehicleType": "幻想阵营",
       "manufacturer": "混沌",
       "acquisition": "补给箱 / 赛车学院",
-      "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be27e1d2a9.png",
+      "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be27e1d2a9.png/webp",
       "stats": {
         "topSpeed": "209.8 km/h",
         "power": "7.22",
@@ -10594,7 +10594,7 @@
   "vehicleType": "幻想阵营",
   "manufacturer": "平行世界",
   "acquisition": "王牌补给",
-  "acquisitionIcon": "https://a1.boltp.com/2026/06/24/6a3be28128ec0.png",
+  "acquisitionIcon": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/2026/06/24/6a3be28128ec0.png/webp",
   "stats": {
     "topSpeed": "217.0 km/h",
     "power": "8.54",
