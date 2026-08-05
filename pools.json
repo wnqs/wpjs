@@ -1,14 +1,14 @@
 {
   "pools": [
     {
-      "name": "时尚节",
-      "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5375dc6b-a2c3-4244-97ad-40ccd390710e.jpg",
-      "content": "保底240抽/9600纪念币"
-    },
-    {
       "name": "双变镜阁-禁疗密契（继承兑换道具）",
       "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c0605963-7255-445a-a4d6-d38c315a8cec.jpg",
       "content": "保底200抽/16000纪念币左右"
+    },
+    {
+      "name": "时尚节",
+      "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5375dc6b-a2c3-4244-97ad-40ccd390710e.jpg",
+      "content": "保底240抽/9600纪念币"
     },
     {
       "name": "自选up",
