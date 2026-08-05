@@ -712,7 +712,8 @@
           "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/f0179a43-cb93-4e61-bed0-8f9de2abcb27.png",
           "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/67d7e6f3-a34b-45ba-9ad0-efab8a9f0f4f.png",
           "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/69c1270d-74cf-4443-95c3-12cfc9ab4dd0.png",
-          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/4fc642be-5bbd-448c-a817-6c6bab588dca.png"
+          "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/4fc642be-5bbd-448c-a817-6c6bab588dca.png",
+          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/08f58e6b-4090-47dc-838e-20ee6022172b.png"
 ],
       "positionIcon": "辅助",
       "specialtyIcon": "城市",
@@ -3795,7 +3796,8 @@
       "position": "竞速",
       "specialty": "山路",
       "imageUrl": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/c9ea6cb9-dd3a-4d6f-9a6c-a87fe6f1787d.png",
-      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fdf0e6b7-218d-43ee-9b12-1f95cc3ec135.png",
+      "images": ["https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/21599d79-20ef-46c4-839b-dfcae03fcba0.png",
+          "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/fdf0e6b7-218d-43ee-9b12-1f95cc3ec135.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/a45cee4c-cb5f-4e2f-a892-51f8956d56c0.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/622bd18c-b828-48b6-a385-13598f9ff58f.png",
           "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/cfb9809e-338b-4894-9907-6c32186cccca.png",
@@ -10501,7 +10503,7 @@
     "skills": {
       "ult": {
         "name": "音速传说",
-        "desc": "加速推进，8秒内极速+110km/h。加速期间：<br>·敌方车辆每次使用大招时为自身提供5%大招能量<br>·敌方车辆每5次使用氮气时为自身提供5000集气量<br>·敌方车辆每10次使用涡轮时将自身氮气和涡轮染色5秒<br>被动：开局时激活脉冲5秒，激活期间每次使用大招本局内极速+7km/h（上限叠加至35km/h）",
+        "desc": "加速推进，8秒内极速+90km/h。加速期间：<br>·敌方车辆每次使用大招时为自身提供5%大招能量<br>·敌方车辆每5次使用氮气时为自身提供3500集气量<br>·敌方车辆每10次使用涡轮时将自身氮气和涡轮染色5秒<br>被动：开局5秒时获得13%大招能量，激活期间每次使用大招本局内极速+15km/h（上限叠加至60km/h）",
         "recu": "音速传说可以充能两次",
         "ultPassive": ""
       },
