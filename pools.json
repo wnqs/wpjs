@@ -6,9 +6,14 @@
       "content": "保底200抽/16000纪念币左右"
     },
     {
-      "name": "时尚节",
+      "name": "耀世臻藏抽奖",
+      "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5f249593-c4f4-4bd8-b476-a4a64693d5c2.jpg",
+      "content": "保底1500-1800RMB不等"
+    },
+    {
+      "name": "帝皇降临",
       "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5375dc6b-a2c3-4244-97ad-40ccd390710e.jpg",
-      "content": "保底240抽/9600纪念币"
+      "content": "保底200抽/8000纪念币"
     },
     {
       "name": "自选up",
@@ -19,11 +24,6 @@
       "name": "焕颜珍宝（继承抽奖次数）",
       "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/612502d7-ab8d-4a59-82f3-0b16c6cdbfa6.png",
       "content": "累计350次抽取<br>保底价格：1400外观币/14000纪念币<br>阶段次数：<br>20→20→30→30→30→40→40→70→70<br>解锁词条保底炼化次数：<br>100→200→400次<br>解锁四词条价格：21000纪念币<br>四金炼化：21000币+词条1-3保底1600抽≈64000币"
-    },
-    {
-      "name": "耀世臻藏抽奖",
-      "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/5f249593-c4f4-4bd8-b476-a4a64693d5c2.jpg",
-      "content": "保底1500-1800RMB不等"
     },
     {
       "name": "幻器卡牌/R 计划",
@@ -54,6 +54,11 @@
       "name": "唤灵之境（不继承）",
       "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/faa4237d-8063-4d5a-a09c-fb8b9479d382.png",
       "content": "保底14000纪念币"
+    },
+    {
+      "name": "时尚节",
+      "image": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/6f891fe7-d765-47b9-abac-bdfb3f231d7e.jpg",
+      "content": "保底240抽/9600纪念币"
     },
     {
       "name": "星光大赏（不继承）",
