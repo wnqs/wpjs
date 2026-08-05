@@ -3707,13 +3707,13 @@ function _calc_togSub(skipUlt) {
             var html='';
             results.forEach(function(r){
                 var label=r.label,surplus=r.total>100?r.total-100:0;
-                var lines=[label+'最终计算能量：'+r.total.toFixed(3)+'%',label+'多出能量：'+surplus.toFixed(3)+'%','充能效率%：'+r.eff+'%','氮气数量：'+r.nitroCount,'车辆固定充能%：'+r.fixedCharge+'%','车辆浮动充能%：'+r.floatCharge+'%'];
+                var lines=[label+'开启前最终计算能量：'+r.total.toFixed(3)+'%',label+'多出能量：'+surplus.toFixed(3)+'%','充能效率%：'+r.eff+'%','氮气数量：'+r.nitroCount,'车辆固定充能%：'+r.fixedCharge+'%','车辆浮动充能%：'+r.floatCharge+'%'];
                 if(!r.isFirst)lines.push('猎芯（奇数次）：'+(r.isOdd?'是':'否'));
                 var subE=document.getElementById('_calc_subEnerg').value;
                 if(subE==='queYi'){lines.push('缺一档位：'+document.getElementById('_calc_queYiGear').value+'%');lines.push('缺一秒数：'+r.queYiSec);}
                 if(subE==='rhythm')lines.push('节奏次数：'+r.rhythmCount);
                 lines.push('辅助充能%：'+r.assistCharge+'%');lines.push('赋能充能%：'+r.floatEnerg+'%');
-                html+='<div class="output-block"><div class="flex-wrap"><strong>'+label+'最终计算能量：</strong>'+r.total.toFixed(3)+'%<span class="text-gold">(超出'+surplus.toFixed(3)+'%)</span><span class="detail-toggle" onclick="_calc_toggleDetail(this)"><i class="dt-chev"></i><span class="dt-txt">查看详情</span></span></div><div class="detail-content">'+lines.join('\n')+'</div></div>';
+                html+='<div class="output-block"><div class="flex-wrap"><strong>'+label+'开启前最终计算能量：</strong>'+r.total.toFixed(3)+'%<span class="text-gold">(超出'+surplus.toFixed(3)+'%)</span><span class="detail-toggle" onclick="_calc_toggleDetail(this)"><i class="dt-chev"></i><span class="dt-txt">查看详情</span></span></div><div class="detail-content">'+lines.join('\n')+'</div></div>';
             });
             return html;
         }
