@@ -3696,8 +3696,8 @@ function _calc_togSub(skipUlt) {
             p.ults.forEach(function(ult){
                 var r=_calc_calcUlt(prev,{start:p.start,nitro:p.nitro,hui:hui,xianJi:xian,zhuan:p.zhuanjing,eff:ult.eff,antiVal:p.antiVal,nCount:ult.nCount,nRatio:p.nitroRatio,startExtra:p.startExtra,floatC:ult.floatC,fixedC:ult.fixedC,floatE:ult.floatE,tuanHun:tuan,assist:ult.assist,assistCore:p.assistCoreOn,liexin:p.liexinVal,isOdd:ult.isOdd,ultEnergy:p.ultEnergy,isFirst:ult.isFirst});
                 var passed=r.total>=p.ultEnergy;
-                results.push({label:ult.label,total:r.total,surplus:passed?r.total-100:0,passed:passed,eff:ult.eff,nitroCount:ult.nCount,floatCharge:ult.floatC,fixedCharge:ult.fixedC,floatEnerg:ult.floatE,queYiSec:ult.queYiSec||0,rhythmCount:ult.rhythmCount||0,assistCharge:ult.assist,isOdd:ult.isOdd,isFirst:ult.isFirst,ultEnergy:p.ultEnergy});
-                prev=passed?r.total-100:0;
+                results.push({label:ult.label,total:r.total,surplus:passed?Math.max(0,r.total-100):0,passed:passed,eff:ult.eff,nitroCount:ult.nCount,floatCharge:ult.floatC,fixedCharge:ult.fixedC,floatEnerg:ult.floatE,queYiSec:ult.queYiSec||0,rhythmCount:ult.rhythmCount||0,assistCharge:ult.assist,isOdd:ult.isOdd,isFirst:ult.isFirst,ultEnergy:p.ultEnergy});
+                prev=passed?Math.max(0,r.total-100):0;
             });
             return results;
         }
