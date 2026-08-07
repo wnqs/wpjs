@@ -1,6 +1,16 @@
 {
   "pools": [
     {
+      "name": "帝皇再临",
+      "image": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5375dc6b-a2c3-4244-97ad-40ccd390710e.jpg",
+      "content": "保底200抽/8000纪念币"
+    },
+    {
+      "name": "帝皇降临",
+      "image": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a5015e6f-9915-494c-8063-65f474a66abf.jpg",
+      "content": "保底4090纪念币"
+    },
+    {
       "name": "双变镜阁-禁疗密契（继承兑换道具）",
       "image": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c0605963-7255-445a-a4d6-d38c315a8cec.jpg",
       "content": "保底200抽/16000纪念币左右"
@@ -9,11 +19,6 @@
       "name": "耀世臻藏抽奖",
       "image": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5f249593-c4f4-4bd8-b476-a4a64693d5c2.jpg",
       "content": "保底1500-1800RMB不等"
-    },
-    {
-      "name": "帝皇降临",
-      "image": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/5375dc6b-a2c3-4244-97ad-40ccd390710e.jpg",
-      "content": "保底200抽/8000纪念币"
     },
     {
       "name": "自选up",
@@ -64,11 +69,6 @@
       "name": "星光大赏（不继承）",
       "image": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b84f3d27-5fbe-44d9-b727-f3fe381a6273.png",
       "content": "保底3440纪念币"
-    },
-    {
-      "name": "帝皇降临",
-      "image": "https://aly2.tuchuangyun.top/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/a5015e6f-9915-494c-8063-65f474a66abf.jpg",
-      "content": "保底4090纪念币"
     },
     {
       "name": "赤曜超星",
