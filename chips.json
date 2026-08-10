@@ -52,7 +52,7 @@
       "quality": "传说",
       "shape": "V型芯片",
       "type": "扩展",
-      "effectDescription": "极速+8km/h，耐久损失降低12%，能量损失和消耗降低40%",
+      "effectDescription": "极速+13km/h，耐久损失降低12%，能量损失和消耗降低40%。自动集气效果翻倍",
       "effectNote": "神剑号专属"
     },
     {
@@ -217,7 +217,7 @@
       "quality": "传说",
       "shape": "V型芯片",
       "type": "扩展",
-      "effectDescription": "开局时获得7%大招能量，每15秒使本局比赛完成时间-0.3秒，比赛结束倒计时变为13秒",
+      "effectDescription": "开局时获得13%大招能量，每15秒使本局比赛完成时间-0.3秒，比赛结束倒计时变为13秒。免疫增加完成时间效果",
       "effectNote": "烛龙专属"
     },
     {
