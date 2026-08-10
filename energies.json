@@ -22,7 +22,7 @@
       "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/d4e0dd2f-aed8-4535-a969-8df0568533f4.png",
       "type": "主要",
       "func": "创造",
-      "effectDescription": "开局前5秒内每秒自动获得2000集气量但漂移无法获得集气量"
+      "effectDescription": "开局前5秒内每秒自动获得2000集气量但漂移无法获得集气量。开局5秒时将涡轮和氮气染色5秒"
     },
     {
       "id": "energy_chuangzao_04",
@@ -78,7 +78,7 @@
       "icon": "https://backend.appmiaoda.com/projects/supabase316894448002838528/storage/v1/object/public/images/57b3ea31-320b-4da9-991f-3a656292c48d.png",
       "type": "主要",
       "func": "防御",
-      "effectDescription": "当你的车辆耐久值降至0时，不会立即进入修复状态。4秒内若使用大招，则恢复35点耐久值并在3秒内获得一个防护罩，防护罩可以反弹锁定类干扰效果给一个随机敌方目标"
+      "effectDescription": "当你的车辆耐久值降至0时,不会立即进入修复状态。3秒内若使用大招,则恢复30点耐久值。"
     },
     {
       "id": "energy_fangyu_05",
