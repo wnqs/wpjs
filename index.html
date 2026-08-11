@@ -4113,7 +4113,7 @@ function _calc_togSub(skipUlt) {
             var isBC=(vn==='布加迪 Chiron'), nrMul=isBC?1.5:1;
             var prev=0,results=[];
             p.ults.forEach(function(ult){
-                var r=_calc_calcUlt(prev,{start:p.start,nitro:p.nitro,hui:hui,xianJi:xian,zhuan:p.zhuanjing,eff:ult.eff,antiVal:p.antiVal,nCount:ult.nCount,nRatio:p.nitroRatio,startExtra:p.startExtra,floatC:ult.floatC,fixedC:ult.fixedC,floatE:ult.floatE,tuanHun:tuan,assist:ult.assist,assistCore:p.assistCoreOn,liexin:p.liexinVal,isOdd:ult.isOdd,ultEnergy:p.ultEnergy,isFirst:ult.isFirst});
+                var r=_calc_calcUlt(prev,{start:p.start,nitro:p.nitro,hui:hui,xianJi:xian,zhuan:p.zhuanjing,eff:ult.eff,antiVal:p.antiVal,nCount:ult.nCount,nRatio:p.nitroRatio*nrMul,startExtra:p.startExtra,floatC:ult.floatC,fixedC:ult.fixedC,floatE:ult.floatE,tuanHun:tuan,assist:ult.assist,assistCore:p.assistCoreOn,liexin:p.liexinVal,isOdd:ult.isOdd,ultEnergy:p.ultEnergy,isFirst:ult.isFirst});
                 if (isBC && !ult.isFirst && ult.nCount>=1) {
                 var extra = p.nitroRatio*nrMul*(p.nitro*(1+hui/100)+p.zhuanjing)*0.2*(1-p.antiVal/100)*(1+ult.eff/100);
                 r.total += extra;
