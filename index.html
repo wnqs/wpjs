@@ -3087,6 +3087,11 @@ window.renderCalculator = function () {
           "https://img.pagehost.cn/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/e164550e-6804-4f45-9a20-101fc63549f9.png/webp",
           "https://img.pagehost.cn/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/b1ecbd4d-5859-4c5d-871f-78184089ac10.png/webp"
 ]},
+            {name:"布加迪 Chiron", chips:"346", start:58, nitro:38, type:"竞速",
+  img: "https://a1.boltp.com/2026/06/13/6a2ce23980a35.png",
+  skins: ["https://tc-new.z.wiki/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/7f91b956-92cb-4354-87ae-164bf4b2521a.png",
+          "https://tc-new.z.wiki/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/547d806b-ff56-4d76-ab89-00a4be85e5be.png"
+]},
     {name:"英菲尼迪 Prototype", chips:"346", start:25, nitro:25, type:"竞速",
   img: "https://img.pagehost.cn/autoupload/q2nr6/default/projects/supabase316894448002838528/storage/v1/object/public/images/c67f8959-a0a7-45a2-8db8-b91d5df511f4.png/webp"},
     {name:"玛莎拉蒂 Alfieri", chips:"334", start:30, nitro:30, type:"竞速",
@@ -4104,9 +4109,16 @@ function _calc_togSub(skipUlt) {
         }
         function _calc_calcAll(vn,hui,xian,tuan) {
             var p=_calc_getParams(vn,hui,xian,tuan); if(!p)return null;
+            var isBC=(vn==='布加迪 Chiron'), nrMul=isBC?1.5:1;
             var prev=0,results=[];
             p.ults.forEach(function(ult){
                 var r=_calc_calcUlt(prev,{start:p.start,nitro:p.nitro,hui:hui,xianJi:xian,zhuan:p.zhuanjing,eff:ult.eff,antiVal:p.antiVal,nCount:ult.nCount,nRatio:p.nitroRatio,startExtra:p.startExtra,floatC:ult.floatC,fixedC:ult.fixedC,floatE:ult.floatE,tuanHun:tuan,assist:ult.assist,assistCore:p.assistCoreOn,liexin:p.liexinVal,isOdd:ult.isOdd,ultEnergy:p.ultEnergy,isFirst:ult.isFirst});
+                if (isBC && !ult.isFirst && ult.nCount>=1) {
+                var extra = p.nitroRatio*nrMul*(p.nitro*(1+hui/100)+p.zhuanjing)*0.2*(1-p.antiVal/100)*(1+ult.eff/100);
+                r.total += extra;
+                var maxE=document.getElementById('_calc_mainEnerg').value==='refuse'?300:200;
+               if(r.total>maxE)r.total=maxE;
+             }
                 var passed=r.total>=p.ultEnergy;
                 results.push({label:ult.label,total:r.total,surplus:passed?Math.max(0,r.total-100):0,passed:passed,eff:ult.eff,nitroCount:ult.nCount,floatCharge:ult.floatC,fixedCharge:ult.fixedC,floatEnerg:ult.floatE,queYiSec:ult.queYiSec||0,rhythmCount:ult.rhythmCount||0,assistCharge:ult.assist,isOdd:ult.isOdd,isFirst:ult.isFirst,ultEnergy:p.ultEnergy});
                 prev=passed?Math.max(0,r.total-100):0;
