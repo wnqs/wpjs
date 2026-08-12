@@ -2914,6 +2914,7 @@ window.renderCalculator = function () {
     h += '</div></div>';
     // 首大（折叠，只保留首大特有字段）
     h += '<div class="uR"><div class="uHR" onclick="_calc_toggleCollapsible(this)"><span class="section-title" style="margin-bottom:0;border-bottom:none;">首大开启前最终计算能量 <span class="badge">大招1</span></span><span class="collapse-arrow"></span></div><div class="collapsible-body"><div class="calc-area" style="margin-top:8px;"><div class="grid-2col">';
+    h += _cf('首大大招能量 <span class="hN">(仅竞速位显示)</span>','<input type="number" id="_calc_ultEnergyFirst" step="1" value="100">');
     h += _cf('充能效率%（首大）','<input type="number" id="_calc_effFirst" step="1" value="0">');
     h += _cf('氮气数量（首大）','<div class="rI"><input type="range" id="_calc_nitroCountFirst" min="0" max="6" value="0" step="1" oninput="this.nextElementSibling.textContent=this.value"><span class="cV">0</span></div>');
     h += _cf('车辆起步额外充能%','<input type="text" id="_calc_startExtra" readonly>');
@@ -4063,6 +4064,13 @@ window.renderCalculator = function () {
             document.getElementById('_calc_startCharge').value=v.start;
             document.getElementById('_calc_nitroCharge').value=v.nitro;
             document.getElementById('_calc_ultEnergy').value=(function(){var sp=_calc_specialFirstEnergy[n]||100;return document.getElementById('_calc_subEnerg').value==='future'&&sp>90?90:sp;})();
+            // 首大大招能量：默认按基础数值里的大招能量；仅竞速位显示
+            var ufEl=document.getElementById('_calc_ultEnergyFirst');
+            if(ufEl){
+                ufEl.value=document.getElementById('_calc_ultEnergy').value;
+                var ufFd=ufEl.closest('.fDR');
+                if(ufFd)ufFd.style.display=v.type==='竞速'?'':'none';
+            }
             document.getElementById('_calc_startExtra').value=_calc_startExtraMap[n]||0;
             // 隐藏无起步额外充能的车辆该字段
             var hasSE=_calc_startExtraMap.hasOwnProperty(n);
@@ -4188,16 +4196,18 @@ function _calc_togSub(skipUlt) {
     document.querySelectorAll('.dyn-rhythmCount').forEach(function(el){var fd=el.closest('.fDR');if(fd)fd.style.display=sv==='rhythm'?'':'none';});
     // 添加区域等场景（skipUlt=true）：只更新显隐，不碰大招能量、不更新上次赋能记录
     if(skipUlt===true)return;
-    if(_calc_prevSubEnerg==='future' && sv!=='future'){
+        if(_calc_prevSubEnerg==='future' && sv!=='future'){
         // 从"未来"切走：大招能量恢复为车辆本身默认值
         var v=document.getElementById('_calc_vehicleSelect').value;
         var sp=_calc_specialFirstEnergy[v]||100;
         document.getElementById('_calc_ultEnergy').value=sp;
+        var uf1=document.getElementById('_calc_ultEnergyFirst');if(uf1)uf1.value=sp;
     } else if(sv==='future'){
         // 切到"未来"：按规则设置（车辆本身大招能量>90 时封顶 90）
         var v=document.getElementById('_calc_vehicleSelect').value;
         var sp=_calc_specialFirstEnergy[v]||100;
         document.getElementById('_calc_ultEnergy').value=(sp>90)?90:sp;
+        var uf2=document.getElementById('_calc_ultEnergyFirst');if(uf2)uf2.value=(sp>90)?90:sp;
     }
     // 其它情况：保持用户手动输入的大招能量
     _calc_prevSubEnerg=sv;
@@ -4231,6 +4241,7 @@ function _calc_togSub(skipUlt) {
         function _calc_getParams(vn,hui,xian,tuan) {
             var v=_calc_vehicleList.find(function(x){return x.name===vn});if(!v)return null;
             var ultE=parseFloat(document.getElementById('_calc_ultEnergy').value)||100;
+            var ultEFirst=parseFloat(document.getElementById('_calc_ultEnergyFirst').value)||100;
             var zhuan=document.getElementById('_calc_zhuanjing').value==='yes'?10:0;
             var anti=parseFloat(document.getElementById('_calc_anti').value)||0;
             var liexin=document.getElementById('_calc_liexin').value;
@@ -4250,7 +4261,7 @@ function _calc_togSub(skipUlt) {
             var fl1=parseFloat(document.getElementById('_calc_floatFirst').value)||0,qs1=parseFloat(document.getElementById('_calc_queYiSecFirst').value)||0;
             var rc1=parseFloat(document.getElementById('_calc_rhythmCountFirst').value)||0,as1=parseFloat(document.getElementById('_calc_assistFirst').value)||0;
             var fe1=getFloatE(qs1,rc1,true);
-            var ults=[{label:'首大',eff:ef1,nCount:n1,floatC:fl1,fixedC:0,floatE:fe1,queYiSec:qs1,rhythmCount:rc1,assist:as1,isOdd:false,isFirst:true}];
+                        var ults=[{label:'首大',eff:ef1,nCount:n1,floatC:fl1,fixedC:0,floatE:fe1,queYiSec:qs1,rhythmCount:rc1,assist:as1,isOdd:false,isFirst:true,ultEnergy:ultEFirst}];
             // 动态区域
             document.querySelectorAll('[id^="_calc_areaDynamic_"]').forEach(function(el){
                 var n=parseInt(el.dataset.area);
@@ -4262,7 +4273,7 @@ function _calc_togSub(skipUlt) {
                 var rc=parseFloat(el.querySelector('.dyn-rhythmCount')?.value)||0;
                 var as=parseFloat(el.querySelector('.dyn-assist')?.value)||0;
                 var fe=getFloatE(qs,rc); if(mainE==='resurge')fe+=12.5;
-                ults.push({label:n+'大',eff:ef,nCount:nc,floatC:fl,fixedC:fx,floatE:fe,queYiSec:qs,rhythmCount:rc,assist:as,isOdd:n%2===1,isFirst:false});
+                ults.push({label:n+'大',eff:ef,nCount:nc,floatC:fl,fixedC:fx,floatE:fe,queYiSec:qs,rhythmCount:rc,assist:as,isOdd:n%2===1,isFirst:false,ultEnergy:ultE});
             });
             return {start:v.start,nitro:v.nitro,ultEnergy:ultE,zhuanjing:zhuan,antiVal:anti,liexinVal:liexin,nitroRatio:nRatio,assistCoreOn:asCore,startExtra:sExtra,ults:ults};
         }
@@ -4271,15 +4282,15 @@ function _calc_togSub(skipUlt) {
             var isBC=(vn==='布加迪 Chiron'), nrMul=isBC?1.5:1;
             var prev=0,results=[];
             p.ults.forEach(function(ult){
-                var r=_calc_calcUlt(prev,{start:p.start,nitro:p.nitro,hui:hui,xianJi:xian,zhuan:p.zhuanjing,eff:ult.eff,antiVal:p.antiVal,nCount:ult.nCount,nRatio:p.nitroRatio*nrMul,startExtra:p.startExtra,floatC:ult.floatC,fixedC:ult.fixedC,floatE:ult.floatE,tuanHun:tuan,assist:ult.assist,assistCore:p.assistCoreOn,liexin:p.liexinVal,isOdd:ult.isOdd,ultEnergy:p.ultEnergy,isFirst:ult.isFirst});
+                var r=_calc_calcUlt(prev,{start:p.start,nitro:p.nitro,hui:hui,xianJi:xian,zhuan:p.zhuanjing,eff:ult.eff,antiVal:p.antiVal,nCount:ult.nCount,nRatio:p.nitroRatio*nrMul,startExtra:p.startExtra,floatC:ult.floatC,fixedC:ult.fixedC,floatE:ult.floatE,tuanHun:tuan,assist:ult.assist,assistCore:p.assistCoreOn,liexin:p.liexinVal,isOdd:ult.isOdd,ultEnergy:ult.ultEnergy,isFirst:ult.isFirst});
                 if (isBC && !ult.isFirst && ult.nCount>=1) {
                 var extra = p.nitroRatio*nrMul*(p.nitro*(1+hui/100)+p.zhuanjing)*0.2*(1-p.antiVal/100)*(1+ult.eff/100);
                 r.total += extra;
                 var maxE=document.getElementById('_calc_mainEnerg').value==='refuse'?300:200;
                if(r.total>maxE)r.total=maxE;
              }
-                var passed=r.total>=p.ultEnergy;
-                results.push({label:ult.label,total:r.total,surplus:passed?Math.max(0,r.total-100):0,passed:passed,eff:ult.eff,nitroCount:ult.nCount,floatCharge:ult.floatC,fixedCharge:ult.fixedC,floatEnerg:ult.floatE,queYiSec:ult.queYiSec||0,rhythmCount:ult.rhythmCount||0,assistCharge:ult.assist,isOdd:ult.isOdd,isFirst:ult.isFirst,ultEnergy:p.ultEnergy});
+                var passed=r.total>=ult.ultEnergy;
+                results.push({label:ult.label,total:r.total,surplus:passed?Math.max(0,r.total-100):0,passed:passed,eff:ult.eff,nitroCount:ult.nCount,floatCharge:ult.floatC,fixedCharge:ult.fixedC,floatEnerg:ult.floatE,queYiSec:ult.queYiSec||0,rhythmCount:ult.rhythmCount||0,assistCharge:ult.assist,isOdd:ult.isOdd,isFirst:ult.isFirst,ultEnergy:ult.ultEnergy});
                 prev=passed?Math.max(0,r.total-100):0;
             });
             return results;
