@@ -1,5 +1,21 @@
 {
   "activities": [
+   {
+  "name": "5V5排位赛",
+  "image": "https://tc-new.z.wiki/autoupload/q2nr6/20260812/isG5/1280X720/c7b5e9c259ac933896b38605f50847f6.jpg/webp",
+  "start": "2026.08.14",
+  "end": "2026.09.17",
+  "intro": "<div style='text-align:center;width:100%;color:#ff4757;font-weight:800;font-size:1.2rem;margin:6px 0'>5V5排位赛，竞速不孤单</div><br><span class=\"act-red\">全新5V5排位赛</span>将于<span class=\"act-red\">8月14日</span>正式上线，让你这个夏天不孤单！至于练着练着变成了恋……那就是速度节的魔力了~<br>5V5排位赛，与以往传统的3v3对决模式相比，参与人数限制的打破代表着将会出现<span class=\"act-red\">更多的阵容搭配选择</span>，趣味性和策略性得到全面提升。<br>对抗程度更为激烈，竞技策略更为多变，车手们准备好迎接全新的赛场挑战了吗！<br><img src='https://tc-new.z.wiki/autoupload/q2nr6/20260812/jjMZ/1280X720/80cafe5df71f150708581e88e04f0bfa.jpg/webp' style='max-width:100%;border-radius:6px'><br>在5V5排位赛中，车手们可以<span class=\"act-red\">单人</span>或<span class=\"act-red\">组建小队</span>的形式参与匹配，比赛结束后，仍然以<span class=\"act-red\">对位胜负制</span>来决定队伍胜利的归属，分别将两队的对应的五个名次进行比较，<span class=\"act-red\">每个名次的优胜者</span>将为团队赢得<span class=\"act-red\">一面锦旗</span>，获得<span class=\"act-red\">3面或以上锦旗</span>的队伍即为<span class=\"act-red\">胜利</span>！<br><br>5V5排位赛开放<span class=\"act-red\">多条经典赛道</span>！曾经熟悉的赛道在新玩法的加持下定会碰撞出与以往不同的惊喜，针对不同赛道也可以产生出<span class=\"act-red\">更多奇妙的阵容</span>搭配——<br><img src='https://tc-new.z.wiki/autoupload/q2nr6/20260812/WuVW/304X209/5a5f8ceb506cefedc610670b24b1e653.jpg/webp' style='max-width:100%;border-radius:6px'><br>5V5排位赛设有<span class=\"act-red\">独立段位系统</span>与<span class=\"act-red\">专属段位奖励</span>，与3V3段位互不影响！全新的攀登之路已经铺开，属于5V5赛场的传奇篇章，由你来书写！与3V3模式相同，在5V5比赛结束后，将会展示<span class=\"act-red\">当局MVP选手个人荣耀时刻</span>，尽情享受胜利喜悦，一步登顶人生赢家，在TA面前一展你的飙车神技吧！",
+  "tips": "敬请期待，等待阵容开发"
+},
+    {
+  "name": "5V5领传说（仅需赢5场）",
+  "image": "https://tc-new.z.wiki/autoupload/q2nr6/20260812/vZ5P/1280X805/73d56440432372d8f58abd9c13acc2b9.jpg/webp",
+  "start": "2026.08.14",
+  "end": "2026.08.27",
+  "intro": "同步上线<span class=\"act-red\">五周年5V5领传说涂装</span>活动，参与5V5排位赛<span class=\"act-red\">累计获胜五局</span>，即可领取<span class=\"act-red\">传说涂装随机包</span>，打开随机获得一个<span class=\"act-red\">未拥有的传说涂装</span>，若已经拥有包内全部涂装，则获得<span class=\"act-red\">精粹500</span>。",
+  "tips": "好活动，皮肤质量都很高"
+},
     {
       "name": "君临天下（联动涂装免费得）",
       "image": "https://tc-new.z.wiki/autoupload/q2nr6/20260811/boCq/1280X806/fd5f9062f2551ac825a2d760af299256.jpg/webp",
@@ -53,8 +69,7 @@
       "image": "https://tc-new.z.wiki/autoupload/q2nr6/20260811/6axz/1280X807/224767a49fe07d50583e752e683681b1.png/webp",
       "start": "2026.06.26",
       "end": "2026.07.23",
-      "intro": "车手们可以在活动中消耗1脚力值\u201c踢一脚\u201d饮料机，有概率获得道具瓶子，瓶子累计达到对应数值里程碑可领取对应奖励。西理也帮大家整理出来啦~<br>脚力值获取方式<br>\u00b7首次进入活动页：获得3脚力值<br>\u00b7每日参加比赛：参加6场任意比赛，每场获得1脚力值（每日最多6点）<br>里程碑奖励表<br><img src='https://tc-new.z.wiki/autoupload/q2nr6/20260811/AHpd/310X265/01c342a6338dcbb81f50e9b49d85d799.jpg/webp' style='max-width:100%;border-radius:6px'>",
-      "tips": "白嫖活动尽量拉满"
+      "intro": ""intro": "车手们可以在活动中<span class=\"act-red\">消耗1脚力值\u201c踢一脚\u201d饮料机</span>，有概率获得<span class=\"act-red\">道具瓶子</span>，瓶子累计达到对应数值里程碑可领取对应奖励。西理也帮大家整理出来啦~<br><br><span style='color:#ffffff;font-weight:800;font-size:1.05rem'>脚力值获取方式</span><br>\u00b7首次进入活动页：获得<span class=\"act-red\">3脚力值</span><br>\u00b7每日参加比赛：参加<span class=\"act-red\">6场任意比赛</span>，每场获得1脚力值（每日最多6点）<br><br><span style='color:#ffffff;font-weight:800;font-size:1.05rem'>里程碑奖励表</span><br><img src='https://tc-new.z.wiki/autoupload/q2nr6/20260811/AHpd/310X265/01c342a6338dcbb81f50e9b49d85d799.jpg/webp' style='max-width:100%;border-radius:6px'>",
     }
   ]
 }
