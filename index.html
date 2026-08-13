@@ -507,6 +507,7 @@ main{max-width:var(--max-width);margin:0 auto;padding:calc(var(--nav-height) + 0
 .vd-chip-rec{padding:14px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid var(--border-color)}
 .v-rec-title{font-size:.9rem;font-weight:800;color:#ffffff;margin:4px 0 2px}
 .v-rec-line{font-size:.8rem;color:#e2e2e6;padding:2px 0;line-height:1.7}
+.rec-seg{display:inline-block;vertical-align:top;max-width:100%;overflow-wrap:break-word;word-break:break-word}
 .vd-stats-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
 .v-stat-card{padding:10px;border-radius:8px;background:rgba(255,255,255,.03);border:1px solid var(--border-color);text-align:center}
 .v-stat-card span{display:block;font-size:.78rem;color:var(--text-muted)}
@@ -579,6 +580,7 @@ body::before{opacity:.9}
 .vd-chip-rec{padding:8px}
 .v-rec-title{font-size:.78rem}
 .v-rec-line{font-size:.72rem}
+.rec-seg{font-size:.72rem}
 .v-feat-box{padding:3px 8px;font-size:.72rem}
 .vd-gallery-btn{width:24px;height:24px;font-size:1rem}
 .chip-card-img{height:100px}
@@ -1451,7 +1453,7 @@ function showVehicleDetail(car) {
                 var segs = (parts[pi+1]||'').split('/');
                 for (var gi=0; gi<segs.length; gi++) {
                     if (segs[gi]) {
-                        out += '<span style="display:inline-block;white-space:normal;vertical-align:top;max-width:100%;overflow-wrap:break-word;word-break:break-word">'+(gi===0?parts[pi]:'/')+segs[gi]+'</span>';
+                        out += '<span class="rec-seg">'+(gi===0?parts[pi]:'/')+segs[gi]+'</span>';
                     }
                 }
                 pi++;
