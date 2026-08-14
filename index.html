@@ -4258,7 +4258,7 @@ function _calc_togSub(skipUlt) {
         function _calc_getParams(vn,hui,xian,tuan) {
             var v=_calc_vehicleList.find(function(x){return x.name===vn});if(!v)return null;
             var ultE=parseFloat(document.getElementById('_calc_ultEnergy').value)||100;
-            var ultEFirst=parseFloat(document.getElementById('_calc_ultEnergyFirst').value)||100;
+            var ultEFirst=parseFloat(document.getElementById('_calc_ultEnergyFirst').value)||parseFloat(document.getElementById('_calc_ultEnergy').value)||100;
             var zhuan=document.getElementById('_calc_zhuanjing').value==='yes'?10:0;
             var anti=parseFloat(document.getElementById('_calc_anti').value)||0;
             var liexin=document.getElementById('_calc_liexin').value;
