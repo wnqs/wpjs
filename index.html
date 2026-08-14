@@ -2908,7 +2908,7 @@ window.renderCalculator = function () {
     h += _cf('团魂% <span class="hN">(空则计算)</span>','<input type="number" id="_calc_tuanHun" step="1" min="0" value="0" placeholder="自动">');
     h += _cf('起步充能%','<input type="text" id="_calc_startCharge" readonly>');
     h += _cf('氮气充能%','<input type="text" id="_calc_nitroCharge" readonly>');
-    h += _cf('大招能量','<input type="number" id="_calc_ultEnergy" step="1" value="100">');
+    h += _cf('大招能量','<input type="number" id="_calc_ultEnergy" step="1" value="100" oninput="var uf=document.getElementById(\'_calc_ultEnergyFirst\');if(uf)uf.value=this.value">');
     h += _cf('是否专精','<select id="_calc_zhuanjing"><option value="yes">是</option><option value="no">否</option></select>');
     h += _cf('反制%','<div class="rI"><input type="range" id="_calc_anti" min="0" max="18" value="0" step="1" oninput="this.nextElementSibling.textContent=this.value"><span class="cV">0</span></div>');
     h += _cf('是否猎芯','<select id="_calc_liexin"><option value="yes">是</option><option value="no">否</option></select>');
